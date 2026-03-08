@@ -1,0 +1,38 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+// ---------------------------------------------------------
+// #SCRIPTNAME#.cs
+// 作成日:  2026/3/
+// 作成者:  
+// 概要:
+// ---------------------------------------------------------
+
+/// <summary>
+/// 
+/// </summary>
+public class #SCRIPTNAME# : MonoBehaviour
+{
+
+	#region 変数
+
+
+	private void Awake()
+	{
+
+	}
+
+	private void Start() 
+	{
+
+	}
+	
+	private void Update() 
+	{
+
+	}
+
+	#endregion
+}
