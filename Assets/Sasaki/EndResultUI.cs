@@ -14,8 +14,8 @@ public class EndResultUI : MonoBehaviour
 
     void Start()
     {
-        int total = Enemycount.totalEnemy;
-        int dead = Enemycount.deadEnemy;
+        int total = GameManager.Instance.totalEnemy;
+        int dead = GameManager.Instance.deadEnemy;
 
         resultText.text = "倒した敵 : " + dead + " / " + total;
     }
