@@ -2,7 +2,7 @@
 // EnemyHit.cs
 // 作成日:  2026/3/8
 // 作成者:  佐々木
-// 概要:赤ちゃんと当たると死ぬ
+// 概要: 赤ちゃんと当たると死ぬ
 // ---------------------------------------------------------
 
 using UnityEngine;
@@ -10,12 +10,14 @@ using UnityEngine;
 public class EnemyHit : MonoBehaviour
 {
     public float knockbackForce = 10f;
+
     Rigidbody rb;
+    Enemy enemy;
 
     void Start()
     {
-        Enemycount.AddEnemy();
         rb = GetComponent<Rigidbody>();
+        enemy = GetComponent<Enemy>(); // Enemyスクリプト取得
     }
 
     void OnCollisionEnter(Collision collision)
@@ -27,9 +29,11 @@ public class EnemyHit : MonoBehaviour
 
             rb.AddForce(dir * knockbackForce + Vector3.up * 5f, ForceMode.Impulse);
 
-            // 少し後に消える
-            Enemycount.EnemyDead();
-            Destroy(gameObject, 1.5f);
+            // 敵死亡処理
+            if (enemy != null)
+            {
+                enemy.Dead();
+            }
         }
     }
 }

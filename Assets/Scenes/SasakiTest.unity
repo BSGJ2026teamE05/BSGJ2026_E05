@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 6207142}
   - component: {fileID: 6207141}
   - component: {fileID: 6207140}
+  - component: {fileID: 6207145}
   m_Layer: 0
   m_Name: Enemy2 (31)
   m_TagString: Untagged
@@ -269,6 +270,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6207138}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &6207145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6207138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &18425704
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,6 +301,7 @@ GameObject:
   - component: {fileID: 18425708}
   - component: {fileID: 18425707}
   - component: {fileID: 18425706}
+  - component: {fileID: 18425711}
   m_Layer: 0
   m_Name: Enemy2 (10)
   m_TagString: Untagged
@@ -419,6 +438,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18425704}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &18425711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18425704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &59767837
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,6 +469,7 @@ GameObject:
   - component: {fileID: 59767841}
   - component: {fileID: 59767840}
   - component: {fileID: 59767839}
+  - component: {fileID: 59767844}
   m_Layer: 0
   m_Name: Enemy3 (6)
   m_TagString: Untagged
@@ -569,6 +606,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59767837}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &59767844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59767837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &61191021
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,6 +637,7 @@ GameObject:
   - component: {fileID: 61191025}
   - component: {fileID: 61191024}
   - component: {fileID: 61191023}
+  - component: {fileID: 61191028}
   m_Layer: 0
   m_Name: Enemy3 (2)
   m_TagString: Untagged
@@ -719,6 +774,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 61191021}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &61191028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61191021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &107599343
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +805,7 @@ GameObject:
   - component: {fileID: 107599347}
   - component: {fileID: 107599346}
   - component: {fileID: 107599345}
+  - component: {fileID: 107599350}
   m_Layer: 0
   m_Name: Enemy2 (16)
   m_TagString: Untagged
@@ -869,6 +942,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107599343}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &107599350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107599343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &118209233
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +973,7 @@ GameObject:
   - component: {fileID: 118209237}
   - component: {fileID: 118209236}
   - component: {fileID: 118209235}
+  - component: {fileID: 118209240}
   m_Layer: 0
   m_Name: Enemy3 (12)
   m_TagString: Untagged
@@ -1019,6 +1110,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118209233}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &118209240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118209233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &140901442
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,6 +1141,7 @@ GameObject:
   - component: {fileID: 140901446}
   - component: {fileID: 140901445}
   - component: {fileID: 140901444}
+  - component: {fileID: 140901449}
   m_Layer: 0
   m_Name: Enemy1 (20)
   m_TagString: Untagged
@@ -1169,6 +1278,126 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140901442}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &140901449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140901442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
+--- !u!1 &161141180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 161141184}
+  - component: {fileID: 161141183}
+  - component: {fileID: 161141182}
+  - component: {fileID: 161141181}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &161141181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161141180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &161141182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161141180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &161141183
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161141180}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &161141184
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161141180}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 360272487}
+  - {fileID: 495469757}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &166299317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,6 +1412,7 @@ GameObject:
   - component: {fileID: 166299321}
   - component: {fileID: 166299320}
   - component: {fileID: 166299319}
+  - component: {fileID: 166299324}
   m_Layer: 0
   m_Name: Enemy3 (9)
   m_TagString: Untagged
@@ -1319,6 +1549,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166299317}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &166299324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166299317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &177927181
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,6 +1580,7 @@ GameObject:
   - component: {fileID: 177927185}
   - component: {fileID: 177927184}
   - component: {fileID: 177927183}
+  - component: {fileID: 177927188}
   m_Layer: 0
   m_Name: Enemy2 (11)
   m_TagString: Untagged
@@ -1469,6 +1717,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177927181}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &177927188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177927181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &199831616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1483,6 +1748,7 @@ GameObject:
   - component: {fileID: 199831620}
   - component: {fileID: 199831619}
   - component: {fileID: 199831618}
+  - component: {fileID: 199831623}
   m_Layer: 0
   m_Name: Enemy2 (12)
   m_TagString: Untagged
@@ -1619,6 +1885,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199831616}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &199831623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199831616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &260629385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1633,6 +1916,7 @@ GameObject:
   - component: {fileID: 260629389}
   - component: {fileID: 260629388}
   - component: {fileID: 260629387}
+  - component: {fileID: 260629392}
   m_Layer: 0
   m_Name: Enemy2 (8)
   m_TagString: Untagged
@@ -1769,6 +2053,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260629385}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &260629392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260629385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &280285384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1783,6 +2084,7 @@ GameObject:
   - component: {fileID: 280285388}
   - component: {fileID: 280285387}
   - component: {fileID: 280285386}
+  - component: {fileID: 280285391}
   m_Layer: 0
   m_Name: Enemy3 (31)
   m_TagString: Untagged
@@ -1919,6 +2221,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280285384}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &280285391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280285384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &287902739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,6 +2252,7 @@ GameObject:
   - component: {fileID: 287902741}
   - component: {fileID: 287902740}
   - component: {fileID: 287902745}
+  - component: {fileID: 287902746}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Untagged
@@ -2069,6 +2389,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockbackForce: 10
+--- !u!114 &287902746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287902739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 300
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &332897343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2083,6 +2420,7 @@ GameObject:
   - component: {fileID: 332897347}
   - component: {fileID: 332897346}
   - component: {fileID: 332897345}
+  - component: {fileID: 332897350}
   m_Layer: 0
   m_Name: Enemy2 (5)
   m_TagString: Untagged
@@ -2219,6 +2557,102 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332897343}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &332897350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332897343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
+--- !u!1 &360272486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 360272487}
+  - component: {fileID: 360272489}
+  - component: {fileID: 360272488}
+  m_Layer: 5
+  m_Name: Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &360272487
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360272486}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 161141184}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -540.7635, y: 369.8}
+  m_SizeDelta: {x: 720.0161, y: 127.2134}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &360272488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360272486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 57
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 65
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &360272489
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360272486}
+  m_CullTransparentMesh: 1
 --- !u!1 &360322557
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,6 +2667,7 @@ GameObject:
   - component: {fileID: 360322561}
   - component: {fileID: 360322560}
   - component: {fileID: 360322559}
+  - component: {fileID: 360322564}
   m_Layer: 0
   m_Name: Enemy3 (7)
   m_TagString: Untagged
@@ -2369,6 +2804,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360322557}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &360322564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360322557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &364974842
 GameObject:
   m_ObjectHideFlags: 0
@@ -2383,6 +2835,7 @@ GameObject:
   - component: {fileID: 364974846}
   - component: {fileID: 364974845}
   - component: {fileID: 364974844}
+  - component: {fileID: 364974849}
   m_Layer: 0
   m_Name: Enemy3 (15)
   m_TagString: Untagged
@@ -2519,6 +2972,72 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364974842}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &364974849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364974842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
+--- !u!1 &385893401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 385893403}
+  - component: {fileID: 385893402}
+  m_Layer: 0
+  m_Name: Gamemanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &385893402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385893401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535fb9c78d81a254ebf23e8a6f00607c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalEnemy: 0
+  deadEnemy: 0
+  score: 0
+  enemyCountText: {fileID: 495469758}
+  scoreText: {fileID: 360272488}
+--- !u!4 &385893403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385893401}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &423861689
 GameObject:
   m_ObjectHideFlags: 0
@@ -2533,6 +3052,7 @@ GameObject:
   - component: {fileID: 423861693}
   - component: {fileID: 423861692}
   - component: {fileID: 423861691}
+  - component: {fileID: 423861696}
   m_Layer: 0
   m_Name: Enemy2 (30)
   m_TagString: Untagged
@@ -2669,6 +3189,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423861689}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &423861696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423861689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &448839060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2683,6 +3220,7 @@ GameObject:
   - component: {fileID: 448839064}
   - component: {fileID: 448839063}
   - component: {fileID: 448839062}
+  - component: {fileID: 448839067}
   m_Layer: 0
   m_Name: Enemy3 (24)
   m_TagString: Untagged
@@ -2819,6 +3357,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448839060}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &448839067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448839060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &454694844
 GameObject:
   m_ObjectHideFlags: 0
@@ -2833,6 +3388,7 @@ GameObject:
   - component: {fileID: 454694848}
   - component: {fileID: 454694847}
   - component: {fileID: 454694846}
+  - component: {fileID: 454694851}
   m_Layer: 0
   m_Name: Enemy2 (17)
   m_TagString: Untagged
@@ -2969,6 +3525,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454694844}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &454694851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454694844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &454898972
 GameObject:
   m_ObjectHideFlags: 0
@@ -2983,6 +3556,7 @@ GameObject:
   - component: {fileID: 454898976}
   - component: {fileID: 454898975}
   - component: {fileID: 454898974}
+  - component: {fileID: 454898979}
   m_Layer: 0
   m_Name: Enemy1 (13)
   m_TagString: Untagged
@@ -3119,6 +3693,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454898972}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &454898979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454898972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &475894449
 GameObject:
   m_ObjectHideFlags: 0
@@ -3133,6 +3724,7 @@ GameObject:
   - component: {fileID: 475894453}
   - component: {fileID: 475894452}
   - component: {fileID: 475894451}
+  - component: {fileID: 475894456}
   m_Layer: 0
   m_Name: Enemy1 (19)
   m_TagString: Untagged
@@ -3269,6 +3861,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475894449}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &475894456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475894449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &489518479
 GameObject:
   m_ObjectHideFlags: 0
@@ -3283,6 +3892,7 @@ GameObject:
   - component: {fileID: 489518483}
   - component: {fileID: 489518482}
   - component: {fileID: 489518481}
+  - component: {fileID: 489518486}
   m_Layer: 0
   m_Name: Enemy2 (28)
   m_TagString: Untagged
@@ -3419,6 +4029,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489518479}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &489518486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489518479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &494155692
 GameObject:
   m_ObjectHideFlags: 0
@@ -3433,6 +4060,7 @@ GameObject:
   - component: {fileID: 494155696}
   - component: {fileID: 494155695}
   - component: {fileID: 494155694}
+  - component: {fileID: 494155699}
   m_Layer: 0
   m_Name: Enemy1 (15)
   m_TagString: Untagged
@@ -3569,6 +4197,102 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494155692}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &494155699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494155692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
+--- !u!1 &495469756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495469757}
+  - component: {fileID: 495469759}
+  - component: {fileID: 495469758}
+  m_Layer: 5
+  m_Name: EnemyCount
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &495469757
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495469756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 161141184}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -540.7635, y: 444.4}
+  m_SizeDelta: {x: 720.0161, y: 127.2134}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &495469758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495469756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 57
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 65
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &495469759
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495469756}
+  m_CullTransparentMesh: 1
 --- !u!1 &532117973
 GameObject:
   m_ObjectHideFlags: 0
@@ -3583,6 +4307,7 @@ GameObject:
   - component: {fileID: 532117977}
   - component: {fileID: 532117976}
   - component: {fileID: 532117975}
+  - component: {fileID: 532117980}
   m_Layer: 0
   m_Name: Enemy1 (7)
   m_TagString: Untagged
@@ -3719,6 +4444,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532117973}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &532117980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532117973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &584738159
 GameObject:
   m_ObjectHideFlags: 0
@@ -3733,6 +4475,7 @@ GameObject:
   - component: {fileID: 584738163}
   - component: {fileID: 584738162}
   - component: {fileID: 584738161}
+  - component: {fileID: 584738166}
   m_Layer: 0
   m_Name: Enemy1 (12)
   m_TagString: Untagged
@@ -3869,6 +4612,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584738159}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &584738166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584738159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &651637362
 GameObject:
   m_ObjectHideFlags: 0
@@ -3883,6 +4643,7 @@ GameObject:
   - component: {fileID: 651637366}
   - component: {fileID: 651637365}
   - component: {fileID: 651637364}
+  - component: {fileID: 651637369}
   m_Layer: 0
   m_Name: Enemy1 (32)
   m_TagString: Untagged
@@ -4019,6 +4780,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651637362}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &651637369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651637362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &666792285
 GameObject:
   m_ObjectHideFlags: 0
@@ -4033,6 +4811,7 @@ GameObject:
   - component: {fileID: 666792289}
   - component: {fileID: 666792288}
   - component: {fileID: 666792287}
+  - component: {fileID: 666792292}
   m_Layer: 0
   m_Name: Enemy1 (25)
   m_TagString: Untagged
@@ -4169,6 +4948,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666792285}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &666792292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666792285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &675902999
 GameObject:
   m_ObjectHideFlags: 0
@@ -4183,6 +4979,7 @@ GameObject:
   - component: {fileID: 675903001}
   - component: {fileID: 675903000}
   - component: {fileID: 675903005}
+  - component: {fileID: 675903006}
   m_Layer: 0
   m_Name: Enemy3
   m_TagString: Untagged
@@ -4319,6 +5116,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockbackForce: 10
+--- !u!114 &675903006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675902999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 500
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &684779738
 GameObject:
   m_ObjectHideFlags: 0
@@ -4333,6 +5147,7 @@ GameObject:
   - component: {fileID: 684779742}
   - component: {fileID: 684779741}
   - component: {fileID: 684779740}
+  - component: {fileID: 684779745}
   m_Layer: 0
   m_Name: Enemy3 (22)
   m_TagString: Untagged
@@ -4469,6 +5284,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684779738}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &684779745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684779738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &694882825
 GameObject:
   m_ObjectHideFlags: 0
@@ -4483,6 +5315,7 @@ GameObject:
   - component: {fileID: 694882829}
   - component: {fileID: 694882828}
   - component: {fileID: 694882827}
+  - component: {fileID: 694882832}
   m_Layer: 0
   m_Name: Enemy1 (29)
   m_TagString: Untagged
@@ -4619,6 +5452,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694882825}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &694882832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694882825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &696763654
 GameObject:
   m_ObjectHideFlags: 0
@@ -4633,6 +5483,7 @@ GameObject:
   - component: {fileID: 696763658}
   - component: {fileID: 696763657}
   - component: {fileID: 696763656}
+  - component: {fileID: 696763661}
   m_Layer: 0
   m_Name: Enemy2 (27)
   m_TagString: Untagged
@@ -4769,6 +5620,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696763654}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &696763661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696763654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &706078420
 GameObject:
   m_ObjectHideFlags: 0
@@ -4783,6 +5651,7 @@ GameObject:
   - component: {fileID: 706078424}
   - component: {fileID: 706078423}
   - component: {fileID: 706078422}
+  - component: {fileID: 706078427}
   m_Layer: 0
   m_Name: Enemy2 (22)
   m_TagString: Untagged
@@ -4919,6 +5788,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706078420}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &706078427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706078420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &706962905
 GameObject:
   m_ObjectHideFlags: 0
@@ -4933,6 +5819,7 @@ GameObject:
   - component: {fileID: 706962909}
   - component: {fileID: 706962908}
   - component: {fileID: 706962907}
+  - component: {fileID: 706962912}
   m_Layer: 0
   m_Name: Enemy2 (9)
   m_TagString: Untagged
@@ -5069,6 +5956,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706962905}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &706962912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706962905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &714523869
 GameObject:
   m_ObjectHideFlags: 0
@@ -5083,6 +5987,7 @@ GameObject:
   - component: {fileID: 714523873}
   - component: {fileID: 714523872}
   - component: {fileID: 714523871}
+  - component: {fileID: 714523876}
   m_Layer: 0
   m_Name: Enemy3 (4)
   m_TagString: Untagged
@@ -5219,6 +6124,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714523869}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &714523876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714523869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &715463752
 GameObject:
   m_ObjectHideFlags: 0
@@ -5233,6 +6155,7 @@ GameObject:
   - component: {fileID: 715463756}
   - component: {fileID: 715463755}
   - component: {fileID: 715463754}
+  - component: {fileID: 715463759}
   m_Layer: 0
   m_Name: Enemy3 (23)
   m_TagString: Untagged
@@ -5369,6 +6292,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715463752}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &715463759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715463752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &732478938
 GameObject:
   m_ObjectHideFlags: 0
@@ -5383,6 +6323,7 @@ GameObject:
   - component: {fileID: 732478942}
   - component: {fileID: 732478941}
   - component: {fileID: 732478940}
+  - component: {fileID: 732478945}
   m_Layer: 0
   m_Name: Enemy3 (28)
   m_TagString: Untagged
@@ -5519,6 +6460,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732478938}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &732478945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732478938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &735286941
 GameObject:
   m_ObjectHideFlags: 0
@@ -5533,6 +6491,7 @@ GameObject:
   - component: {fileID: 735286945}
   - component: {fileID: 735286944}
   - component: {fileID: 735286943}
+  - component: {fileID: 735286948}
   m_Layer: 0
   m_Name: Enemy1 (5)
   m_TagString: Untagged
@@ -5669,6 +6628,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735286941}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &735286948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735286941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &742456429
 GameObject:
   m_ObjectHideFlags: 0
@@ -5683,6 +6659,7 @@ GameObject:
   - component: {fileID: 742456433}
   - component: {fileID: 742456432}
   - component: {fileID: 742456431}
+  - component: {fileID: 742456436}
   m_Layer: 0
   m_Name: Enemy2 (29)
   m_TagString: Untagged
@@ -5819,6 +6796,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742456429}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &742456436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742456429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &776151443
 GameObject:
   m_ObjectHideFlags: 0
@@ -5833,6 +6827,7 @@ GameObject:
   - component: {fileID: 776151447}
   - component: {fileID: 776151446}
   - component: {fileID: 776151445}
+  - component: {fileID: 776151450}
   m_Layer: 0
   m_Name: Enemy1 (22)
   m_TagString: Untagged
@@ -5969,6 +6964,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776151443}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &776151450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776151443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &793192969
 GameObject:
   m_ObjectHideFlags: 0
@@ -5983,6 +6995,7 @@ GameObject:
   - component: {fileID: 793192973}
   - component: {fileID: 793192972}
   - component: {fileID: 793192971}
+  - component: {fileID: 793192976}
   m_Layer: 0
   m_Name: Enemy3 (30)
   m_TagString: Untagged
@@ -6119,6 +7132,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793192969}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &793192976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793192969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &815581898
 GameObject:
   m_ObjectHideFlags: 0
@@ -6133,6 +7163,7 @@ GameObject:
   - component: {fileID: 815581902}
   - component: {fileID: 815581901}
   - component: {fileID: 815581900}
+  - component: {fileID: 815581905}
   m_Layer: 0
   m_Name: Enemy1 (31)
   m_TagString: Untagged
@@ -6269,6 +7300,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815581898}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &815581905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815581898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &818743841
 GameObject:
   m_ObjectHideFlags: 0
@@ -6283,6 +7331,7 @@ GameObject:
   - component: {fileID: 818743845}
   - component: {fileID: 818743844}
   - component: {fileID: 818743843}
+  - component: {fileID: 818743848}
   m_Layer: 0
   m_Name: Enemy1 (17)
   m_TagString: Untagged
@@ -6419,6 +7468,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818743841}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &818743848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818743841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &831674342
 GameObject:
   m_ObjectHideFlags: 0
@@ -6433,6 +7499,7 @@ GameObject:
   - component: {fileID: 831674346}
   - component: {fileID: 831674345}
   - component: {fileID: 831674344}
+  - component: {fileID: 831674349}
   m_Layer: 0
   m_Name: Enemy3 (25)
   m_TagString: Untagged
@@ -6569,6 +7636,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 831674342}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &831674349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831674342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &899037333
 GameObject:
   m_ObjectHideFlags: 0
@@ -6583,6 +7667,7 @@ GameObject:
   - component: {fileID: 899037337}
   - component: {fileID: 899037336}
   - component: {fileID: 899037335}
+  - component: {fileID: 899037340}
   m_Layer: 0
   m_Name: Enemy2 (23)
   m_TagString: Untagged
@@ -6719,6 +7804,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899037333}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &899037340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899037333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &908411347
 GameObject:
   m_ObjectHideFlags: 0
@@ -6733,6 +7835,7 @@ GameObject:
   - component: {fileID: 908411351}
   - component: {fileID: 908411350}
   - component: {fileID: 908411349}
+  - component: {fileID: 908411354}
   m_Layer: 0
   m_Name: Enemy1 (28)
   m_TagString: Untagged
@@ -6869,6 +7972,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908411347}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &908411354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908411347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &961475661
 GameObject:
   m_ObjectHideFlags: 0
@@ -6883,6 +8003,7 @@ GameObject:
   - component: {fileID: 961475665}
   - component: {fileID: 961475664}
   - component: {fileID: 961475663}
+  - component: {fileID: 961475668}
   m_Layer: 0
   m_Name: Enemy2 (24)
   m_TagString: Untagged
@@ -7019,6 +8140,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961475661}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &961475668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961475661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &968051530
 GameObject:
   m_ObjectHideFlags: 0
@@ -7033,6 +8171,7 @@ GameObject:
   - component: {fileID: 968051534}
   - component: {fileID: 968051533}
   - component: {fileID: 968051532}
+  - component: {fileID: 968051537}
   m_Layer: 0
   m_Name: Enemy3 (10)
   m_TagString: Untagged
@@ -7169,6 +8308,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968051530}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &968051537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968051530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &985763422
 GameObject:
   m_ObjectHideFlags: 0
@@ -7183,6 +8339,7 @@ GameObject:
   - component: {fileID: 985763426}
   - component: {fileID: 985763425}
   - component: {fileID: 985763424}
+  - component: {fileID: 985763429}
   m_Layer: 0
   m_Name: Enemy3 (29)
   m_TagString: Untagged
@@ -7319,6 +8476,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985763422}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &985763429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985763422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &993845084
 GameObject:
   m_ObjectHideFlags: 0
@@ -7470,6 +8644,7 @@ GameObject:
   - component: {fileID: 998107800}
   - component: {fileID: 998107799}
   - component: {fileID: 998107798}
+  - component: {fileID: 998107803}
   m_Layer: 0
   m_Name: Enemy3 (18)
   m_TagString: Untagged
@@ -7606,6 +8781,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998107796}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &998107803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998107796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1043616268
 GameObject:
   m_ObjectHideFlags: 0
@@ -7620,6 +8812,7 @@ GameObject:
   - component: {fileID: 1043616272}
   - component: {fileID: 1043616271}
   - component: {fileID: 1043616270}
+  - component: {fileID: 1043616275}
   m_Layer: 0
   m_Name: Enemy1 (8)
   m_TagString: Untagged
@@ -7756,6 +8949,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1043616268}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1043616275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043616268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1063233758
 GameObject:
   m_ObjectHideFlags: 0
@@ -7770,6 +8980,7 @@ GameObject:
   - component: {fileID: 1063233762}
   - component: {fileID: 1063233761}
   - component: {fileID: 1063233760}
+  - component: {fileID: 1063233765}
   m_Layer: 0
   m_Name: Enemy1 (18)
   m_TagString: Untagged
@@ -7906,6 +9117,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063233758}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1063233765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063233758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1069676157
 GameObject:
   m_ObjectHideFlags: 0
@@ -7920,6 +9148,7 @@ GameObject:
   - component: {fileID: 1069676161}
   - component: {fileID: 1069676160}
   - component: {fileID: 1069676159}
+  - component: {fileID: 1069676164}
   m_Layer: 0
   m_Name: Enemy2 (32)
   m_TagString: Untagged
@@ -8056,6 +9285,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069676157}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1069676164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069676157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1137161552
 GameObject:
   m_ObjectHideFlags: 0
@@ -8070,6 +9316,7 @@ GameObject:
   - component: {fileID: 1137161556}
   - component: {fileID: 1137161555}
   - component: {fileID: 1137161554}
+  - component: {fileID: 1137161559}
   m_Layer: 0
   m_Name: Enemy3 (26)
   m_TagString: Untagged
@@ -8206,6 +9453,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137161552}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1137161559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137161552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1176491116
 GameObject:
   m_ObjectHideFlags: 0
@@ -8220,6 +9484,7 @@ GameObject:
   - component: {fileID: 1176491120}
   - component: {fileID: 1176491119}
   - component: {fileID: 1176491118}
+  - component: {fileID: 1176491123}
   m_Layer: 0
   m_Name: Enemy2 (6)
   m_TagString: Untagged
@@ -8356,6 +9621,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176491116}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1176491123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176491116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1194833316
 GameObject:
   m_ObjectHideFlags: 0
@@ -8370,6 +9652,7 @@ GameObject:
   - component: {fileID: 1194833318}
   - component: {fileID: 1194833317}
   - component: {fileID: 1194833322}
+  - component: {fileID: 1194833323}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Untagged
@@ -8506,6 +9789,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockbackForce: 10
+--- !u!114 &1194833323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194833316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1202714180
 GameObject:
   m_ObjectHideFlags: 0
@@ -8520,6 +9820,7 @@ GameObject:
   - component: {fileID: 1202714184}
   - component: {fileID: 1202714183}
   - component: {fileID: 1202714182}
+  - component: {fileID: 1202714187}
   m_Layer: 0
   m_Name: Enemy3 (27)
   m_TagString: Untagged
@@ -8656,6 +9957,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202714180}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1202714187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202714180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1219735086
 GameObject:
   m_ObjectHideFlags: 0
@@ -8670,6 +9988,7 @@ GameObject:
   - component: {fileID: 1219735090}
   - component: {fileID: 1219735089}
   - component: {fileID: 1219735088}
+  - component: {fileID: 1219735093}
   m_Layer: 0
   m_Name: Enemy1 (11)
   m_TagString: Untagged
@@ -8806,6 +10125,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219735086}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1219735093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219735086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1251022912
 GameObject:
   m_ObjectHideFlags: 0
@@ -8820,6 +10156,7 @@ GameObject:
   - component: {fileID: 1251022916}
   - component: {fileID: 1251022915}
   - component: {fileID: 1251022914}
+  - component: {fileID: 1251022919}
   m_Layer: 0
   m_Name: Enemy3 (8)
   m_TagString: Untagged
@@ -8956,6 +10293,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251022912}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1251022919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251022912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1267706707
 GameObject:
   m_ObjectHideFlags: 0
@@ -9097,6 +10451,7 @@ GameObject:
   - component: {fileID: 1268337597}
   - component: {fileID: 1268337596}
   - component: {fileID: 1268337595}
+  - component: {fileID: 1268337600}
   m_Layer: 0
   m_Name: Enemy1 (6)
   m_TagString: Untagged
@@ -9233,6 +10588,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268337593}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1268337600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268337593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1300596073
 GameObject:
   m_ObjectHideFlags: 0
@@ -9247,6 +10619,7 @@ GameObject:
   - component: {fileID: 1300596077}
   - component: {fileID: 1300596076}
   - component: {fileID: 1300596075}
+  - component: {fileID: 1300596080}
   m_Layer: 0
   m_Name: Enemy1 (16)
   m_TagString: Untagged
@@ -9383,6 +10756,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300596073}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1300596080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300596073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1305843657
 GameObject:
   m_ObjectHideFlags: 0
@@ -9397,6 +10787,7 @@ GameObject:
   - component: {fileID: 1305843661}
   - component: {fileID: 1305843660}
   - component: {fileID: 1305843659}
+  - component: {fileID: 1305843664}
   m_Layer: 0
   m_Name: Enemy1 (4)
   m_TagString: Untagged
@@ -9533,6 +10924,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305843657}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1305843664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305843657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1319672221
 GameObject:
   m_ObjectHideFlags: 0
@@ -9655,6 +11063,7 @@ GameObject:
   - component: {fileID: 1320659497}
   - component: {fileID: 1320659496}
   - component: {fileID: 1320659495}
+  - component: {fileID: 1320659500}
   m_Layer: 0
   m_Name: Enemy1 (1)
   m_TagString: Untagged
@@ -9791,6 +11200,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320659493}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1320659500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320659493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1332515340
 GameObject:
   m_ObjectHideFlags: 0
@@ -9805,6 +11231,7 @@ GameObject:
   - component: {fileID: 1332515344}
   - component: {fileID: 1332515343}
   - component: {fileID: 1332515342}
+  - component: {fileID: 1332515347}
   m_Layer: 0
   m_Name: Enemy2 (18)
   m_TagString: Untagged
@@ -9941,6 +11368,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1332515340}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1332515347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332515340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1333856689
 GameObject:
   m_ObjectHideFlags: 0
@@ -9955,6 +11399,7 @@ GameObject:
   - component: {fileID: 1333856693}
   - component: {fileID: 1333856692}
   - component: {fileID: 1333856691}
+  - component: {fileID: 1333856696}
   m_Layer: 0
   m_Name: Enemy2 (25)
   m_TagString: Untagged
@@ -10091,6 +11536,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333856689}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1333856696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333856689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1334868004
 GameObject:
   m_ObjectHideFlags: 0
@@ -10105,6 +11567,7 @@ GameObject:
   - component: {fileID: 1334868008}
   - component: {fileID: 1334868007}
   - component: {fileID: 1334868006}
+  - component: {fileID: 1334868011}
   m_Layer: 0
   m_Name: Enemy2 (1)
   m_TagString: Untagged
@@ -10241,6 +11704,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1334868004}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1334868011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334868004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1340571038
 GameObject:
   m_ObjectHideFlags: 0
@@ -10255,6 +11735,7 @@ GameObject:
   - component: {fileID: 1340571042}
   - component: {fileID: 1340571041}
   - component: {fileID: 1340571040}
+  - component: {fileID: 1340571045}
   m_Layer: 0
   m_Name: Enemy3 (17)
   m_TagString: Untagged
@@ -10391,52 +11872,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340571038}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1351180831
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1351180833}
-  - component: {fileID: 1351180832}
-  m_Layer: 0
-  m_Name: Enemycount
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1351180832
+--- !u!114 &1340571045
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351180831}
+  m_GameObject: {fileID: 1340571038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4c85e99cf28eb648b5c093d921ec136, type: 3}
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inspectorTotalEnemy: 0
-  inspectorDeadEnemy: 0
---- !u!4 &1351180833
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351180831}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1352466941
 GameObject:
   m_ObjectHideFlags: 0
@@ -10451,6 +11903,7 @@ GameObject:
   - component: {fileID: 1352466945}
   - component: {fileID: 1352466944}
   - component: {fileID: 1352466943}
+  - component: {fileID: 1352466948}
   m_Layer: 0
   m_Name: Enemy3 (11)
   m_TagString: Untagged
@@ -10587,6 +12040,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352466941}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1352466948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352466941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1360442835
 GameObject:
   m_ObjectHideFlags: 0
@@ -10601,6 +12071,7 @@ GameObject:
   - component: {fileID: 1360442839}
   - component: {fileID: 1360442838}
   - component: {fileID: 1360442837}
+  - component: {fileID: 1360442842}
   m_Layer: 0
   m_Name: Enemy2 (20)
   m_TagString: Untagged
@@ -10737,6 +12208,102 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360442835}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1360442842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360442835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
+--- !u!1 &1389895762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1389895765}
+  - component: {fileID: 1389895764}
+  - component: {fileID: 1389895763}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1389895763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389895762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
+--- !u!114 &1389895764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389895762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1389895765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389895762}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1430953374
 GameObject:
   m_ObjectHideFlags: 0
@@ -10751,6 +12318,7 @@ GameObject:
   - component: {fileID: 1430953378}
   - component: {fileID: 1430953377}
   - component: {fileID: 1430953376}
+  - component: {fileID: 1430953381}
   m_Layer: 0
   m_Name: Enemy2 (2)
   m_TagString: Untagged
@@ -10887,6 +12455,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430953374}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1430953381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430953374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1442469457
 GameObject:
   m_ObjectHideFlags: 0
@@ -10901,6 +12486,7 @@ GameObject:
   - component: {fileID: 1442469461}
   - component: {fileID: 1442469460}
   - component: {fileID: 1442469459}
+  - component: {fileID: 1442469464}
   m_Layer: 0
   m_Name: Enemy2 (15)
   m_TagString: Untagged
@@ -11037,6 +12623,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442469457}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1442469464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442469457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1455284463
 GameObject:
   m_ObjectHideFlags: 0
@@ -11203,6 +12806,7 @@ GameObject:
   - component: {fileID: 1475038222}
   - component: {fileID: 1475038221}
   - component: {fileID: 1475038220}
+  - component: {fileID: 1475038225}
   m_Layer: 0
   m_Name: Enemy2 (7)
   m_TagString: Untagged
@@ -11339,6 +12943,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475038218}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1475038225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475038218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1482701146
 GameObject:
   m_ObjectHideFlags: 0
@@ -11353,6 +12974,7 @@ GameObject:
   - component: {fileID: 1482701150}
   - component: {fileID: 1482701149}
   - component: {fileID: 1482701148}
+  - component: {fileID: 1482701153}
   m_Layer: 0
   m_Name: Enemy2 (21)
   m_TagString: Untagged
@@ -11489,6 +13111,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482701146}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1482701153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482701146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1523242116
 GameObject:
   m_ObjectHideFlags: 0
@@ -11503,6 +13142,7 @@ GameObject:
   - component: {fileID: 1523242120}
   - component: {fileID: 1523242119}
   - component: {fileID: 1523242118}
+  - component: {fileID: 1523242123}
   m_Layer: 0
   m_Name: Enemy3 (13)
   m_TagString: Untagged
@@ -11639,6 +13279,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523242116}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1523242123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523242116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1560187354
 GameObject:
   m_ObjectHideFlags: 0
@@ -11653,6 +13310,7 @@ GameObject:
   - component: {fileID: 1560187358}
   - component: {fileID: 1560187357}
   - component: {fileID: 1560187356}
+  - component: {fileID: 1560187361}
   m_Layer: 0
   m_Name: Enemy1 (10)
   m_TagString: Untagged
@@ -11789,6 +13447,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560187354}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1560187361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560187354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1573275588
 GameObject:
   m_ObjectHideFlags: 0
@@ -11803,6 +13478,7 @@ GameObject:
   - component: {fileID: 1573275592}
   - component: {fileID: 1573275591}
   - component: {fileID: 1573275590}
+  - component: {fileID: 1573275595}
   m_Layer: 0
   m_Name: Enemy1 (21)
   m_TagString: Untagged
@@ -11939,6 +13615,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573275588}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1573275595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573275588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1601199284
 GameObject:
   m_ObjectHideFlags: 0
@@ -11953,6 +13646,7 @@ GameObject:
   - component: {fileID: 1601199288}
   - component: {fileID: 1601199287}
   - component: {fileID: 1601199286}
+  - component: {fileID: 1601199291}
   m_Layer: 0
   m_Name: Enemy1 (27)
   m_TagString: Untagged
@@ -12089,6 +13783,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601199284}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1601199291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601199284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1634782217
 GameObject:
   m_ObjectHideFlags: 0
@@ -12103,6 +13814,7 @@ GameObject:
   - component: {fileID: 1634782221}
   - component: {fileID: 1634782220}
   - component: {fileID: 1634782219}
+  - component: {fileID: 1634782224}
   m_Layer: 0
   m_Name: Enemy2 (14)
   m_TagString: Untagged
@@ -12239,6 +13951,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634782217}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1634782224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634782217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1635811746
 GameObject:
   m_ObjectHideFlags: 0
@@ -12253,6 +13982,7 @@ GameObject:
   - component: {fileID: 1635811750}
   - component: {fileID: 1635811749}
   - component: {fileID: 1635811748}
+  - component: {fileID: 1635811753}
   m_Layer: 0
   m_Name: Enemy3 (1)
   m_TagString: Untagged
@@ -12389,6 +14119,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635811746}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1635811753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635811746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1648965010
 GameObject:
   m_ObjectHideFlags: 0
@@ -12403,6 +14150,7 @@ GameObject:
   - component: {fileID: 1648965014}
   - component: {fileID: 1648965013}
   - component: {fileID: 1648965012}
+  - component: {fileID: 1648965017}
   m_Layer: 0
   m_Name: Enemy1 (9)
   m_TagString: Untagged
@@ -12539,6 +14287,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648965010}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1648965017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648965010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1649199579
 GameObject:
   m_ObjectHideFlags: 0
@@ -12553,6 +14318,7 @@ GameObject:
   - component: {fileID: 1649199583}
   - component: {fileID: 1649199582}
   - component: {fileID: 1649199581}
+  - component: {fileID: 1649199586}
   m_Layer: 0
   m_Name: Enemy2 (4)
   m_TagString: Untagged
@@ -12689,6 +14455,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649199579}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1649199586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649199579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1655638830
 GameObject:
   m_ObjectHideFlags: 0
@@ -12703,6 +14486,7 @@ GameObject:
   - component: {fileID: 1655638834}
   - component: {fileID: 1655638833}
   - component: {fileID: 1655638832}
+  - component: {fileID: 1655638837}
   m_Layer: 0
   m_Name: Enemy1 (3)
   m_TagString: Untagged
@@ -12839,6 +14623,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655638830}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1655638837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655638830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1722356785
 GameObject:
   m_ObjectHideFlags: 0
@@ -12853,6 +14654,7 @@ GameObject:
   - component: {fileID: 1722356789}
   - component: {fileID: 1722356788}
   - component: {fileID: 1722356787}
+  - component: {fileID: 1722356792}
   m_Layer: 0
   m_Name: Enemy2 (3)
   m_TagString: Untagged
@@ -12989,6 +14791,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722356785}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1722356792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722356785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1723811496
 GameObject:
   m_ObjectHideFlags: 0
@@ -13003,6 +14822,7 @@ GameObject:
   - component: {fileID: 1723811500}
   - component: {fileID: 1723811499}
   - component: {fileID: 1723811498}
+  - component: {fileID: 1723811503}
   m_Layer: 0
   m_Name: Enemy1 (14)
   m_TagString: Untagged
@@ -13139,6 +14959,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723811496}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1723811503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723811496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1743942381
 GameObject:
   m_ObjectHideFlags: 0
@@ -13153,6 +14990,7 @@ GameObject:
   - component: {fileID: 1743942385}
   - component: {fileID: 1743942384}
   - component: {fileID: 1743942383}
+  - component: {fileID: 1743942388}
   m_Layer: 0
   m_Name: Enemy3 (19)
   m_TagString: Untagged
@@ -13289,6 +15127,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1743942381}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1743942388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743942381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1790884438
 GameObject:
   m_ObjectHideFlags: 0
@@ -13303,6 +15158,7 @@ GameObject:
   - component: {fileID: 1790884442}
   - component: {fileID: 1790884441}
   - component: {fileID: 1790884440}
+  - component: {fileID: 1790884445}
   m_Layer: 0
   m_Name: Enemy3 (20)
   m_TagString: Untagged
@@ -13439,6 +15295,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790884438}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1790884445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790884438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1817850661
 GameObject:
   m_ObjectHideFlags: 0
@@ -13453,6 +15326,7 @@ GameObject:
   - component: {fileID: 1817850665}
   - component: {fileID: 1817850664}
   - component: {fileID: 1817850663}
+  - component: {fileID: 1817850668}
   m_Layer: 0
   m_Name: Enemy1 (26)
   m_TagString: Untagged
@@ -13589,6 +15463,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817850661}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1817850668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817850661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1826472853
 GameObject:
   m_ObjectHideFlags: 0
@@ -13603,6 +15494,7 @@ GameObject:
   - component: {fileID: 1826472857}
   - component: {fileID: 1826472856}
   - component: {fileID: 1826472855}
+  - component: {fileID: 1826472860}
   m_Layer: 0
   m_Name: Enemy1 (30)
   m_TagString: Untagged
@@ -13739,6 +15631,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826472853}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1826472860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826472853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1875176142
 GameObject:
   m_ObjectHideFlags: 0
@@ -13753,6 +15662,7 @@ GameObject:
   - component: {fileID: 1875176146}
   - component: {fileID: 1875176145}
   - component: {fileID: 1875176144}
+  - component: {fileID: 1875176149}
   m_Layer: 0
   m_Name: Enemy3 (5)
   m_TagString: Untagged
@@ -13889,6 +15799,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1875176142}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1875176149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875176142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1914068414
 GameObject:
   m_ObjectHideFlags: 0
@@ -13903,6 +15830,7 @@ GameObject:
   - component: {fileID: 1914068418}
   - component: {fileID: 1914068417}
   - component: {fileID: 1914068416}
+  - component: {fileID: 1914068421}
   m_Layer: 0
   m_Name: Enemy3 (16)
   m_TagString: Untagged
@@ -14039,6 +15967,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914068414}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1914068421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914068414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &1984548625
 GameObject:
   m_ObjectHideFlags: 0
@@ -14299,6 +16244,7 @@ GameObject:
   - component: {fileID: 2010745159}
   - component: {fileID: 2010745158}
   - component: {fileID: 2010745157}
+  - component: {fileID: 2010745162}
   m_Layer: 0
   m_Name: Enemy3 (21)
   m_TagString: Untagged
@@ -14435,6 +16381,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010745155}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2010745162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010745155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &2013333583
 GameObject:
   m_ObjectHideFlags: 0
@@ -14449,6 +16412,7 @@ GameObject:
   - component: {fileID: 2013333587}
   - component: {fileID: 2013333586}
   - component: {fileID: 2013333585}
+  - component: {fileID: 2013333590}
   m_Layer: 0
   m_Name: Enemy2 (19)
   m_TagString: Untagged
@@ -14585,6 +16549,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013333583}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2013333590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013333583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &2014125810
 GameObject:
   m_ObjectHideFlags: 0
@@ -14599,6 +16580,7 @@ GameObject:
   - component: {fileID: 2014125814}
   - component: {fileID: 2014125813}
   - component: {fileID: 2014125812}
+  - component: {fileID: 2014125817}
   m_Layer: 0
   m_Name: Enemy3 (32)
   m_TagString: Untagged
@@ -14735,6 +16717,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2014125810}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2014125817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014125810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &2055575440
 GameObject:
   m_ObjectHideFlags: 0
@@ -14749,6 +16748,7 @@ GameObject:
   - component: {fileID: 2055575444}
   - component: {fileID: 2055575443}
   - component: {fileID: 2055575442}
+  - component: {fileID: 2055575447}
   m_Layer: 0
   m_Name: Enemy3 (3)
   m_TagString: Untagged
@@ -14885,6 +16885,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2055575440}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2055575447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055575440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &2070050490
 GameObject:
   m_ObjectHideFlags: 0
@@ -14899,6 +16916,7 @@ GameObject:
   - component: {fileID: 2070050494}
   - component: {fileID: 2070050493}
   - component: {fileID: 2070050492}
+  - component: {fileID: 2070050497}
   m_Layer: 0
   m_Name: Enemy2 (26)
   m_TagString: Untagged
@@ -15035,6 +17053,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070050490}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2070050497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070050490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &2070680474
 GameObject:
   m_ObjectHideFlags: 0
@@ -15049,6 +17084,7 @@ GameObject:
   - component: {fileID: 2070680478}
   - component: {fileID: 2070680477}
   - component: {fileID: 2070680476}
+  - component: {fileID: 2070680481}
   m_Layer: 0
   m_Name: Enemy1 (2)
   m_TagString: Untagged
@@ -15185,6 +17221,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070680474}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2070680481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070680474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &2075418358
 GameObject:
   m_ObjectHideFlags: 0
@@ -15199,6 +17252,7 @@ GameObject:
   - component: {fileID: 2075418362}
   - component: {fileID: 2075418361}
   - component: {fileID: 2075418360}
+  - component: {fileID: 2075418365}
   m_Layer: 0
   m_Name: Enemy1 (23)
   m_TagString: Untagged
@@ -15335,6 +17389,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075418358}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2075418365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075418358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &2087366172
 GameObject:
   m_ObjectHideFlags: 0
@@ -15349,6 +17420,7 @@ GameObject:
   - component: {fileID: 2087366176}
   - component: {fileID: 2087366175}
   - component: {fileID: 2087366174}
+  - component: {fileID: 2087366179}
   m_Layer: 0
   m_Name: Enemy2 (13)
   m_TagString: Untagged
@@ -15485,6 +17557,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087366172}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2087366179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087366172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &2092652454
 GameObject:
   m_ObjectHideFlags: 0
@@ -15499,6 +17588,7 @@ GameObject:
   - component: {fileID: 2092652458}
   - component: {fileID: 2092652457}
   - component: {fileID: 2092652456}
+  - component: {fileID: 2092652461}
   m_Layer: 0
   m_Name: Enemy3 (14)
   m_TagString: Untagged
@@ -15635,6 +17725,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092652454}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2092652461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092652454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1 &2126884436
 GameObject:
   m_ObjectHideFlags: 0
@@ -15649,6 +17756,7 @@ GameObject:
   - component: {fileID: 2126884440}
   - component: {fileID: 2126884439}
   - component: {fileID: 2126884438}
+  - component: {fileID: 2126884443}
   m_Layer: 0
   m_Name: Enemy1 (24)
   m_TagString: Untagged
@@ -15785,6 +17893,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126884436}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2126884443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126884436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e89315be1d2d4f347accefdbc9a0b617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 100
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
+  bloodOffset: {x: 0, y: -0.2, z: 0}
+  goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -15796,5 +17921,7 @@ SceneRoots:
   - {fileID: 287902744}
   - {fileID: 675903004}
   - {fileID: 1267706708}
-  - {fileID: 1351180833}
   - {fileID: 1984548630}
+  - {fileID: 161141184}
+  - {fileID: 1389895765}
+  - {fileID: 385893403}
