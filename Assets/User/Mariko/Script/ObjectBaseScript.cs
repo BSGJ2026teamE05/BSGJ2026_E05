@@ -1,8 +1,8 @@
 // ---------------------------------------------------------
-// ProtoPlayerController.cs
-// 作成日:  2026/3/8
-// 作成者:  Mariko Haruki
-// 概要:プロトタイプ版のプレイヤーコントローラー
+// ObjectBaseScript.cs
+// 作成日:  2026/3/
+// 作成者:  
+// 概要:
 // ---------------------------------------------------------
 
 using System;
@@ -11,9 +11,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class ProtoPlayerController : MonoBehaviour
+public class ObjectBaseScript : MonoBehaviour
 {
 	// [SerializeField] private int _numId;
+
+	// ステータスパラメータ
+	[SerializeField] protected int _hp = 1;
 
 
 	private void Awake()
