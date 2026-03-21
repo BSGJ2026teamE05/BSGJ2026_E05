@@ -18,19 +18,22 @@ public class PlayerMove : MonoBehaviour
 	[SerializeField] private HandLandmarkerRunner runner;
 
     [Header("移動パラメータ")]
-    public float stepDistance = 2.0f;
-    public float moveSpeed = 3f;
-    public float rotateSpeed = 2f;
+    [SerializeField ] private float stepDistance = 2.0f;
+    [SerializeField] private float moveSpeed = 3f;
+    [SerializeField] private float rotateSpeed = 2f;
 
     [Header("ハイハイ判定")]
-    public float pullY = 0.3f;
-    public float resetY = 0.4f;
-    public float pullZ = 0.2f;
-    public float resetZ = 0.1f;
+    [SerializeField]private float pullY = 0.3f;
+    [SerializeField] private float resetY = 0.4f;
+    [SerializeField] private float pullZ = 0.2f;
+    [SerializeField] private float resetZ = 0.1f;
 
     [Header("回転パラメータ")]
-    public float rotateAngle = 15;
-    public int haihaiCount = 3;
+    [SerializeField] private float rotateAngle = 15;
+    [SerializeField] private int haihaiCount = 3;
+
+    [Header("攻撃パラメータ")]
+    [SerializeField] private int attackDamage = 1;
 
     private int consecutiveCount = 0;
     private string lastStepHnad = "None";
@@ -119,5 +122,33 @@ public class PlayerMove : MonoBehaviour
         {
             canStep = true;
         }
+    }
+
+    // lastAttackTimeとattackCooldownは削除
+
+    private HashSet<int> _hitEnemies = new HashSet<int>();
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        var enemy = collision.gameObject.GetComponent<EnemyManager>();
+        if (enemy != null)
+        {
+            int enemyId = collision.gameObject.GetInstanceID();
+
+            // 同じエネミーにはまだヒットしていない場合のみダメージ
+            if (!_hitEnemies.Contains(enemyId))
+            {
+                _hitEnemies.Add(enemyId);
+                enemy.TakeDamage(attackDamage);
+                Debug.Log($"{collision.gameObject.name} に攻撃！");
+            }
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        // エネミーから離れたらリセット、再接触でまたダメージ
+        int enemyId = collision.gameObject.GetInstanceID();
+        _hitEnemies.Remove(enemyId);
     }
 }
