@@ -60,4 +60,11 @@ public class BaseEnemyScript : ObjectBaseScript
         Vector3 nextPos = _rigidbody.position + direction * _moveSpeed * Time.fixedDeltaTime;
         _rigidbody.MovePosition(nextPos);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (_hp <= 0) return;
+
+
+    }
 }
