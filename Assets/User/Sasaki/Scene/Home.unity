@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a5c6afda7e65df4f882ebe8317bcbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: SasakiTest
+  nextSceneName: PrototypeScene1
 --- !u!114 &771232672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,7 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a5c6afda7e65df4f882ebe8317bcbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: SasakiTest
+  nextSceneName: PrototypeScene1
 --- !u!114 &1232254011
 MonoBehaviour:
   m_ObjectHideFlags: 0
