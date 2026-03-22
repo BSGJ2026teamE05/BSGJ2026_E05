@@ -2419,13 +2419,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411311285}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15841654, y: 0, z: 0, w: 0.9873724}
+  m_LocalRotation: {x: 0.0801448, y: -0, z: -0, w: 0.99678326}
   m_LocalPosition: {x: 0, y: 2.13, z: -3.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1493215400}
-  m_LocalEulerAnglesHint: {x: 18.23, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 9.194, y: 0, z: 0}
 --- !u!4 &414616301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2380456133787038066, guid: 9b0c5e02ecd8a764d86200eef3489577, type: 3}
@@ -5703,10 +5703,6 @@ PrefabInstance:
       propertyPath: _activateDistance
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 8804902114394566897, guid: 9b0c5e02ecd8a764d86200eef3489577, type: 3}
-      propertyPath: bloodEffectPrefab
-      value: 
-      objectReference: {fileID: 104493762697975389, guid: ab6a331ca89345a47af419faa76b863c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6414,9 +6410,9 @@ MonoBehaviour:
   scoreValue: 1000
   maxHP: 5
   _door: {fileID: 1429163828}
-  bloodEffectPrefab: {fileID: 104493762697975389, guid: ab6a331ca89345a47af419faa76b863c, type: 3}
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
   UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
-  hitEffectPrefab: {fileID: 104493762697975389, guid: ab6a331ca89345a47af419faa76b863c, type: 3}
+  hitEffectPrefab: {fileID: 4749794247526845477, guid: 879f51214520d834a8d8cb5628cd8abe, type: 3}
   bloodOffset: {x: 0, y: 0, z: 0}
   goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!54 &1048402660
@@ -7457,7 +7453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -575.38, y: -463.06}
+  m_AnchoredPosition: {x: 0, y: -463.06}
   m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1118395470
@@ -8787,9 +8783,9 @@ MonoBehaviour:
   scoreValue: 1000
   maxHP: 3
   _door: {fileID: 1980481862}
-  bloodEffectPrefab: {fileID: 104493762697975389, guid: ab6a331ca89345a47af419faa76b863c, type: 3}
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
   UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
-  hitEffectPrefab: {fileID: 104493762697975389, guid: ab6a331ca89345a47af419faa76b863c, type: 3}
+  hitEffectPrefab: {fileID: 4749794247526845477, guid: 879f51214520d834a8d8cb5628cd8abe, type: 3}
   bloodOffset: {x: 0, y: 0, z: 0}
   goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!54 &1408091992
@@ -9848,7 +9844,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506504721}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9857,7 +9853,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 604.38, y: 302.04797}
+  m_AnchoredPosition: {x: 29, y: 302.04797}
   m_SizeDelta: {x: 1258.5276, y: 634.0959}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1506504723
@@ -15443,9 +15439,9 @@ MonoBehaviour:
   scoreValue: 1000
   maxHP: 3
   _door: {fileID: 1549726033}
-  bloodEffectPrefab: {fileID: 104493762697975389, guid: ab6a331ca89345a47af419faa76b863c, type: 3}
+  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
   UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
-  hitEffectPrefab: {fileID: 104493762697975389, guid: ab6a331ca89345a47af419faa76b863c, type: 3}
+  hitEffectPrefab: {fileID: 4749794247526845477, guid: 879f51214520d834a8d8cb5628cd8abe, type: 3}
   bloodOffset: {x: 0, y: 0, z: 0}
   goodUIOffset: {x: 0, y: 2, z: 0}
 --- !u!114 &7883209572524144712
