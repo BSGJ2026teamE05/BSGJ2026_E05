@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 100
-  bloodEffectPrefab: {fileID: 4571338159618775736, guid: e7c9548f572e4b940965501c1a29b3ee, type: 3}
+  bloodEffectPrefab: {fileID: 104493762697975389, guid: ab6a331ca89345a47af419faa76b863c, type: 3}
   UIPrefab: {fileID: 83688228048228825, guid: 1feae6db6ffd22a4ba0182def4f918a2, type: 3}
   bloodOffset: {x: 0, y: -0.2, z: 0}
   goodUIOffset: {x: 0, y: 2, z: 0}
@@ -186,3 +186,4 @@ MonoBehaviour:
   _rigidbody: {fileID: 0}
   _moveSpeed: 3
   _stopDistance: 1
+  _activateDistance: 10
