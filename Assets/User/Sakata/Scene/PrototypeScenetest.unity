@@ -1971,7 +1971,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &865804596
+--- !u!4 &865804600 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1707752304732766567, guid: ef3300c0d0a3bc842a4af880d15db077, type: 3}
+  m_PrefabInstance: {fileID: 1254477881}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &865804601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1980,25 +1985,46 @@ MonoBehaviour:
   m_GameObject: {fileID: 865804594}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c32b905ced2d4a4fa08e1d492d47597, type: 3}
+  m_Script: {fileID: 11500000, guid: 47afc2938a476cd4d857578d6fe4fe15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runner: {fileID: 1064799468}
-  stepDistance: 5
-  moveSpeed: 4
-  rotateSpeed: 10
-  pullY: 0.3
-  resetY: 0.4
-  pullZ: 0.2
-  resetZ: 0.1
-  rotateAngle: 20
-  haihaiCount: 3
-  attackDamage: 1
---- !u!4 &865804600 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1707752304732766567, guid: ef3300c0d0a3bc842a4af880d15db077, type: 3}
-  m_PrefabInstance: {fileID: 1254477881}
+  killsRequired: 5
+  boostMultiplier: 2
+  boostDuration: 5
+--- !u!114 &865804602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865804594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbe496335904fd43b46fb094af8147c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runner: {fileID: 0}
+  _leftHand:
+    _positionList: []
+    _collectionIndex: 10
+    _moveVector: {x: 0, y: 0, z: 0}
+    _canStep: 1
+    _canTurn: 1
+  _rightHand:
+    _positionList: []
+    _collectionIndex: 10
+    _moveVector: {x: 0, y: 0, z: 0}
+    _canStep: 1
+    _canTurn: 1
+  centerLineY: 0.5
+  forwardDamping: 5
+  minMoveThreshold: 0.02
+  maxMoveClamp: 0.3
+  speedMultiplier: 10
+  turnThreshold: 0.03
+  turnPowerMultiplier: 120
+  maxTurnSpeed: 120
+  turnDamping: 6
 --- !u!4 &883554736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2380456133787038066, guid: 9b0c5e02ecd8a764d86200eef3489577, type: 3}
@@ -3127,7 +3153,10 @@ PrefabInstance:
       addedObject: {fileID: 865804595}
     - targetCorrespondingSourceObject: {fileID: 6790595086547169211, guid: ef3300c0d0a3bc842a4af880d15db077, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 865804596}
+      addedObject: {fileID: 865804602}
+    - targetCorrespondingSourceObject: {fileID: 6790595086547169211, guid: ef3300c0d0a3bc842a4af880d15db077, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 865804601}
   m_SourcePrefab: {fileID: 100100000, guid: ef3300c0d0a3bc842a4af880d15db077, type: 3}
 --- !u!1001 &1329591939
 PrefabInstance:
