@@ -1,10 +1,13 @@
 {
   "dependencies": {
-    "com.unity.2d.sprite": {
-      "version": "1.0.0",
+    "com.github.homuler.mediapipe": {
+      "version": "file:com.github.homuler.mediapipe",
       "depth": 0,
-      "source": "builtin",
-      "dependencies": {}
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.test-framework": "1.0.0"
+      }
     },
     "com.unity.ai.navigation": {
       "version": "2.0.10",
