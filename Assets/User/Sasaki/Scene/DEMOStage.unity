@@ -594,7 +594,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8571076842338426122, guid: 140d1d2c406167c50819d89f86d9092e, type: 3}
       propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571076842338426122, guid: 140d1d2c406167c50819d89f86d9092e, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571076842338426122, guid: 140d1d2c406167c50819d89f86d9092e, type: 3}
+      propertyPath: m_UpdateRectTransformForStandalone
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8571076842338426123, guid: 140d1d2c406167c50819d89f86d9092e, type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -1765,6 +1773,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6790595086547169211, guid: ef3300c0d0a3bc842a4af880d15db077, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1493215401}
+    - targetCorrespondingSourceObject: {fileID: 6790595086547169211, guid: ef3300c0d0a3bc842a4af880d15db077, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1493215403}
   m_SourcePrefab: {fileID: 100100000, guid: ef3300c0d0a3bc842a4af880d15db077, type: 3}
 --- !u!1001 &321959832
 PrefabInstance:
@@ -9522,7 +9533,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493215399}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c32b905ced2d4a4fa08e1d492d47597, type: 3}
   m_Name: 
@@ -9565,6 +9576,50 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1493215403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493215399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbe496335904fd43b46fb094af8147c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runner: {fileID: 2022859476}
+  _leftHand:
+    _positionList:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    _collectionIndex: 5
+    _moveVector: {x: 0, y: 0, z: 0}
+    _canStep: 1
+    _canTurn: 1
+  _rightHand:
+    _positionList:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    _collectionIndex: 5
+    _moveVector: {x: 0, y: 0, z: 0}
+    _canStep: 1
+    _canTurn: 1
+  centerLineY: 0.5
+  forwardDamping: 1
+  minMoveThreshold: 0.02
+  maxMoveClamp: 0.3
+  speedMultiplier: 10
+  turnThreshold: 0.03
+  turnPowerMultiplier: 200
+  maxTurnSpeed: 200
+  turnDamping: 6
 --- !u!1 &1499569909
 GameObject:
   m_ObjectHideFlags: 0
