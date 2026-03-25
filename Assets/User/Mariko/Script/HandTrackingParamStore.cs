@@ -102,7 +102,7 @@ public class HandTrackingParamStore : MonoBehaviour
     private void FixedUpdate()
     {
         // 前方向に移動
-        Vector3 moveDelta = transform.forward * _currentForwardSpeed * Time.fixedDeltaTime;
+        Vector3 moveDelta = transform.forward * _currentForwardSpeed * _speedBoostMultiplier *Time.fixedDeltaTime;
         _rb.MovePosition(_rb.position + moveDelta);
 
         // Y軸回転

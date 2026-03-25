@@ -46,6 +46,9 @@ public class Enemy : MonoBehaviour
             GameManager.Instance.EnemyDead(scoreValue);
         }
 
+        FindFirstObjectByType<EnemyKillBooster>()?.OnEnemyKilled();
+
+
         SpawnDeathEffects();
         Destroy(gameObject, 1.5f);
     }
