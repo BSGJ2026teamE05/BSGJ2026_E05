@@ -1,90 +1,116 @@
-// ---------------------------------------------------------
-// TitleSceneManager.cs
-// 作成日:  2026/3/26
-// 作成者:  坂田
-// 概要: 両手同時に叩く動作でゲームシーンへ移動
-// ---------------------------------------------------------
-
-using System;
-using System.Collections;
-using System.Collections.Generic;
+//// ---------------------------------------------------------
+//// TitleSceneManager.cs
+//// 作成日:  2026/3/26
+//// 作成者:  坂田
+//// 概要: 両手同時に叩く動作でゲームシーンへ移動
+//// ---------------------------------------------------------
 using UnityEngine;
 using Mediapipe.Unity.Sample.HandLandmarkDetection;
 using UnityEngine.SceneManagement;
 
-
 public class TitleSceneManager : MonoBehaviour
 {
-	// [SerializeField] private int _numId;
-	[SerializeField] private HandLandmarkerRunner runner;
+    [SerializeField] private HandLandmarkerRunner runner;
+    [SerializeField] private string gameSceneName = "PrototypeScenetest";
 
-	[SerializeField] private string gameSceneName = "PrototypeScenetest";
+    [Header("判定")]
+    [SerializeField, Range(0f, 1f)] private float centerLineY = 0.5f;
+    [SerializeField] private float velocityThreshold = 4.5f;
+    [SerializeField] private float minMoveDistance = 0.03f;
+    [SerializeField] private float clapCooldown = 0.35f;
+    [SerializeField] private float simultaneousWindow = 0.3f;
 
-	[Header("叩く判定")]
-	[SerializeField, Range(0f, 1f)] private float centerLineY = 0.5f;
-	[SerializeField] private float simultaneousWindow = 0.3f; // 両手の同時判定の時間
-    [SerializeField] private float swingDownThreshold = 0.05f; // 振り下ろし速度の閾値
+    [SerializeField] private DoorController doorController;
 
+    private HandState leftHand = new HandState();
+    private HandState rightHand = new HandState();
 
-    private bool canLeftClap = true;
-	private bool canRightClap = true;
+    private float leftClapTime = -999f;
+    private float rightClapTime = -999f;
 
-	private float leftClapTime = -999f;
-	private float rightClapTime = -999f;
+    private bool isStarted = false;
 
-    // 座標履歴
-    private float _leftPrevY = 0f;
-    private float _rightPrevY = 0f;
+    void Update()
+    {
+        if (TryClap(runner.isLeftHandDetected, runner.leftWristY, ref leftHand))
+        {
+            leftClapTime = Time.time;
+        }
 
+        if (TryClap(runner.isRightHandDetected, runner.rightWristY, ref rightHand))
+        {
+            rightClapTime = Time.time;
+        }
 
-
-    private void Awake()
-	{
-
-	}
-
-	private void Start() 
-	{
-
-	}
-	
-	private void Update() 
-	{
-        CheckClap(runner.isLeftHandDetected, runner.leftWristY, ref canLeftClap, ref leftClapTime);
-        CheckClap(runner.isRightHandDetected, runner.rightWristY, ref canRightClap, ref rightClapTime);
-
-        // 両手の叩いた時間差が許容範囲内なら発動
         if (leftClapTime > 0f && rightClapTime > 0f)
         {
             if (Mathf.Abs(leftClapTime - rightClapTime) <= simultaneousWindow)
             {
                 leftClapTime = -999f;
                 rightClapTime = -999f;
-                SceneManager.LoadScene(gameSceneName);
+                //SceneManager.LoadScene(gameSceneName);
+                doorController.OpenDoor();
             }
         }
-
     }
 
-    private bool CheckClap(bool isDetected, float wristY, ref bool canClap,ref float clapTime)
-	{
-		if (!isDetected)
-		{
-			canClap = true;
-			return false;
-		}
-
-		if (canClap && wristY >= centerLineY)
-		{
-			canClap = false;
-			clapTime = Time.time;
-		}
-
-        if (!canClap && wristY < centerLineY)
+    private bool TryClap(bool isDetected, float wristY, ref HandState state)
+    {
+        if (!isDetected)
         {
-            canClap = true;
+            state.Reset(wristY);
+            return false;
         }
 
-		return false;
+        float move = wristY - state.prevY;
+        float velocity = move / Time.deltaTime;
+        velocity = Mathf.Clamp(velocity, -5f, 5f);
+
+        if (wristY < centerLineY)
+        {
+            state.wasAbove = true;
+        }
+
+        if (Time.time - state.lastClapTime < clapCooldown)
+        {
+            state.prevY = wristY;
+            return false;
+        }
+
+        if (state.canClap &&
+            state.wasAbove &&
+            wristY >= centerLineY &&
+            velocity > velocityThreshold &&
+            move > minMoveDistance)
+        {
+            state.canClap = false;
+            state.wasAbove = false;
+            state.lastClapTime = Time.time;
+            state.prevY = wristY;
+            return true;
+        }
+
+        if (!state.canClap && wristY < centerLineY)
+        {
+            state.canClap = true;
+        }
+
+        state.prevY = wristY;
+        return false;
+    }
+
+    private class HandState
+    {
+        public bool canClap = true;
+        public bool wasAbove = false;
+        public float prevY = 0f;
+        public float lastClapTime = 0f;
+
+        public void Reset(float y)
+        {
+            canClap = true;
+            wasAbove = false;
+            prevY = y;
+        }
     }
 }

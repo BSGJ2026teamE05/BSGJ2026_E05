@@ -777,7 +777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runner: {fileID: 1064799468}
   gameSceneName: PrototypeScenetest
-  titleSceneName: ProtoTitleScene
+  titleSceneName: SakataProtoTitleScene
   centerLineY: 0.5
   velocityThreshold: 4.5
   minMoveDistance: 0.03
