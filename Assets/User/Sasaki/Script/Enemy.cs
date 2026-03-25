@@ -51,6 +51,8 @@ public class Enemy : MonoBehaviour
 
         SpawnDeathEffects();
         Destroy(gameObject, 1.5f);
+
+
     }
 
     private void SpawnDeathEffects()
