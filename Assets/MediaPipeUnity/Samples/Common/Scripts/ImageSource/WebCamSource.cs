@@ -241,7 +241,7 @@ namespace Mediapipe.Unity
       Stop();
       if (webCamDevice is WebCamDevice valueOfWebCamDevice)
       {
-        webCamTexture = new WebCamTexture(valueOfWebCamDevice.name, resolution.width, resolution.height, (int)resolution.frameRate);
+                webCamTexture = new WebCamTexture(valueOfWebCamDevice.name, resolution.width, resolution.height, 60);//(int)resolution.frameRate);
         return;
       }
       throw new InvalidOperationException("Cannot initialize WebCamTexture because WebCamDevice is not selected");
@@ -283,7 +283,8 @@ namespace Mediapipe.Unity
           return a.height - b.height;
         }
         // prefer smaller frame rate
-        return (int)(a.frameRate - b.frameRate);
+        //return (int)(a.frameRate - b.frameRate);
+        return (int)(b.frameRate - a.frameRate);
       }
     }
   }
