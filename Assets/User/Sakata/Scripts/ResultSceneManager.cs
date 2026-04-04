@@ -2,123 +2,40 @@
 // ResultSceneManager.cs
 // 作成日:  2026/3/26
 // 作成者:  坂田
+// 修正日:  2026/4/5
 // 概要:右手で叩くともう一度プレイ、左手で叩くとタイトルへ
 // ---------------------------------------------------------
+
 using UnityEngine;
-using Mediapipe.Unity.Sample.HandLandmarkDetection;
 using UnityEngine.SceneManagement;
 
-public class ResultSceneManager : MonoBehaviour
+public class ResultSceneManager : ClapDetectorBase
 {
-    [Header("参照")]
-    [SerializeField] private HandLandmarkerRunner runner;
-
-    [Header("シーン")]
+    [Header("── シーン ──")]
     [SerializeField] private string gameSceneName = "";
     [SerializeField] private string titleSceneName = "";
 
-    [Header("判定パラメータ")]
-    [SerializeField, Range(0f, 1f)] private float centerLineY = 0.5f;
-    [SerializeField] private float velocityThreshold = 4.5f;
-    [SerializeField] private float minMoveDistance = 0.03f;
-    [SerializeField] private float clapCooldown = 0.35f;
-
-    // 内部状態（左右で共通構造）
-    private HandState leftHand = new HandState();
-    private HandState rightHand = new HandState();
+    // 内部状態
+    private ClapHandState _leftHand = new ClapHandState();
+    private ClapHandState _rightHand = new ClapHandState();
 
     private void Update()
     {
-        // 左手 → ゲームへ
-        if (TryClap(runner.isLeftHandDetected, runner.leftWristY, ref leftHand))
+        if (runner == null) return;
+
+        // 俯瞰撮影：wristY ではなく Depth(Z) を渡す
+
+        // 左手 → もう一度プレイ
+        if (TryClap(runner.isLeftHandDetected, runner.leftDepth, _leftHand, "Left"))
         {
             SceneManager.LoadScene(gameSceneName);
+            return;
         }
 
         // 右手 → タイトルへ
-        else if (TryClap(runner.isRightHandDetected, runner.rightWristY, ref rightHand))
+        if (TryClap(runner.isRightHandDetected, runner.rightDepth, _rightHand, "Right"))
         {
             SceneManager.LoadScene(titleSceneName);
         }
     }
-
-    /// <summary>
-    /// 叩き判定
-    /// </summary>
-    private bool TryClap(bool isDetected, float wristY, ref HandState state)
-    {
-        if (!isDetected)
-        {
-            state.Reset(wristY);
-            return false;
-        }
-
-        float move = wristY - state.prevY;
-        float velocity = Mathf.Clamp(move / Time.deltaTime, -5f, 5f);
-
-        // 上にいた履歴を記録
-        if (wristY < centerLineY)
-        {
-            state.wasAbove = true;
-        }
-
-        // クールダウン中
-        if (Time.time - state.lastClapTime < clapCooldown)
-        {
-            state.prevY = wristY;
-            return false;
-        }
-
-        // 判定条件
-        bool isClap =
-            state.canClap &&
-            state.wasAbove &&
-            wristY >= centerLineY &&
-            velocity > velocityThreshold &&
-            move > minMoveDistance;
-
-        if (isClap)
-        {
-            state.OnClap(wristY);
-            return true;
-        }
-
-        // 上に戻ったら再び有効
-        if (!state.canClap && wristY < centerLineY)
-        {
-            state.canClap = true;
-        }
-
-        state.prevY = wristY;
-        return false;
-    }
 }
-
-#region 内部クラス
-
-[System.Serializable]
-public class HandState
-{
-    public bool canClap = true;
-    public bool wasAbove = false;
-
-    public float prevY = 0f;
-    public float lastClapTime = 0f;
-
-    public void Reset(float y)
-    {
-        canClap = true;
-        wasAbove = false;
-        prevY = y;
-    }
-
-    public void OnClap(float y)
-    {
-        canClap = false;
-        wasAbove = false;
-        lastClapTime = Time.time;
-        prevY = y;
-    }
-}
-
-#endregion

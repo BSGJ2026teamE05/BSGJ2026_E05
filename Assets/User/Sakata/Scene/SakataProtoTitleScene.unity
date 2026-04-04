@@ -637,11 +637,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runner: {fileID: 1064799468}
-  gameSceneName: PrototypeScenetest
-  centerLineY: 0.5
+  liftedDepthMax: 0.26
+  clapDepthMin: 0.23
   velocityThreshold: 2
   minMoveDistance: 0.01
   clapCooldown: 0.2
+  lostResetDelay: 0.3
+  gameSceneName: PrototypeScenetest
   simultaneousWindow: 0.6
   doorController: {fileID: 879075474}
 --- !u!4 &879075473
@@ -1135,6 +1137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1064799461}
   - component: {fileID: 1064799468}
+  - component: {fileID: 1064799469}
   m_Layer: 0
   m_Name: Solution
   m_TagString: Untagged
@@ -1179,6 +1182,20 @@ MonoBehaviour:
   isRightHandDetected: 0
   rightWristY: 0
   rightDepth: 0
+--- !u!114 &1064799469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064799459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30c752fd24212d4bb352002f55151e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCameraIndex: 1
+  targetCameraNameContains: 
 --- !u!1 &1084661135
 GameObject:
   m_ObjectHideFlags: 0

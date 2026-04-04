@@ -1976,7 +1976,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1707752304732766567, guid: ef3300c0d0a3bc842a4af880d15db077, type: 3}
   m_PrefabInstance: {fileID: 1254477881}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &865804601
+--- !u!114 &865804603
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1985,46 +1985,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 865804594}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47afc2938a476cd4d857578d6fe4fe15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  killsRequired: 5
-  boostMultiplier: 2
-  boostDuration: 5
---- !u!114 &865804602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 865804594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcbe496335904fd43b46fb094af8147c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c16f923e145bb64daa8859fef5704e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   runner: {fileID: 1064799468}
-  _leftHand:
-    _positionList: []
-    _collectionIndex: 10
-    _moveVector: {x: 0, y: 0, z: 0}
-    _canStep: 1
-    _canTurn: 1
-  _rightHand:
-    _positionList: []
-    _collectionIndex: 10
-    _moveVector: {x: 0, y: 0, z: 0}
-    _canStep: 1
-    _canTurn: 1
-  centerLineY: 0.5
-  forwardDamping: 5
-  minMoveThreshold: 0.02
-  maxMoveClamp: 0.3
-  speedMultiplier: 10
-  turnThreshold: 0.03
-  turnPowerMultiplier: 120
-  maxTurnSpeed: 120
-  turnDamping: 6
+  stepDistance: 3
+  moveSpeed: 10
+  stepDownThresholdY: 0.7
+  liftUpThresholdY: 0.65
+  historyFrames: 8
+  stepCooldown: 0.15
+  lostResetDelay: 0.3
+  maxTurnSpeed: 90
+  turnDamping: 7
+  turnStopDamping: 5
+  turnDiffThreshold: 0.015
+  turnSensitivity: 60
+  killCountToBoost: 5
+  boostDuration: 5
+  boostMultiplier: 2
 --- !u!4 &883554736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2380456133787038066, guid: 9b0c5e02ecd8a764d86200eef3489577, type: 3}
@@ -2572,6 +2551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1064799461}
   - component: {fileID: 1064799468}
+  - component: {fileID: 1064799469}
   m_Layer: 0
   m_Name: Solution
   m_TagString: Untagged
@@ -2616,6 +2596,20 @@ MonoBehaviour:
   isRightHandDetected: 0
   rightWristY: 0
   rightDepth: 0
+--- !u!114 &1064799469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064799459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30c752fd24212d4bb352002f55151e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCameraIndex: 1
+  targetCameraNameContains: 
 --- !u!1 &1077924950
 GameObject:
   m_ObjectHideFlags: 0
@@ -3153,10 +3147,7 @@ PrefabInstance:
       addedObject: {fileID: 865804595}
     - targetCorrespondingSourceObject: {fileID: 6790595086547169211, guid: ef3300c0d0a3bc842a4af880d15db077, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 865804602}
-    - targetCorrespondingSourceObject: {fileID: 6790595086547169211, guid: ef3300c0d0a3bc842a4af880d15db077, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 865804601}
+      addedObject: {fileID: 865804603}
   m_SourcePrefab: {fileID: 100100000, guid: ef3300c0d0a3bc842a4af880d15db077, type: 3}
 --- !u!1001 &1329591939
 PrefabInstance:
