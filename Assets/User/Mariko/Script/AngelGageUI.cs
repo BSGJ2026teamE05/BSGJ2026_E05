@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
+using Cysharp.Threading.Tasks;
 
 
 public class AngelGageUI : MonoBehaviour
@@ -50,5 +51,8 @@ public class AngelGageUI : MonoBehaviour
 
 	}
 
-
+    async UniTask OnClick()
+    {
+        // await
+    }
 }
