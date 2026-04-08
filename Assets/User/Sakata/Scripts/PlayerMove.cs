@@ -32,8 +32,14 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float rotateAngle = 15;
     [SerializeField] private int haihaiCount = 3;
 
-    [Header("攻撃パラメータ")]
-    [SerializeField] private int attackDamage = 1;
+    //[Header("攻撃パラメータ")]
+    //[SerializeField] private int attackDamage = 1;
+
+    [Header("加速パラメータ")]
+    [SerializeField] private int killCountToBoost = 5;
+    [SerializeField] private float boostDuration = 5;
+    [SerializeField] private float boostMoveSpeed = 8;
+    [SerializeField] private float boostStepDistance = 4f;
 
     private int consecutiveCount = 0;
     private string lastStepHnad = "None";
@@ -48,6 +54,12 @@ public class PlayerMove : MonoBehaviour
     private bool canLeft = true;
     private bool canRight = true;
     private bool hasRotated = false;
+
+    private int killCount = 0;
+    private bool isBoosting = false;
+    private float boostTimer = 0f;
+    private float currentMoveSpeed;
+    private float currentStepDistance;
 
 
     private void Awake()
@@ -64,10 +76,22 @@ public class PlayerMove : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
 
+        currentMoveSpeed = moveSpeed;
+        currentStepDistance = stepDistance;
+
     }
 
     private void Update() 
 	{
+        if (isBoosting)
+        {
+            boostTimer -= Time.deltaTime;
+            if (boostTimer <= 0f)
+            {
+                EndBoost();
+            }
+        }
+
         if (!runner.isLeftHandDetected) canLeft = true;
         if (!runner.isRightHandDetected) canRight = true;
 
@@ -112,7 +136,7 @@ public class PlayerMove : MonoBehaviour
             else
             {
                 Vector3 forward = Quaternion.Euler(0, targetYRotation, 0) * Vector3.forward;
-                targetPos += forward * stepDistance;
+                targetPos += forward * currentStepDistance;
                 lastStepHnad = handName;
                 consecutiveCount = 1;
                 hasRotated = false;
@@ -124,31 +148,31 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    // lastAttackTimeとattackCooldownは削除
-
-    private HashSet<int> _hitEnemies = new HashSet<int>();
-
-    private void OnCollisionEnter(Collision collision)
+    private void StartBoost()
     {
-        var enemy = collision.gameObject.GetComponent<EnemyManager>();
-        if (enemy != null)
-        {
-            int enemyId = collision.gameObject.GetInstanceID();
+        isBoosting = true;
+        boostTimer = boostDuration;
+        currentMoveSpeed = boostMoveSpeed;
+        currentStepDistance = boostStepDistance;
+    }
 
-            // 同じエネミーにはまだヒットしていない場合のみダメージ
-            if (!_hitEnemies.Contains(enemyId))
-            {
-                _hitEnemies.Add(enemyId);
-                enemy.TakeDamage(attackDamage);
-                Debug.Log($"{collision.gameObject.name} に攻撃！");
-            }
+    private void EndBoost()
+    {
+        isBoosting = false;
+        boostTimer = 0f;
+        currentMoveSpeed = moveSpeed;
+        currentStepDistance = stepDistance;
+    }
+
+    public void OnEnemyKilled()
+    {
+        killCount++;
+        
+        if(killCount >= killCountToBoost)
+        {
+            killCount = 0;
+            StartBoost();
         }
     }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        // エネミーから離れたらリセット、再接触でまたダメージ
-        int enemyId = collision.gameObject.GetInstanceID();
-        _hitEnemies.Remove(enemyId);
-    }
 }

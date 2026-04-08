@@ -63,6 +63,8 @@ public class HandTrackingParamStore : MonoBehaviour
     // 現在の回転速度
     // プラス = 右折、マイナス = 左折
     private float _currentTurnSpeed = 0f;
+    // 加速度（外部スクリプトから上書きされる)
+    private float _speedBoostMultiplier = 1.0f;
 
     private void Awake()
     {
@@ -102,7 +104,7 @@ public class HandTrackingParamStore : MonoBehaviour
     private void FixedUpdate()
     {
         // 前方向に移動
-        Vector3 moveDelta = transform.forward * _currentForwardSpeed * Time.fixedDeltaTime;
+        Vector3 moveDelta = transform.forward * _currentForwardSpeed * _speedBoostMultiplier *Time.fixedDeltaTime;
         _rb.MovePosition(_rb.position + moveDelta);
 
         // Y軸回転
@@ -210,7 +212,7 @@ public class HandTrackingParamStore : MonoBehaviour
                 moveAmount = Mathf.Clamp(moveAmount, 0f, maxMoveClamp);
 
                 // ベクトル量を前進速度に変換
-                float addSpeed = moveAmount * speedMultiplier;
+                float addSpeed = moveAmount * speedMultiplier * speedMultiplier;
                 _currentForwardSpeed += addSpeed;
 
                 Debug.Log($"{handName} Forward AddSpeed : {addSpeed:F2}");
@@ -283,5 +285,14 @@ public class HandTrackingParamStore : MonoBehaviour
         // Sceneビューで前方向を見やすくする
         Gizmos.color = Color.green;
         Gizmos.DrawLine(transform.position, transform.position + transform.forward * 2f);
+    }
+
+    /// <summary>
+    /// EnemyKillBooster から加速倍率をセットする。
+    /// 1.0f で等倍（通常速度）に戻る。
+    /// </summary>
+    public void SetSpeedBoost(float multiplier)
+    {
+        _speedBoostMultiplier = Mathf.Max(0f, multiplier);
     }
 }
