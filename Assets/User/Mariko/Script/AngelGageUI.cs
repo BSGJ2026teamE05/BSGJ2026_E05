@@ -30,13 +30,19 @@ public class AngelGageUI : MonoBehaviour
     public Image WingUI => _wingUI;
 
     // パラメータ
-    [Header("テスト用 AngleGage パラメータ"), SerializeField]
-    private float _gage = 100.0f;
-    [Header("テスト用 AngleGage ハイ天使状態しきい値"), SerializeField]
-    private float _overgageRatio = 100.0f;
+    [Header("ゲージの下限"), Range(0.0f, 180.0f)]
+    [SerializeField] private float _gageMin = 100.0f;
+    [Header("ゲージの上限"), Range(0.0f, 180.0f)]
+    [SerializeField] private float _gageMax = 100.0f;
+
+    [Header("テスト用 AngleGage パラメータ")]
+    [SerializeField] private float _gage = 100.0f;
+
+    [Header("テスト用 AngleGage ハイ天使状態しきい値")]
+    [SerializeField] private float _overgageRatio = 100.0f;
+
     [Header("テスト用 AngleGage 最大値")]
-    [SerializeField, Range(0.0f, 150.0f)]
-    private float _gageMax = 130.0f;
+    [SerializeField, Range(0.0f, 150.0f)] private float _overgageMax = 130.0f;
 
     [Header("ゲージの加算値")]
     [SerializeField, Range(0.0f, 2.0f)] private float _addCount = 0.5f;
@@ -82,15 +88,22 @@ public class AngelGageUI : MonoBehaviour
         UpdateAngleGaze();
     }
 
-    // UI表示の更新を行う
+    // ゲージUI表示の更新を行う
     public void UpdateAngleGaze()
     {
         // 値を限定
-        var value = Mathf.Clamp(_gage, 0.0f, 360.0f);
+        var value = Mathf.Clamp(_gage, 0.0f, _gageMax);
 
         // fillamountの計算
-        GageUI.fillAmount = (value / _gageMax) * 360.0f;
-        OverGageUI.fillAmount = value / _gageMax * 360.0f;
+        GageUI.fillAmount = (value + _gageMin) / (_overgageMax + _gageMax);
+        OverGageUI.fillAmount = (value + _gageMin) / (_overgageMax + _gageMax);
+
+        UpdateViewAngelWing(value > _overgageRatio);
+    }
+
+    public void UpdateViewAngelWing(bool key)
+    {
+        WingUI.gameObject.SetActive(key);
     }
 
     async UniTask OnClick()
