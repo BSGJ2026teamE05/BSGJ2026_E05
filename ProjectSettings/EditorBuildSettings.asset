@@ -18,16 +18,16 @@ EditorBuildSettings:
     path: Assets/User/Sasaki/Scene/Home.unity
     guid: 6dac9021f6292a74db204a6cd8c5dc7a
   - enabled: 1
-    path: Assets/User/Mariko/ProtoGameScene1.unity
+    path: Assets/User/Mariko/Scene/Proto/ProtoGameScene1.unity
     guid: b9fc62bb5c5c31b4abf2e905570ff93c
   - enabled: 1
-    path: Assets/User/Mariko/ProtoGameScene2.unity
+    path: Assets/User/Mariko/Scene/Proto/ProtoGameScene2.unity
     guid: 942e35ce73da86b4fbc1f11261d70bfb
   - enabled: 1
-    path: Assets/User/Mariko/ProtoResultScene.unity
+    path: Assets/User/Mariko/Scene/Proto/ProtoResultScene.unity
     guid: b3c50c07c2304df4492c974c866180bd
   - enabled: 1
-    path: Assets/User/Mariko/ProtoTitleScene.unity
+    path: Assets/User/Mariko/Scene/Proto/ProtoTitleScene.unity
     guid: 81e512c57e73f5340ba61bf0909dee92
   - enabled: 1
     path: Assets/User/Sakata/Scene/SakataProtoResultScene.unity
