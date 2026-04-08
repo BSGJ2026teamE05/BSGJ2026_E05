@@ -12,6 +12,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 using Cysharp.Threading.Tasks;
+using UnityEngine.InputSystem;
 
 
 public class AngelGageUI : MonoBehaviour
@@ -30,12 +31,12 @@ public class AngelGageUI : MonoBehaviour
     public Image WingUI => _wingUI;
 
     // パラメータ
-    [Header("ゲージの下限"), Range(0.0f, 180.0f)]
-    [SerializeField] private float _gageMin = 100.0f;
-    [Header("ゲージの上限"), Range(0.0f, 180.0f)]
-    [SerializeField] private float _gageMax = 100.0f;
+    [Header("ゲージの下限"), Range(0.0f, 1.0f)]
+    [SerializeField] private float _gageUIMin = 0.0f;
+    [Header("ゲージの振れ幅"), Range(0.0f, 1.0f)]
+    [SerializeField] private float _gageUIRatio = 1.0f;
 
-    [Header("テスト用 AngleGage パラメータ")]
+    [Header("テスト用 AngleGage パラメータ本体")]
     [SerializeField] private float _gage = 100.0f;
 
     [Header("テスト用 AngleGage ハイ天使状態しきい値")]
@@ -62,21 +63,21 @@ public class AngelGageUI : MonoBehaviour
     // =========================================================================
     private void InitializeGageUI()
 	{
-        _gage = 100;
     }
 	
 	private void Update() 
 	{
-        if (Input.GetKey(KeyCode.T)) AddAngleGage(_addCount);
-        if (Input.GetKey(KeyCode.Y)) SubAngleGage(_addCount);
-
+        if (Keyboard.current.tKey.isPressed) AddAngleGage(_addCount);
+        else if (Keyboard.current.yKey.isPressed) SubAngleGage(_addCount);
     }
 
     // ゲージ減少
     public void SubAngleGage(float count)
     {
         _gage -= count;
-        _gage = Mathf.Clamp(_gage, 0.0f, _gageMax);
+        _gage = Mathf.Clamp(_gage, 0.0f, _overgageMax);
+
+        Debug.Log("減算中 gage: " + _gage);
         UpdateAngleGaze();
     }
 
@@ -84,19 +85,29 @@ public class AngelGageUI : MonoBehaviour
     public void AddAngleGage(float count)
     {
         _gage += count;
-        _gage = Mathf.Clamp(_gage, 0.0f, _gageMax);
+        _gage = Mathf.Clamp(_gage, 0.0f, _overgageMax);
+
+        Debug.Log("加算中 gage: " + _gage);
         UpdateAngleGaze();
     }
 
     // ゲージUI表示の更新を行う
     public void UpdateAngleGaze()
     {
-        // 値を限定
-        var value = Mathf.Clamp(_gage, 0.0f, _gageMax);
+        // _gage の範囲を 0 ～ _overgageMax に制限
+        float value = Mathf.Clamp(_gage, 0.0f, _overgageMax);
 
-        // fillamountの計算
-        GageUI.fillAmount = (value + _gageMin) / (_overgageMax + _gageMax);
-        OverGageUI.fillAmount = (value + _gageMin) / (_overgageMax + _gageMax);
+        // 0 ～ 1 に正規化
+        float normalizedValue = value / _overgageMax;
+
+        // fillAmount を 0.3 ～ 0.8 のような任意範囲に変換
+        float fill = _gageUIMin + normalizedValue * _gageUIRatio;
+
+        // 念のため fillAmount の有効範囲に制限
+        fill = Mathf.Clamp01(fill);
+
+        GageUI.fillAmount = fill;
+        OverGageUI.fillAmount = fill;
 
         UpdateViewAngelWing(value > _overgageRatio);
     }
