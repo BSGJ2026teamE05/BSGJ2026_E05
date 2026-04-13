@@ -284,4 +284,12 @@ public class PlayerMoveImproved : MonoBehaviour
     {
         _boostMult = Mathf.Max(0f, multiplier);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Goal")
+        {
+            FindFirstObjectByType<AlphaGameManager>().GameClear();
+        }
+    }
 }
