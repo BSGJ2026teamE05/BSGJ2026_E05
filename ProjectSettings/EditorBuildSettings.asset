@@ -39,5 +39,6 @@ EditorBuildSettings:
     path: Assets/User/Sakata/Scene/PrototypeScenetest.unity
     guid: 49fed08c61e1c9d46a375960d23528ec
   m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 6ffa53bc8b87c7f4fa8497959341a88d, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
