@@ -10,7 +10,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [Header("この敵を倒した時のスコア")]
-    [SerializeField] private int scoreValue = 100;
+    [SerializeField] private int scoreValue = 10;
 
     [Header("死亡演出")]
     [SerializeField] private GameObject bloodEffectPrefab;   // 地面の血しぶき
@@ -41,13 +41,13 @@ public class Enemy : MonoBehaviour
             PeakGaugeManager.Instance.RecoverOnEnemyKill();
         }
 
-        if (GameManager.Instance != null)
-        {
-            GameManager.Instance.EnemyDead(scoreValue);
-        }
+        //GameManager.Instance.EnemyDead(scoreValue);
+        AlphaGameManager.instance.AddScore(scoreValue);
 
         SpawnDeathEffects();
         Destroy(gameObject, 1.5f);
+
+
     }
 
     private void SpawnDeathEffects()
