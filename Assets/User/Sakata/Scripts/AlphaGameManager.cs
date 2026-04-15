@@ -63,6 +63,8 @@ public class AlphaGameManager : MonoBehaviour
         {
             GameOver(); // 制限時間が0になったらゲームオーバー
         }
+
+
     }
 
     // ─────────────────────────────────────────

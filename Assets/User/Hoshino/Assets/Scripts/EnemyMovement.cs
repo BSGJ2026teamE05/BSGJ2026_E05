@@ -26,6 +26,9 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float knockbackDistance = 2f;    // 後ろに跳ね返る距離
     [SerializeField] private float knockbackDuration = 0.5f;  // 跳ね返るアクションにかかる時間
 
+    [Header("この敵を倒した時のスコア")]
+    [SerializeField] private int scoreValue = 10;
+
     public Rigidbody _rigidbody;
     public Animator animator;
 
@@ -151,6 +154,8 @@ public class EnemyMovement : MonoBehaviour
         if (currentHp <= 0)
         {
             Squash();
+            AlphaGameManager.instance.AddScore(scoreValue);
+
         }
     }
 }

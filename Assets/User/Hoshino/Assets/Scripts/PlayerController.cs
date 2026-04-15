@@ -233,7 +233,10 @@ public class PlayerController : MonoBehaviour
         currentHp -= damage;
         Debug.Log($"いてっ！ {damage} ダメージを受けた！ 残りHP: {currentHp}");
 
-        if (currentHp <= 0) Debug.Log("ゲームオーバー...");
+        if (currentHp <= 0){
+            Debug.Log("ゲームオーバー...");
+            AlphaGameManager.instance.GameOver();
+        }
     }
 
     /* =====================================================================
