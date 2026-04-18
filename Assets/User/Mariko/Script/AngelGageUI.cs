@@ -5,21 +5,16 @@
 // 概要:天使ゲージUI
 // ---------------------------------------------------------
 
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 using Cysharp.Threading.Tasks;
 using UnityEngine.InputSystem;
 
-
 public class AngelGageUI : MonoBehaviour
 {
     // UI
     [SerializeField] private Image _frame;
-	public Image Frame => _frame;
+    public Image Frame => _frame;
 
     [SerializeField] private Image _gazeUI;
     public Image GageUI => _gazeUI;
@@ -33,42 +28,45 @@ public class AngelGageUI : MonoBehaviour
     // パラメータ
     [Header("ゲージの下限"), Range(0.0f, 1.0f)]
     [SerializeField] private float _gageUIMin = 0.0f;
+
     [Header("ゲージの振れ幅"), Range(0.0f, 1.0f)]
     [SerializeField] private float _gageUIRatio = 1.0f;
 
     [Header("テスト用 AngleGage パラメータ本体")]
     [SerializeField] private float _gage = 100.0f;
 
-    [Header("テスト用 AngleGage ハイ天使状態しきい値")]
+    [Header("ハイ天使状態しきい値（通常ゲージ最大値）")]
     [SerializeField] private float _overgageRatio = 100.0f;
 
-    [Header("テスト用 AngleGage 最大値")]
+    [Header("ゲージの最大値")]
     [SerializeField, Range(0.0f, 150.0f)] private float _overgageMax = 130.0f;
 
     [Header("ゲージの加算値")]
     [SerializeField, Range(0.0f, 2.0f)] private float _addCount = 0.5f;
-     
-    private void Awake()
-	{
 
-	}
-
-	private void Start() 
-	{
+    private void Start()
+    {
         InitializeGageUI();
-	}
+    }
 
     // =========================================================================
     // 初期化関数
     // =========================================================================
     private void InitializeGageUI()
-	{
+    {
+        UpdateAngleGaze();
     }
-	
-	private void Update() 
-	{
-        if (Keyboard.current.tKey.isPressed) AddAngleGage(_addCount);
-        else if (Keyboard.current.yKey.isPressed) SubAngleGage(_addCount);
+
+    private void Update()
+    {
+        if (Keyboard.current.tKey.isPressed)
+        {
+            AddAngleGage(_addCount);
+        }
+        else if (Keyboard.current.yKey.isPressed)
+        {
+            SubAngleGage(_addCount);
+        }
     }
 
     // ゲージ減少
@@ -94,20 +92,24 @@ public class AngelGageUI : MonoBehaviour
     // ゲージUI表示の更新を行う
     public void UpdateAngleGaze()
     {
-        // _gage の範囲を 0 ～ _overgageMax に制限
+        // 現在値を 0 ～ 130 に制限
         float value = Mathf.Clamp(_gage, 0.0f, _overgageMax);
 
-        // 0 ～ 1 に正規化
-        float normalizedValue = value / _overgageMax;
+        // GageUI は 100 を超えたら更新を止める
+        float gageStopValue = Mathf.Clamp(value, 0.0f, _overgageRatio);
 
-        // fillAmount を 0.3 ～ 0.8 のような任意範囲に変換
-        float fill = _gageUIMin + normalizedValue * _gageUIRatio;
+        // ただし fillAmount への変換は 0 ～ 130 基準で行う
+        float gageNormalized = (_overgageMax <= 0.0f) ? 0.0f : gageStopValue / _overgageMax;
+        float overNormalized = (_overgageMax <= 0.0f) ? 0.0f : value / _overgageMax;
 
-        // 念のため fillAmount の有効範囲に制限
-        fill = Mathf.Clamp01(fill);
+        float gageFill = _gageUIMin + gageNormalized * _gageUIRatio;
+        float overFill = _gageUIMin + overNormalized * _gageUIRatio;
 
-        GageUI.fillAmount = fill;
-        OverGageUI.fillAmount = fill;
+        gageFill = Mathf.Clamp01(gageFill);
+        overFill = Mathf.Clamp01(overFill);
+
+        GageUI.fillAmount = gageFill;
+        OverGageUI.fillAmount = overFill;
 
         UpdateViewAngelWing(value > _overgageRatio);
     }
@@ -119,6 +121,6 @@ public class AngelGageUI : MonoBehaviour
 
     async UniTask OnClick()
     {
-        // await
+        await UniTask.Yield();
     }
 }
