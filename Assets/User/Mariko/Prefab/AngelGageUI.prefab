@@ -30,8 +30,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4907264499286385597}
-  - {fileID: 7845881477548086683}
   - {fileID: 4874458531008231194}
+  - {fileID: 7845881477548086683}
   - {fileID: 579288892324108134}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -304,7 +304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4874458531008231194
 RectTransform:
   m_ObjectHideFlags: 0
