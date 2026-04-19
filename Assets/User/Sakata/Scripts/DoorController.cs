@@ -43,7 +43,15 @@ public class DoorController : MonoBehaviour
         // プレイヤーが落ちたら遷移
         if (isOpened && player.position.y < fallThresholdY)
         {
-            SceneManager.LoadScene(nextSceneName);
+            isOpened = false; // 二重起動防止
+
+            CloudTransition transition = FindAnyObjectByType<CloudTransition>();
+
+            // 雲が全部埋まってからシーン遷移
+            transition.PlayTransitionIn(() =>
+            {
+                SceneManager.LoadScene(nextSceneName);
+            });
         }
     }
 
