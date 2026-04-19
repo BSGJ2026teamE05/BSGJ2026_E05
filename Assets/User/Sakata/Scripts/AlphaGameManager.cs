@@ -102,9 +102,19 @@ public class AlphaGameManager : MonoBehaviour
     // ─────────────────────────────────────────
     private IEnumerator GameOverCoroutine()
     {
+        PlayerPrefs.SetInt("LastScore", score);
+        PlayerPrefs.Save();
+
         gameOverUI.SetActive(true);                      // ゲームオーバーUIを表示
         yield return new WaitForSeconds(gameSceneDelay); // 指定秒数待機
-        SceneManager.LoadScene(overSceneName);           // ゲームオーバーシーンへ遷移
+
+        WingTransition transition = FindAnyObjectByType<WingTransition>();
+
+        transition.PlayTransitionIn(() =>
+        {
+            SceneManager.LoadScene(clearSceneName);
+        });
+        //SceneManager.LoadScene(overSceneName);           // ゲームオーバーシーンへ遷移
     }
 
     // ─────────────────────────────────────────
@@ -112,8 +122,18 @@ public class AlphaGameManager : MonoBehaviour
     // ─────────────────────────────────────────
     private IEnumerator GameClearCoroutine()
     {
+        PlayerPrefs.SetInt("LastScore", score);
+        PlayerPrefs.Save();
+
         gameClearUI.SetActive(true);                     // ゲームクリアUIを表示
         yield return new WaitForSeconds(gameSceneDelay); // 指定秒数待機
-        SceneManager.LoadScene(clearSceneName);          // クリアシーンへ遷移
+        WingTransition transition = FindAnyObjectByType<WingTransition>();
+
+        transition.PlayTransitionIn(() =>
+        {
+            SceneManager.LoadScene(clearSceneName);
+        });
+
+        //SceneManager.LoadScene(clearSceneName);          // クリアシーンへ遷移
     }
 }
