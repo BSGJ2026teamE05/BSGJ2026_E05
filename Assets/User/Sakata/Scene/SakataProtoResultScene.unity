@@ -1154,7 +1154,7 @@ MonoBehaviour:
   clapCooldown: 0.35
   lostResetDelay: 0.3
   gameSceneName: PrototypeScenetest
-  titleSceneName: SakataProtoTitleScene
+  titleSceneName: SakataAlphaTitle
 --- !u!4 &1150578894
 Transform:
   m_ObjectHideFlags: 0

@@ -18,6 +18,8 @@ public class AlphaGameManager : MonoBehaviour
     [SerializeField] private float timeLimit = 60f;     // 制限時間（秒）
     [SerializeField] private float gameSceneDelay = 3f; // UI表示からシーン遷移までの待機時間（秒）
 
+    [SerializeField] private string playerName = "Player"; //ランキング用の名前
+
     [SerializeField] private string clearSceneName = "SakataProtoResultScene"; // クリア時の遷移先シーン名
     [SerializeField] private string overSceneName = "SakataProtoResultScene"; // ゲームオーバー時の遷移先シーン名
 
@@ -103,6 +105,7 @@ public class AlphaGameManager : MonoBehaviour
     private IEnumerator GameOverCoroutine()
     {
         PlayerPrefs.SetInt("LastScore", score);
+        PlayerPrefs.SetString("LastName", playerName);
         PlayerPrefs.Save();
 
         gameOverUI.SetActive(true);                      // ゲームオーバーUIを表示
@@ -123,6 +126,7 @@ public class AlphaGameManager : MonoBehaviour
     private IEnumerator GameClearCoroutine()
     {
         PlayerPrefs.SetInt("LastScore", score);
+        PlayerPrefs.SetString("LastName", playerName);
         PlayerPrefs.Save();
 
         gameClearUI.SetActive(true);                     // ゲームクリアUIを表示
