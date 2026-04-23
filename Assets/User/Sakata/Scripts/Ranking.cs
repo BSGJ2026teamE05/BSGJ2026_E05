@@ -4,25 +4,56 @@
 // 作成者:  坂田
 // 概要:ランキング
 // ---------------------------------------------------------
-
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-
 public class Ranking : MonoBehaviour
 {
-	// [SerializeField] private int _numId;
     public TextMeshProUGUI rankingText;
 
-	[SerializeField]
-	private class RankingEntry
-	{
-		public string name;
-		public int score;
-	}
+    [SerializeField]
+    private class RankingEntry
+    {
+        public string name;
+        public int score;
+    }
+
+    // ─────────────────────────────────────────
+    // Start：PlayerPrefsからスコアを取得してランキングを更新・表示
+    // ─────────────────────────────────────────
+
+    private void Start()
+{
+    Debug.Log("HasKey LastScore: " + PlayerPrefs.HasKey("LastScore"));
+    Debug.Log("LastScore value: " + PlayerPrefs.GetInt("LastScore", -1));
+
+    if (!PlayerPrefs.HasKey("LastScore"))
+    {
+        RankingLoad("Ranking");
+        return;
+    }
+
+    int lastScore = PlayerPrefs.GetInt("LastScore", 0);
+    string playerName = "Player";
+    string rankingKey = "Ranking";
+
+    int newRank = RankingUpdate(rankingKey, lastScore, playerName);
+
+    // ★追加：保存直後のPlayerPrefsの中身を確認
+    Debug.Log("Ranking保存後の生データ: " + PlayerPrefs.GetString(rankingKey, "なし"));
+    Debug.Log("newRank: " + newRank);
+
+    RankingLoad(rankingKey, newRank);
+
+    // ★追加：rankingTextへの反映確認
+    Debug.Log("rankingText.text: " + (rankingText != null ? rankingText.text : "nullです！"));
+
+    PlayerPrefs.DeleteKey("LastScore");
+    PlayerPrefs.Save();
+}
 
     public int RankingUpdate(string rankingKey, int newScore, string newName)
     {
@@ -42,9 +73,11 @@ public class Ranking : MonoBehaviour
         int saveCount = Mathf.Min(extended.Length, 5);
         string[] parts = new string[saveCount];
         int newRankIndex = -1;
+
         for (int i = 0; i < saveCount; i++)
         {
             parts[i] = $"{extended[i].name}:{extended[i].score}";
+
             // 新エントリーの順位を記録（同スコア・同名で最初に見つかった位置）
             if (newRankIndex == -1
                 && extended[i].score == newScore
@@ -56,10 +89,13 @@ public class Ranking : MonoBehaviour
 
         PlayerPrefs.SetString(rankingKey, string.Join(",", parts));
         PlayerPrefs.Save();
+
         return newRankIndex;
     }
 
-    // ランキングを表示する
+    // ─────────────────────────────────────────
+    // RankingLoad：ランキングを表示する
+    // ─────────────────────────────────────────
     public void RankingLoad(string rankingKey, int highlightIndex = -1)
     {
         string rawData = PlayerPrefs.GetString(rankingKey, "");
@@ -80,15 +116,18 @@ public class Ranking : MonoBehaviour
         {
             rankingText.text = displayText;
         }
+
         Debug.Log(displayText);
     }
 
-    // 保存データをパースしてRankingEntry配列にする
+    // ─────────────────────────────────────────
+    // ParseEntries：保存データをパースしてRankingEntry配列にする
+    // ─────────────────────────────────────────
     private RankingEntry[] ParseEntries(string rawData, int topN)
     {
         RankingEntry[] result = new RankingEntry[topN];
-
         string[] pairs = (rawData != "") ? rawData.Split(',') : new string[0];
+
         for (int i = 0; i < topN; i++)
         {
             if (i < pairs.Length)
@@ -106,7 +145,7 @@ public class Ranking : MonoBehaviour
                 result[i] = new RankingEntry { name = "---", score = 0 };
             }
         }
+
         return result;
     }
-
 }
