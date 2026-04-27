@@ -44,6 +44,8 @@ public class AngelGageUI : MonoBehaviour
     [Header("ゲージの加算値")]
     [SerializeField, Range(0.0f, 2.0f)] private float _addCount = 0.5f;
 
+    public float CurrentGage => _gage;
+
     private void Start()
     {
         InitializeGageUI();
@@ -59,14 +61,14 @@ public class AngelGageUI : MonoBehaviour
 
     private void Update()
     {
-        if (Keyboard.current.tKey.isPressed)
-        {
-            AddAngleGage(_addCount);
-        }
-        else if (Keyboard.current.yKey.isPressed)
-        {
-            SubAngleGage(_addCount);
-        }
+        //if (Keyboard.current.tKey.isPressed)
+        //{
+        //    AddAngleGage(_addCount);
+        //}
+        //else if (Keyboard.current.yKey.isPressed)
+        //{
+        //    SubAngleGage(_addCount);
+        //}
     }
 
     // ゲージ減少

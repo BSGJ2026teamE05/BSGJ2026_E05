@@ -79,6 +79,8 @@ public class CloudTransition : MonoBehaviour
     // 上へ移動して消える（遷移前）
     IEnumerator SlideUp(RectTransform cloud)
     {
+        cloud.gameObject.SetActive(true);
+
         Vector2 startPos = cloud.anchoredPosition;
         Vector2 endPos = startPos + new Vector2(0, slideDistance);
         float elapsed = 0f;
@@ -93,7 +95,7 @@ public class CloudTransition : MonoBehaviour
         }
 
         cloud.anchoredPosition = endPos;
-        cloud.gameObject.SetActive(false);
+        //cloud.gameObject.SetActive(false);
     }
 
     // 上へ移動して消える（遷移後）
