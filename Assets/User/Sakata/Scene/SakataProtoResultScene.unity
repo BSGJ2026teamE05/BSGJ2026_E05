@@ -1012,7 +1012,7 @@ MonoBehaviour:
   minMoveDistance: 0.03
   clapCooldown: 0.35
   lostResetDelay: 0.3
-  gameSceneName: PrototypeScenetest
+  gameSceneName: SakataAlphaIngame
   titleSceneName: SakataAlphaTitle
 --- !u!4 &1150578894
 Transform:
