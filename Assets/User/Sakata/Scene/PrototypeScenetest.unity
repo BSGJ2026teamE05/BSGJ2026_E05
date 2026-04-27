@@ -3410,8 +3410,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  timeLimit: 180
+  timeLimit: 5
   gameSceneDelay: 3
+  playerName: Player
   clearSceneName: SakataProtoResultScene
   overSceneName: SakataProtoResultScene
   gameOverUI: {fileID: 503917324}
@@ -5140,6 +5141,77 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015810139}
   m_CullTransparentMesh: 1
+--- !u!1 &2034790503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2034790504}
+  - component: {fileID: 2034790505}
+  - component: {fileID: 2034790506}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2034790504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034790503}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 818.3203, y: 433.45172, z: -7.6324525}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2034790505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034790503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9902b6cac08b39b4cb07de138e80e831, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clouds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  slideDuration: 0.6
+  delayBetween: 0.1
+  slideDistance: 800
+  autoPlayOnStart: 1
+--- !u!114 &2034790506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034790503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61031b9a1462bee40b7302b6456bbf0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wingImage: {fileID: 0}
+  expandDuration: 0.6
+  retractDuration: 0.5
+  autoPlayOnStart: 0
 --- !u!4 &2035206192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2380456133787038066, guid: 9b0c5e02ecd8a764d86200eef3489577, type: 3}
@@ -5695,3 +5767,4 @@ SceneRoots:
   - {fileID: 1712075434}
   - {fileID: 1382930229}
   - {fileID: 1128198198}
+  - {fileID: 2034790504}

@@ -52,6 +52,9 @@ public class PlayerController : MonoBehaviour
     private MoveState currentMoveState = MoveState.Idle;
     private Coroutine stateResetCoroutine;
 
+    [Header("アニメ")]
+    [SerializeField] public HaiHaiAnime _haiHaiAnime;
+
     private void Awake()
     {
         input = new InputSystemActions();
@@ -112,6 +115,7 @@ public class PlayerController : MonoBehaviour
        ===================================================================== */
     private void OnPressLeft()
     {
+        _haiHaiAnime?.OnInput(); // ← 追加
         isNeutral = false;
         UpdateActivityTime();
 
@@ -131,6 +135,7 @@ public class PlayerController : MonoBehaviour
     }
     private void OnPressRight()
     {
+        _haiHaiAnime?.OnInput(); // ← 追加
         isNeutral = false;
         UpdateActivityTime();
 

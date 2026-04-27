@@ -28,14 +28,27 @@ public class ResultSceneManager : ClapDetectorBase
         // 左手 → もう一度プレイ
         if (TryClap(runner.isLeftHandDetected, runner.leftDepth, _leftHand, "Left"))
         {
-            SceneManager.LoadScene(gameSceneName);
+
+            CloudTransition transition = FindAnyObjectByType<CloudTransition>();
+
+            transition.PlayTransitionIn(() =>
+            {
+                SceneManager.LoadScene(gameSceneName);
+            });
+            //SceneManager.LoadScene(gameSceneName);
             return;
         }
 
         // 右手 → タイトルへ
         if (TryClap(runner.isRightHandDetected, runner.rightDepth, _rightHand, "Right"))
         {
-            SceneManager.LoadScene(titleSceneName);
+            CloudTransition transition = FindAnyObjectByType<CloudTransition>();
+
+            transition.PlayTransitionIn(() =>
+            {
+                SceneManager.LoadScene(titleSceneName);
+            });
+            //SceneManager.LoadScene(titleSceneName);
         }
     }
 }
