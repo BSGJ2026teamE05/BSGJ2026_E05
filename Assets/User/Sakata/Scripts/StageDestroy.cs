@@ -12,6 +12,7 @@ public class StageDestroy : MonoBehaviour
     [SerializeField] private float _collisionForce = 10f;
     [SerializeField] private Vector3 _forceDirection = new Vector3(0f, 0.5f, 1f);
     [SerializeField] private float _destroyDelay = 3f;
+    [SerializeField] private float _gageRecoverAmount = 10;
 
     private Rigidbody _rb;
     private BoxCollider _col;
@@ -36,8 +37,8 @@ public class StageDestroy : MonoBehaviour
             _isDestroyed = true;
             _rb.constraints = RigidbodyConstraints.None;
             _rb.AddForce(_forceDirection.normalized * _collisionForce, ForceMode.Impulse);
-            //_col.isTrigger = true;
             Physics.IgnoreCollision(_col, collision.collider);
+            AlphaGameManager.instance.RecoverAngelGage(_gageRecoverAmount);
             StartCoroutine(DestroyObject());
         }
     }

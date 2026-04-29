@@ -77,7 +77,7 @@ public class AngelGageUI : MonoBehaviour
         _gage -= count;
         _gage = Mathf.Clamp(_gage, 0.0f, _overgageMax);
 
-        Debug.Log("減算中 gage: " + _gage);
+        //Debug.Log("減算中 gage: " + _gage);
         UpdateAngleGaze();
     }
 
