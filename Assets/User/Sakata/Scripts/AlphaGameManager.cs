@@ -25,13 +25,17 @@ public class AlphaGameManager : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
 
+    [SerializeField] private TextMeshProUGUI countdownText;
+    private int countdownFrom = 3;
+
     [Header("天使ゲージ")]
     [SerializeField] private AngelGageUI angelGageUI;
 
     [Header("ゲージ減少速度（/秒）"), Range(0f, 20f)]
     [SerializeField] private float drainSpeed = 5f;
 
-    private bool isGameActive = true;
+    private bool isGameActive = false;
+    public bool IsGameActive => isGameActive;
 
     void Awake()
     {
@@ -42,6 +46,22 @@ public class AlphaGameManager : MonoBehaviour
     private void Start()
     {
         scoreText.text = "Score: 0";
+
+        CloudTransition cloudTransition = FindAnyObjectByType<CloudTransition>();
+
+        if (cloudTransition != null)
+        {
+            cloudTransition.autoPlayOnStart = false;
+
+            cloudTransition.PlayTransitionOut(() =>
+            {
+                StartCoroutine(CountdownCoroutine());
+            });
+        }
+        else
+        {
+            StartCoroutine(CountdownCoroutine());
+        }
     }
 
     void Update()
@@ -81,6 +101,28 @@ public class AlphaGameManager : MonoBehaviour
         if (!isGameActive) return;
         isGameActive = false;
         StartCoroutine(GameOverCoroutine());
+    }
+
+    private IEnumerator CountdownCoroutine()
+    {
+        countdownText.gameObject.SetActive(true);
+
+        for (int i = countdownFrom; i > 0; i--)
+        {
+            if (countdownText != null)
+                countdownText.text = i.ToString();
+
+            yield return new WaitForSeconds(1f);
+        }
+
+        if (countdownText != null)
+            countdownText.text = "GO";
+
+        yield return new WaitForSeconds(0.5f);
+        countdownText.gameObject.SetActive(false);
+
+        isGameActive = true;
+
     }
 
     private IEnumerator GameOverCoroutine()

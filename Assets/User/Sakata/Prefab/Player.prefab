@@ -655,7 +655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8658566189554293782}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ModelOffset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1434,6 +1434,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 1165152131034867883}
+  _modelOffset: {fileID: 8658566189554293782}
+  _movingRotation: {x: 90, y: 0, z: 0}
+  _movingHeight: 0.1
 --- !u!1 &9121915656464516928
 GameObject:
   m_ObjectHideFlags: 0

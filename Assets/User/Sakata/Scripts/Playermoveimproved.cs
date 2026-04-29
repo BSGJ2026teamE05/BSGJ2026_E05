@@ -150,6 +150,8 @@ public class PlayerMoveImproved : MonoBehaviour
 
     private void Update()
     {
+        if (!AlphaGameManager.instance.IsGameActive) return;
+
         // ── ブーストタイマー ──
         if (_boostTimer > 0f)
         {
@@ -180,6 +182,9 @@ public class PlayerMoveImproved : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!AlphaGameManager.instance.IsGameActive) return;
+
+
         // 目標座標へ MoveTowards（Y軸は現在位置を維持）
         Vector3 target = new Vector3(_targetPosition.x, _rb.position.y, _targetPosition.z);
         Vector3 next = Vector3.MoveTowards(_rb.position, target, moveSpeed * _boostMult * Time.fixedDeltaTime);
