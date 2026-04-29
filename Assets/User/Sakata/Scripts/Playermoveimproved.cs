@@ -240,6 +240,8 @@ public class PlayerMoveImproved : MonoBehaviour
             state.IsLifted = false;
             state.StepCooldownTimer = stepCooldown;
 
+            _haiHaiAnime?.OnInput();
+
             // 常に前進
             Vector3 forward = Quaternion.Euler(0f, _rb.rotation.eulerAngles.y, 0f) * Vector3.forward;
             _targetPosition += forward * (stepDistance * _boostMult);
