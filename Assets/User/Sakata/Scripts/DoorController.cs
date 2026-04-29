@@ -60,26 +60,28 @@ public class DoorController : MonoBehaviour
         isOpening = true;
     }
 
-
     private void OpenAnimation()
     {
+        Quaternion leftTarget = Quaternion.Euler(-90, 0, openAngle);
+        Quaternion rightTarget = Quaternion.Euler(-90, 0, -openAngle);
+
         // 左ドア（左に回転）
         leftDoor.localRotation = Quaternion.Lerp(
             leftDoor.localRotation,
-            Quaternion.Euler(0, 0, -openAngle),
+            leftTarget,
             Time.deltaTime * openSpeed
         );
-
         // 右ドア（右に回転）
         rightDoor.localRotation = Quaternion.Lerp(
             rightDoor.localRotation,
-            Quaternion.Euler(0, 0, openAngle),
+            rightTarget,
             Time.deltaTime * openSpeed
         );
 
-        // 十分開いたら完了
-        if (Quaternion.Angle(leftDoor.localRotation, Quaternion.Euler(0, 0, -openAngle)) < 1f)
+        if (Quaternion.Angle(leftDoor.localRotation, leftTarget) < 1f)
         {
+            leftDoor.localRotation = leftTarget;  // スナップして確定
+            rightDoor.localRotation = rightTarget;
             isOpening = false;
             isOpened = true;
         }

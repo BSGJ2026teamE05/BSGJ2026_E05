@@ -19,6 +19,69 @@ public class ResultSceneManager : ClapDetectorBase
     private ClapHandState _leftHand = new ClapHandState();
     private ClapHandState _rightHand = new ClapHandState();
 
+    private InputSystemActions _input;
+
+    // 連続発火防止フラグ
+    private bool _isTransitioning = false;
+
+    private void Start()
+    {
+        _input = new InputSystemActions();
+    }
+
+    private void OnEnable()
+    {
+        if (_input == null) _input = new InputSystemActions();
+
+        _input.Crawl.LeftHand.performed += OnLeftHandPerformed;
+        _input.Crawl.RightHand.performed += OnRightHandPerformed;
+
+        _input.Enable();
+    }
+
+    private void OnDisable()
+    {
+        _input.Crawl.LeftHand.performed -= OnLeftHandPerformed;
+        _input.Crawl.RightHand.performed -= OnRightHandPerformed;
+
+        _input.Disable();
+    }
+
+    private void OnLeftHandPerformed(UnityEngine.InputSystem.InputAction.CallbackContext ctx)
+    {
+        LoadGameScene();
+    }
+
+    /// <summary>右手 performed → タイトルへ</summary>
+    private void OnRightHandPerformed(UnityEngine.InputSystem.InputAction.CallbackContext ctx)
+    {
+        LoadTitleScene();
+    }
+
+    private void LoadGameScene()
+    {
+        if (_isTransitioning) return;
+        _isTransitioning = true;
+
+        CloudTransition transition = FindAnyObjectByType<CloudTransition>();
+        transition.PlayTransitionIn(() =>
+        {
+            SceneManager.LoadScene(gameSceneName);
+        });
+    }
+
+    private void LoadTitleScene()
+    {
+        if (_isTransitioning) return;
+        _isTransitioning = true;
+
+        CloudTransition transition = FindAnyObjectByType<CloudTransition>();
+        transition.PlayTransitionIn(() =>
+        {
+            SceneManager.LoadScene(titleSceneName);
+        });
+    }
+
     private void Update()
     {
         if (runner == null) return;
