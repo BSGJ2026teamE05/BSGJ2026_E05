@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 926561143354675988}
   - component: {fileID: 2850473994934116305}
   m_Layer: 0
-  m_Name: ScorePopUp
+  m_Name: ScorePopup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
