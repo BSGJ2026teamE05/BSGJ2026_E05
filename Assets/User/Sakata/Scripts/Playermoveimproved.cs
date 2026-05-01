@@ -128,7 +128,8 @@ public class PlayerMoveImproved : MonoBehaviour
         _rb.constraints =
             RigidbodyConstraints.FreezeRotationX |
             RigidbodyConstraints.FreezeRotationZ |
-            RigidbodyConstraints.FreezePositionY;
+            RigidbodyConstraints.FreezeRotationY;
+        //RigidbodyConstraints.FreezePositionY;
         _rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
         _rb.interpolation = RigidbodyInterpolation.Interpolate;
 
