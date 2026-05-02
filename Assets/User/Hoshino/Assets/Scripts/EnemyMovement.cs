@@ -1,6 +1,6 @@
 // ---------------------------------------------------------
 // EnemyMovement.cs
-// 作成日:  2026/3/19
+// 作成日:  2026/03/19
 // 作成者:  星野愛由
 // 概要:　Enemy
 // ---------------------------------------------------------
@@ -37,8 +37,6 @@ public class EnemyMovement : MonoBehaviour
 
     [Header("移動設定")]
     [SerializeField] public float moveSpeed = 5f;
-    // === ★追加：徘徊用のスピードが抜け落ちていたので復活させました ===
-    [SerializeField] public float wanderSpeed = 2f;
     [SerializeField] private Transform playerTarget;
 
     [Header("徘徊設定")]
@@ -95,7 +93,11 @@ public class EnemyMovement : MonoBehaviour
             if (playerObj != null) playerTarget = playerObj.transform;
         }
 
-        if (spriteRenderer == null) spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        // ★修正：ハバネロの場合のみ、SpriteRendererを自動取得する（不要な処理を削除）
+        if (_EnemyType == EnemyType.Habanero && spriteRenderer == null)
+        {
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        }
 
         if (findEffect != null) findEffect.SetActive(false);
         if (sweatEffect != null) sweatEffect.SetActive(false);
@@ -136,7 +138,7 @@ public class EnemyMovement : MonoBehaviour
                 if (distanceToPlayer <= detectionRange)
                 {
                     ChangeState(EnemyState.find);
-                    break; // ★追加：状態が変わったらここで処理をストップして次のフレームに任せる
+                    break;
                 }
 
                 if (IsStationaryType)
@@ -147,7 +149,7 @@ public class EnemyMovement : MonoBehaviour
                 else
                 {
                     movement = wanderDirection;
-                    currentSpeed = wanderSpeed; // ★修正：moveSpeed ではなく wanderSpeed に変更
+                    currentSpeed = moveSpeed;
                 }
                 break;
 
@@ -192,7 +194,7 @@ public class EnemyMovement : MonoBehaviour
                 break;
 
             case EnemyState.Cooldown:
-                if (IsStationaryType)
+                if (_EnemyType == EnemyType.Potato)
                 {
                     movement = Vector3.zero;
                     currentSpeed = 0f;
@@ -200,7 +202,7 @@ public class EnemyMovement : MonoBehaviour
                 else
                 {
                     movement = wanderDirection;
-                    currentSpeed = wanderSpeed; // ★修正：moveSpeed ではなく wanderSpeed に変更
+                    currentSpeed = moveSpeed;
                 }
 
                 stateTimer += Time.deltaTime;
@@ -212,8 +214,7 @@ public class EnemyMovement : MonoBehaviour
                 currentSpeed = 0f;
                 stateTimer += Time.deltaTime;
 
-                // ★追加：HasProperty で「このマテリアルはFlash機能を持っているか？」をチェック（エラー防止）
-                if (spriteRenderer != null && spriteRenderer.material != null && spriteRenderer.material.HasProperty("_FlashAmount"))
+                if (spriteRenderer != null && spriteRenderer.material != null)
                 {
                     float progress = stateTimer / explosionDelay;
                     float blinkSpeed = Mathf.Lerp(15f, 60f, progress);
@@ -308,8 +309,8 @@ public class EnemyMovement : MonoBehaviour
         movement = Vector3.zero;
         currentSpeed = 0f;
 
-        // ★追加：エラー防止のチェック
-        if (spriteRenderer != null && spriteRenderer.material != null && spriteRenderer.material.HasProperty("_FlashAmount"))
+        // ★修正：ハバネロの場合のみマテリアルの操作を行う
+        if (_EnemyType == EnemyType.Habanero && spriteRenderer != null && spriteRenderer.material != null)
         {
             spriteRenderer.material.SetFloat("_FlashAmount", 0f);
         }
@@ -385,8 +386,8 @@ public class EnemyMovement : MonoBehaviour
 
         if (sweatEffect != null) sweatEffect.SetActive(false);
 
-        // ★追加：エラー防止のチェック
-        if (spriteRenderer != null && spriteRenderer.material != null && spriteRenderer.material.HasProperty("_FlashAmount"))
+        // ★修正：ハバネロの場合のみマテリアルの操作を行う（ここでMiniTomatoが壊れるのを防ぐ）
+        if (_EnemyType == EnemyType.Habanero && spriteRenderer != null && spriteRenderer.material != null)
         {
             spriteRenderer.material.SetFloat("_FlashAmount", 0f);
         }
