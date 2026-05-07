@@ -7,6 +7,7 @@
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Windows;
 
 public class TitleSceneManager : ClapDetectorBase
 {
@@ -26,6 +27,69 @@ public class TitleSceneManager : ClapDetectorBase
 
     private float _leftClapTime = -999f;
     private float _rightClapTime = -999f;
+
+    private InputSystemActions input;
+
+    // ── Input Action のタイムスタンプ ──
+    private float _leftActionTime = -999f;
+    private float _rightActionTime = -999f;
+
+
+    private void Start()
+    {
+        input = new InputSystemActions();
+    }
+
+    private void OnEnable()
+    {
+        if (input == null) input = new InputSystemActions();
+
+        input.Crawl.LeftHand.performed += OnLeftHandPerformed;
+        input.Crawl.RightHand.performed += OnRightHandPerformed;
+        input.Enable();
+    }
+
+    private void OnDisable()
+    {
+        input.Crawl.LeftHand.performed -= OnLeftHandPerformed;
+        input.Crawl.RightHand.performed -= OnRightHandPerformed;
+
+        input.Disable();
+
+    }
+
+    private void OnLeftHandPerformed(UnityEngine.InputSystem.InputAction.CallbackContext ctx)
+    {
+        _leftActionTime = Time.time;
+        CheckInputSimultaneous();
+    }
+
+    private void OnRightHandPerformed(UnityEngine.InputSystem.InputAction.CallbackContext ctx)
+    {
+        _rightActionTime = Time.time;
+        CheckInputSimultaneous();
+    }
+
+    private void CheckInputSimultaneous()
+    {
+        if (_leftActionTime < 0f || _rightActionTime < 0f) return;
+
+        if (Mathf.Abs(_leftActionTime - _rightActionTime) <= simultaneousWindow)
+        {
+            // リセット（連続発火防止）
+            _leftActionTime = -999f;
+            _rightActionTime = -999f;
+
+            OnBothHandsClapped();
+        }
+    }
+
+    /// <summary>両手同時入力が確定したときの処理</summary>
+    private void OnBothHandsClapped()
+    {
+        doorController.OpenDoor();
+        // SceneManager.LoadScene(gameSceneName);
+    }
 
     private void Update()
     {
