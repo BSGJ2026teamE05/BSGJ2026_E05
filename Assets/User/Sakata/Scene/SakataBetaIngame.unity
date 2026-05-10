@@ -498,6 +498,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &12048856
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -660,6 +661,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &20111583
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1164,6 +1166,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &64750975
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2009,6 +2012,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!4 &84101715 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5231867505176287137, guid: 45c6551c202f22e4b82060bd4add38d7, type: 3}
@@ -2118,6 +2122,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &86024583
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2416,6 +2421,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &94427216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3105,6 +3111,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &107890500
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3524,6 +3531,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &124564371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3935,6 +3943,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &138291017
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4097,6 +4106,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &142101025
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4642,6 +4652,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!4 &170463931 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 662319099425387430, guid: 258cf905ed725ee449e45d0de78d0605, type: 3}
@@ -4966,6 +4977,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &178806678
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5187,6 +5199,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &182517592
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5387,6 +5400,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8370310486363675488, guid: 3a7d37c9d478d364492cdfdb40489610, type: 3}
   m_PrefabInstance: {fileID: 1171792252}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &190260120 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8571076842338426133, guid: 140d1d2c406167c50819d89f86d9092e, type: 3}
+  m_PrefabInstance: {fileID: 8571076842648159877}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &190376069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5577,6 +5595,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &205571424
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5868,6 +5887,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &210575051
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7204,6 +7224,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &273222293
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8079,6 +8100,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &328267999
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8488,6 +8510,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &363854031
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8902,6 +8925,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &386705145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9359,6 +9383,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &398003572
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9526,6 +9551,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &403519446
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9834,6 +9860,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &411214011
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10638,6 +10665,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!4 &432805402 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8370310486363675488, guid: 3a7d37c9d478d364492cdfdb40489610, type: 3}
@@ -11321,6 +11349,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &460296055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11723,6 +11752,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &474775506
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12161,6 +12191,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &494068387
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12964,6 +12995,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!4 &524867340 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8663109453467068425, guid: e5217ca3cc01d39439b6edc0e29d2f4b, type: 3}
@@ -14161,6 +14193,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &575386874
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14411,6 +14444,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &597271725
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15788,6 +15822,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &680050460
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16441,6 +16476,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &725866045
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16603,6 +16639,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &728158593
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16821,6 +16858,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 734286671}
+  - component: {fileID: 734286672}
   m_Layer: 0
   m_Name: DestroyOBJ
   m_TagString: Untagged
@@ -16945,6 +16983,23 @@ Transform:
   - {fileID: 86024580}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &734286672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734286670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc1cfe45eecd7247987315f3d435f47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collisionForce: 10
+  _forceDirection: {x: 0, y: 0.5, z: 1}
+  _destroyDelay: 3
+  _gageRecoverAmount: 10
+  _score: 100
 --- !u!1001 &737425527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17421,6 +17476,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &765336744
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17631,6 +17687,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &767364905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17735,6 +17792,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &767364909
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18023,6 +18081,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!4 &774645057 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 362233261922440916, guid: a80936f3e0ebc564689c598da1fcbeaa, type: 3}
@@ -18267,6 +18326,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &793390636
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20659,6 +20719,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &898904998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20816,6 +20877,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &900172406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21295,6 +21357,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &927983389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22037,6 +22100,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &949086667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22358,6 +22422,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &957604337
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22510,6 +22575,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &958178050
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22921,6 +22987,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &986576133
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23157,6 +23224,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &995316161
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25843,6 +25911,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1124879483
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26083,6 +26152,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1129258962
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26245,6 +26315,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1143332541
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26616,6 +26687,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1151269658
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27474,6 +27546,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &1178091681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27802,6 +27875,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1183796531
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28007,6 +28081,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!4 &1189198000 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8346139860629291646, guid: 7193bf8721103b448bbe633a1fe456bb, type: 3}
@@ -28252,6 +28327,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!4 &1197949842 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8370310486363675488, guid: 3a7d37c9d478d364492cdfdb40489610, type: 3}
@@ -28430,6 +28506,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1208922406
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28708,6 +28785,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &1216884691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29105,6 +29183,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1227062054
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29257,6 +29336,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1227835798
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29728,6 +29808,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1245074952
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30723,6 +30804,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1295252304
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31080,6 +31162,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1303640814
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32039,6 +32122,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1339153024
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32191,6 +32275,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1341952152
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32474,6 +32559,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &1353932259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33067,6 +33153,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &1382017490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33171,6 +33258,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1382017494
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33542,6 +33630,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!4 &1395958274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5887900434135747875, guid: 1876259d00cf5514f9ff17880f12fb6a, type: 3}
@@ -36608,6 +36697,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1499661205
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37048,6 +37138,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &1509000277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37495,6 +37586,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1530313721
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38495,6 +38587,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1569631938
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39141,6 +39234,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1597609104
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39571,6 +39665,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1611631611
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39993,6 +40088,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!4 &1629959999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1277885483427274290, guid: 3aa055d818eab234bb9fafc921aad4f8, type: 3}
@@ -40160,6 +40256,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!4 &1639456055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2518963946476027735, guid: b5f1faf9e937b04409772a8f41ff2ac6, type: 3}
@@ -40405,6 +40502,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!4 &1648004887 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8370310486363675488, guid: 3a7d37c9d478d364492cdfdb40489610, type: 3}
@@ -40787,6 +40885,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1671684968
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41463,6 +41562,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!4 &1696205808 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4952073662891507353, guid: 5a3c6b41be0f936498ac3aca08394a07, type: 3}
@@ -42665,6 +42765,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1724377389
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -42774,6 +42875,157 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14fecc2e00953cf4db4c710dcbd61915, type: 3}
+--- !u!1 &1734383631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1734383632}
+  - component: {fileID: 1734383635}
+  - component: {fileID: 1734383634}
+  - component: {fileID: 1734383633}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1734383632
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734383631}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.5014, y: 3.5014, z: 3.5014}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 190260120}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -802, y: 346}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1734383633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734383631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 109f568983d6eaf42bde33324f050632, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsText: {fileID: 1734383634}
+--- !u!114 &1734383634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734383631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1734383635
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734383631}
+  m_CullTransparentMesh: 1
 --- !u!4 &1735658994 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 362233261922440916, guid: a80936f3e0ebc564689c598da1fcbeaa, type: 3}
@@ -43165,6 +43417,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!4 &1758526284 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8346139860629291646, guid: 7193bf8721103b448bbe633a1fe456bb, type: 3}
@@ -43274,6 +43527,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1761291292
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44149,6 +44403,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1 &1806680259
 GameObject:
   m_ObjectHideFlags: 0
@@ -44525,6 +44780,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1814352639
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44759,6 +45015,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1821166122
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44964,6 +45221,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!4 &1828816557 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8346139860629291646, guid: 7193bf8721103b448bbe633a1fe456bb, type: 3}
@@ -45205,6 +45463,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!4 &1834575040 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 662319099425387430, guid: 258cf905ed725ee449e45d0de78d0605, type: 3}
@@ -45653,6 +45912,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1849625870
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -46635,6 +46895,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1922961785
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -46999,6 +47260,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1934611597
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47156,6 +47418,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1937895058
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47308,6 +47571,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1939696123
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47460,6 +47724,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1944393079
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47749,6 +48014,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1958171335
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -48507,6 +48773,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1992333377
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -48664,6 +48931,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &1995178974
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -49650,6 +49918,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &2037076508
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -50069,8 +50338,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -722, y: 453}
-  m_SizeDelta: {x: 400, y: 100}
+  m_AnchoredPosition: {x: -535, y: 453}
+  m_SizeDelta: {x: 800, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2052938009
 MonoBehaviour:
@@ -50092,19 +50361,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score
+  m_text: 'Score:000
 
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 8aad9f97e9a6eee4abb292baf524b99c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294916096
+  m_fontColor: {r: 0, g: 0.2200644, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -50121,8 +50390,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 85
+  m_fontSizeBase: 85
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -50131,7 +50400,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: 4
   m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -50354,6 +50623,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &2057603811
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -50485,6 +50755,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &2059105616
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -50773,6 +51044,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &2070923444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51398,6 +51670,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &2089969061
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -52133,6 +52406,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &2114844114
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -52533,6 +52807,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &2123985675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52715,6 +52990,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!54 &2126964851
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -52930,6 +53206,7 @@ MonoBehaviour:
   _forceDirection: {x: 0, y: 0.5, z: 1}
   _destroyDelay: 3
   _gageRecoverAmount: 10
+  _score: 0
 --- !u!1001 &2132322324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53426,6 +53703,10 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571076842338426122, guid: 140d1d2c406167c50819d89f86d9092e, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8571076842338426133, guid: 140d1d2c406167c50819d89f86d9092e, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -53593,6 +53874,9 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8571076842338426133, guid: 140d1d2c406167c50819d89f86d9092e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1734383632}
     - targetCorrespondingSourceObject: {fileID: 8571076844135231236, guid: 140d1d2c406167c50819d89f86d9092e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1229135957}

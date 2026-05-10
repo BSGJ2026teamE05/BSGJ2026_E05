@@ -51,6 +51,7 @@ public class AlphaGameManager : MonoBehaviour
     private void Start()
     {
         scoreText.text = "Score: 0";
+        scoreText.color = Color.blue;
 
         CloudTransition cloudTransition = FindAnyObjectByType<CloudTransition>();
 
@@ -87,8 +88,17 @@ public class AlphaGameManager : MonoBehaviour
     {
         score += amount;
         scoreText.text = "Score: " + score;
+        scoreText.color = GetScoreColor(score);
     }
 
+    private Color GetScoreColor(int score)
+    {
+        if (score < 100) return Color.blue;            // 0以上100未満：青色
+        if (score < 1000) return Color.green;           // 100以上1000未満：緑色
+        if (score < 10000) return Color.yellow;          // 1000以上10000未満：黄色
+        if (score < 100000) return new Color(1f, 0.5f, 0f); // 10000以上100000未満：橙色
+        return Color.red;                                    // 100000以上：赤色
+    }
     public void RecoverAngelGage(float amount)
     {
         angelGageUI.AddAngleGage(amount);
