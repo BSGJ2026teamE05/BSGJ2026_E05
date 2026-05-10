@@ -39,6 +39,7 @@ public class StageDestroy : MonoBehaviour
             _rb.AddForce(_forceDirection.normalized * _collisionForce, ForceMode.Impulse);
             Physics.IgnoreCollision(_col, collision.collider);
             AlphaGameManager.instance.RecoverAngelGage(_gageRecoverAmount);
+            AlphaGameManager.instance.AddScore(10);
             StartCoroutine(DestroyObject());
         }
     }

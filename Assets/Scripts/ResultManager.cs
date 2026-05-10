@@ -12,47 +12,54 @@ using UnityEngine.UI;
 public class ResultManager : MonoBehaviour
 {
     [Header("UI設定")]
-    [SerializeField] private GameObject nameEntryWindow;       // 名前入力ウィンドウの親オブジェクト
-    [SerializeField] private TMP_InputField nameInputField;    // 名前を入力するインプットフィールド
-    [SerializeField] private TextMeshProUGUI FinalScoreText;     // 最終スコアテキスト
+    [SerializeField] private GameObject nameEntryWindow;
+    [SerializeField] private TMP_InputField nameInputField;
+    [SerializeField] private TextMeshProUGUI FinalScoreText;
 
     [Header("文字数制限")]
-    private const int MAX_NameLength = 14;  // 半角基準での最大文字数（半角14、全角7）
+    private const int MAX_NameLength = 14;
 
-    private int finalScore = 0;             // プレイヤーの最終スコア
-    private int rankInIndex = -1;           // ランクインした順位（0〜4）
-    private const int MAX_RANKING = 5;      // ランキングの最大保存数
+    private int finalScore = 0;
+    private int rankInIndex = -1;
+    private const int MAX_RANKING = 5;
 
+    private ResultSceneManager _resultSceneManager;
 
-    private void Start()
+    private void Awake()
     {
         if (nameEntryWindow != null) nameEntryWindow.SetActive(false);
 
-        /* ランキング表へ登録 */
+    }
+
+    private void Start()
+    {
+        _resultSceneManager = FindAnyObjectByType<ResultSceneManager>();
+
+
         if (nameInputField != null)
         {
             nameInputField.onSubmit.AddListener(OnSubmitName);
-            nameInputField.onValueChanged.AddListener(OnValueChanged); // リアルタイムの文字チェック用
+            nameInputField.onValueChanged.AddListener(OnValueChanged);
         }
     }
 
-
-    /* ====================================================================================
-       処理：スコアを受け取り判定する
-       ==================================================================================== */
-    public void CheckAndShowEntryWindow(int score)
+    public bool CheckAndShowEntryWindow(int score)
     {
         finalScore = score;
 
-        if (FinalScoreText != null) FinalScoreText.text = $"SCORE: {finalScore}"; // 最終スコアを表示}
+        if (FinalScoreText != null) FinalScoreText.text = $"SCORE: {finalScore}";
 
         rankInIndex = GetRankInIndex(finalScore);
+        Debug.Log("rankInIndex: " + rankInIndex);
 
         if (rankInIndex >= 0)
         {
             nameEntryWindow.SetActive(true);
-            nameInputField.ActivateInputField(); // ウィンドウ表示時にすぐ入力できる状態にする
+            nameInputField.ActivateInputField();
+            return true;
         }
+
+        return false;
     }
 
     private int GetRankInIndex(int score)
@@ -64,60 +71,53 @@ public class ResultManager : MonoBehaviour
         return -1;
     }
 
-    /* ====================================================================================
-       処理：入力した文字の「数」「全角かどうか」をチェック
-       ==================================================================================== */
     private void OnValueChanged(string text)
     {
         if (string.IsNullOrEmpty(text)) return;
-
-        // 日本語を変換している最中（IME入力中）はチェックを一時停止する
         if (!string.IsNullOrEmpty(Input.compositionString)) return;
 
-        // 半角のみ抽出して14文字以内にカットした文字列を取得
         string filteredText = Get_HalfWidth(text, MAX_NameLength);
 
-        // 全角が含まれていた、または14文字を超えていた場合は上書きする
         if (text != filteredText)
         {
             nameInputField.text = filteredText;
-            nameInputField.caretPosition = filteredText.Length; // カーソルを末尾に戻す
+            nameInputField.caretPosition = filteredText.Length;
         }
     }
 
-    /* ====================================================================================
-       処理：半角文字（ASCIIおよび半角カタカナ）のみを抽出し、制限内の文字列を返す
-       ==================================================================================== */
     private string Get_HalfWidth(string text, int maxLength)
     {
         string result = "";
 
         foreach (char c in text)
         {
-            // 半角英数字・記号(0x20〜0x7E) または 半角カタカナ(0xFF61〜0xFF9F) の場合のみ許可
             if ((c >= 0x20 && c <= 0x7E) || (c >= 0xFF61 && c <= 0xFF9F))
             {
                 result += c;
-                if (result.Length >= maxLength) break; // 制限文字数に達したらそこで終了
+                if (result.Length >= maxLength) break;
             }
         }
 
         return result;
     }
 
-    /* ====================================================================================
-       処理：名前入力が完了した（Enterキーが押された）ときに実行
-       ==================================================================================== */
-    private void OnSubmitName(string nameText) // nameText：InputFieldに入力されていた文字列
+    private void OnSubmitName(string nameText)
     {
-        // プレイヤーが入力した文字を、ここで指定文字数（全角7文字分）にカットする！
         string playerName = Get_HalfWidth(nameText, MAX_NameLength);
-
-        // 入力された名前を取得（空白の場合は「NoName」）
-
         if (string.IsNullOrWhiteSpace(playerName)) playerName = "NoName";
-        SaveRanking(playerName, finalScore, rankInIndex); // ランキングデータを保存
+
+        SaveRanking(playerName, finalScore, rankInIndex);
         nameEntryWindow.SetActive(false);
+
+        // 名前入力完了をResultSceneManagerに通知
+        if (_resultSceneManager != null)
+        {
+            _resultSceneManager.OnNameInputComplete();
+        }
+        else
+        {
+            Debug.LogWarning("_resultSceneManagerがnullです");
+        }
     }
 
     private void SaveRanking(string newName, int newScore, int newRankIndex)
