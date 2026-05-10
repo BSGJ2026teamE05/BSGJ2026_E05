@@ -8,6 +8,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System.Collections;
+using UnityEngine.UIElements;
+using UnityEngine.UI;
+using Image = UnityEngine.UI.Image;
 
 public class AlphaGameManager : MonoBehaviour
 {
@@ -22,11 +25,13 @@ public class AlphaGameManager : MonoBehaviour
 
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private GameObject gameClearUI;
+    [SerializeField] private Image fade;
 
     public TextMeshProUGUI scoreText;
 
     [SerializeField] private TextMeshProUGUI countdownText;
     private int countdownFrom = 3;
+    [SerializeField] private float fadeTime;
 
     [Header("天使ゲージ")]
     [SerializeField] private AngelGageUI angelGageUI;
@@ -103,6 +108,13 @@ public class AlphaGameManager : MonoBehaviour
         StartCoroutine(GameOverCoroutine());
     }
 
+    public void FallStage(System.Action onFadeComplete = null)
+    {
+        if (!isGameActive) return;
+        StartCoroutine(FallStageCoroutine(onFadeComplete));
+
+     }
+
     private IEnumerator CountdownCoroutine()
     {
         countdownText.gameObject.SetActive(true);
@@ -155,5 +167,40 @@ public class AlphaGameManager : MonoBehaviour
         {
             SceneManager.LoadScene(clearSceneName);
         });
+    }
+
+    private IEnumerator FallStageCoroutine(System.Action onFadeComplete = null)
+    {
+        isGameActive = false;
+
+        // フェードイン（画面を隠す）
+        yield return StartCoroutine(FadeCoroutine(0f, 1f));
+
+        // 画面が隠れたタイミングでコールバック実行
+        onFadeComplete?.Invoke();
+
+        yield return new WaitForSeconds(0.5f);
+
+        // フェードアウト（画面を見せる）
+        yield return StartCoroutine(FadeCoroutine(1f, 0f));
+
+        isGameActive = true;
+    }
+
+    private IEnumerator FadeCoroutine(float from, float to)
+    {
+        float timer = 0f;
+        Color color = fade.color;
+
+        while (timer < fadeTime)
+        {
+            timer += Time.deltaTime;
+            color.a = Mathf.Lerp(from, to, timer / fadeTime);
+            fade.color = color;
+            yield return null;
+        }
+
+        color.a = to;
+        fade.color = color;
     }
 }
