@@ -99,6 +99,7 @@ public class PlayerMoveImproved : MonoBehaviour
     // -------------------------------------------------------
 
     private Rigidbody _rb;
+    private Vector3 _startPosition;
     private Vector3 _targetPosition;
     private float _targetRotationY = 0f; // 目標角度（速度ではなく角度で管理）
 
@@ -133,6 +134,7 @@ public class PlayerMoveImproved : MonoBehaviour
         _rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
         _rb.interpolation = RigidbodyInterpolation.Interpolate;
 
+        _startPosition = transform.position;
         _targetPosition = transform.position;
         _targetRotationY = transform.eulerAngles.y; // 初期角度を引き継ぐ
     }
@@ -367,6 +369,20 @@ public class PlayerMoveImproved : MonoBehaviour
         if (collision.gameObject.CompareTag("Goal"))
         {
             FindFirstObjectByType<AlphaGameManager>().GameClear();
+        }
+        else if (collision.gameObject.CompareTag("Deadline"))
+        {
+            Debug.Log("接触");
+            FindAnyObjectByType<AlphaGameManager>().FallStage(() =>
+            {
+                // 画面が隠れている間にリセット
+                _rb.position = _startPosition;
+                _rb.linearVelocity = Vector3.zero;
+                _rb.angularVelocity = Vector3.zero;
+                _targetPosition = _startPosition;
+                _targetRotationY = 0f;
+            });
+
         }
     }
 
