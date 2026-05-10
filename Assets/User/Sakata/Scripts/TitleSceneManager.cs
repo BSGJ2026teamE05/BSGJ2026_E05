@@ -11,8 +11,6 @@ using UnityEngine.Windows;
 
 public class TitleSceneManager : ClapDetectorBase
 {
-    [Header("── シーン ──")]
-    [SerializeField] private string gameSceneName = "PrototypeScenetest";
 
     [Header("── 両手同時判定 ──")]
     [Tooltip("左右の叩きが何秒以内なら「同時」と判定するか")]
