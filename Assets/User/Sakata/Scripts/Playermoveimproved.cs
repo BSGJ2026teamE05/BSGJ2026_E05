@@ -48,6 +48,8 @@ public class PlayerMoveImproved : MonoBehaviour
     [Range(0f, 1f)]
     public float curveStepRatio = 0.6f;
 
+    [SerializeField] private int enemyDamage = 20;
+
     [Header("── 加速ブースト ──")]
     [SerializeField] private int killCountToBoost = 5;
     [SerializeField] private float boostDuration = 5f;
@@ -369,6 +371,13 @@ public class PlayerMoveImproved : MonoBehaviour
         if (collision.gameObject.CompareTag("Goal"))
         {
             FindFirstObjectByType<AlphaGameManager>().GameClear();
+        }
+        else if (collision.gameObject.CompareTag ("Enemy"))
+        {
+            // ぶつかった相手から「EnemyController」スクリプトを取得する
+            EnemyMovement enemy = collision.gameObject.GetComponent<EnemyMovement>();
+            Debug.Log("エネミーへ攻撃");
+            enemy.TakeDamage(enemyDamage);
         }
         else if (collision.gameObject.CompareTag("Deadline"))
         {
