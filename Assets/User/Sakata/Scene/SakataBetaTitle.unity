@@ -1363,7 +1363,7 @@ MonoBehaviour:
   openAngle: 90
   openSpeed: 2
   fallThresholdY: -5
-  nextSceneName: BetaIngame
+  nextSceneName: SakataBetaIngame
 --- !u!224 &908042479 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8227820838916586668, guid: 986a8f4794df35745ae2b85b6c6e90ec, type: 3}

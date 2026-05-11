@@ -15380,8 +15380,8 @@ MonoBehaviour:
   score: 0
   gameSceneDelay: 3
   playerName: Player
-  clearSceneName: AlphaResult
-  overSceneName: AlphaResult
+  clearSceneName: SakataBetaResult
+  overSceneName: SakataBetaResult
   gameOverUI: {fileID: 933312772}
   gameClearUI: {fileID: 1338313831}
   fade: {fileID: 1305134305}
