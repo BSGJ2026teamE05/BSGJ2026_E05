@@ -23,6 +23,8 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private GameObject sweatEffect;
     [Tooltip("エフェクトを表示しておく（発見移行）時間")]
     [SerializeField] private float exclamationDuration = 1.0f;
+    [Tooltip("撃破時に再生する3Dエフェクト")]
+    [SerializeField] private GameObject defeatEffectPrefab;
 
     [Header("起爆エフェクト設定 (Habanero専用)")]
     [Tooltip("点滅する色 (HDR対応：強く光らせることができます)")]
@@ -58,6 +60,15 @@ public class EnemyMovement : MonoBehaviour
     [Tooltip("起爆状態になってから爆発するまでの時間(秒)")]
     [SerializeField] private float explosionDelay = 5f;
     private bool hasExploded = false;
+
+    [Header("消滅タイミング設定")]
+    [Tooltip("MiniTomatoやPotatoが潰れてから消滅するまでの時間(秒)")]
+    [SerializeField] private float defaultDestroyDelay = 0.75f;
+    [Tooltip("Habaneroが撃破・爆発してから消滅するまでの時間(秒)")]
+    [SerializeField] private float habaneroDestroyDelay = 2.0f;
+
+    // === ★追加：起爆中のノックバックを1回だけに制限するフラグ ===
+    private bool hasIgniteKnockedBack = false;
 
     [Header("ノックバック設定")]
     [SerializeField] private float knockbackDistance = 2f;
@@ -214,13 +225,31 @@ public class EnemyMovement : MonoBehaviour
                 currentSpeed = 0f;
                 stateTimer += Time.deltaTime;
 
-                if (spriteRenderer != null && spriteRenderer.material != null)
+                // === ★復活：確実に点滅させる処理 ===
+                if (spriteRenderer != null)
                 {
                     float progress = stateTimer / explosionDelay;
                     float blinkSpeed = Mathf.Lerp(15f, 60f, progress);
                     float lerp = (Mathf.Sin(stateTimer * blinkSpeed) + 1f) / 2f;
-                    spriteRenderer.material.SetFloat("_FlashAmount", lerp);
-                    spriteRenderer.material.SetColor("_FlashColor", igniteFlashColor);
+
+                    // 1. 専用ShaderがあればShaderで光らせる
+                    if (spriteRenderer.material != null && spriteRenderer.material.HasProperty("_FlashAmount"))
+                    {
+                        spriteRenderer.material.SetFloat("_FlashAmount", lerp);
+                        spriteRenderer.material.SetColor("_FlashColor", igniteFlashColor);
+                    }
+                    // 2. ★超重要修正：elseを削除。Shaderの有無に関わらず「絶対に」C#でも点滅させる！
+                    if (lerp > 0.5f)
+                    {
+                        // 色を少し透明な黄色にしつつ、ピーク時(0.85以上)は一瞬だけ完全に非表示にして激しい点滅を作る
+                        spriteRenderer.color = new Color(igniteFlashColor.r, igniteFlashColor.g, igniteFlashColor.b, 0.4f);
+                        spriteRenderer.enabled = (lerp < 0.85f);
+                    }
+                    else
+                    {
+                        spriteRenderer.color = Color.white;
+                        spriteRenderer.enabled = true;
+                    }
                 }
 
                 if (stateTimer >= explosionDelay)
@@ -268,6 +297,58 @@ public class EnemyMovement : MonoBehaviour
         animator.SetBool("IsFleeing", isFleeing);
     }
 
+    private IEnumerator KnockbackRoutine()
+    {
+        isKnockedBack = true;
+        animator.SetFloat("Speed", 0);
+
+        Vector3 knockbackDir = (transform.position - playerTarget.position).normalized;
+        knockbackDir.y = 0;
+
+        Vector3 startPos = transform.position;
+        Vector3 targetPos = startPos + knockbackDir * knockbackDistance;
+
+        float elapsedTime = 0f;
+
+        while (elapsedTime < knockbackDuration)
+        {
+            // === ★追加：吹き飛んでいる最中に爆発したり倒されたりしたら強制終了する ===
+            if (isSquashed || hasExploded) break;
+
+            _rigidbody.MovePosition(Vector3.Lerp(startPos, targetPos, elapsedTime / knockbackDuration));
+            elapsedTime += Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
+        }
+
+        isKnockedBack = false;
+    }
+
+    private IEnumerator ShowDiscoveryEffect()
+    {
+        if (findEffect != null)
+        {
+            findEffect.SetActive(true);
+            yield return new WaitForSeconds(exclamationDuration);
+            findEffect.SetActive(false);
+        }
+    }
+
+    // === ★追加：指定秒数（2秒）待ってからエフェクトを出して消滅させるコルーチン ===
+    private IEnumerator DestroyAndPlayEffect(float delay)
+    {
+        // アニメーションが終わるまで待つ
+        yield return new WaitForSeconds(delay);
+
+        // 消滅する瞬間にエフェクトを出す
+        if (defeatEffectPrefab != null)
+        {
+            Instantiate(defeatEffectPrefab, transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
+        }
+
+        // オブジェクトを破壊
+        Destroy(gameObject);
+    }
+
     private void ChangeState(EnemyState newState)
     {
         if (newState == EnemyState.find)
@@ -291,16 +372,6 @@ public class EnemyMovement : MonoBehaviour
         stateTimer = 0f;
     }
 
-    private IEnumerator ShowDiscoveryEffect()
-    {
-        if (findEffect != null)
-        {
-            findEffect.SetActive(true);
-            yield return new WaitForSeconds(exclamationDuration);
-            findEffect.SetActive(false);
-        }
-    }
-
     private void Explode()
     {
         if (hasExploded || isSquashed) return;
@@ -309,10 +380,15 @@ public class EnemyMovement : MonoBehaviour
         movement = Vector3.zero;
         currentSpeed = 0f;
 
-        // ★修正：ハバネロの場合のみマテリアルの操作を行う
-        if (_EnemyType == EnemyType.Habanero && spriteRenderer != null && spriteRenderer.material != null)
+        // ★追加：爆発したら点滅の非表示状態を強制的に元に戻す
+        if (_EnemyType == EnemyType.Habanero && spriteRenderer != null)
         {
-            spriteRenderer.material.SetFloat("_FlashAmount", 0f);
+            spriteRenderer.enabled = true;
+            spriteRenderer.color = Color.white;
+            if (spriteRenderer.material != null && spriteRenderer.material.HasProperty("_FlashAmount"))
+            {
+                spriteRenderer.material.SetFloat("_FlashAmount", 0f);
+            }
         }
 
         Debug.Log("ドカーン！ハバネロが爆発した！");
@@ -328,8 +404,81 @@ public class EnemyMovement : MonoBehaviour
             }
         }
 
+        // === ★追加：ハバネロは「爆発した直後（今この瞬間）」にエフェクトを出す ===
+        if (defeatEffectPrefab != null)
+        {
+            // Y軸を少し浮かせて表示
+            Instantiate(defeatEffectPrefab, transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
+        }
+
         animator.SetTrigger("Squash");
-        Destroy(gameObject, 0.5f);
+        // === ★変更：Habanero専用の短い時間（0.5秒）で消滅させる ===
+        Destroy(gameObject, habaneroDestroyDelay);
+    }
+
+    public void Squash()
+    {
+        if (isSquashed || hasExploded) return;
+
+        isSquashed = true;
+        movement = Vector3.zero;
+
+        bool isFleeing = (currentState == EnemyState.Chase && IsFleeingType);
+        animator.SetBool("IsFleeing", isFleeing);
+
+        if (sweatEffect != null) sweatEffect.SetActive(false);
+
+        // ★追加：潰されたら点滅の非表示状態を強制的に元に戻す
+        if (_EnemyType == EnemyType.Habanero && spriteRenderer != null)
+        {
+            spriteRenderer.enabled = true;
+            spriteRenderer.color = Color.white;
+            if (spriteRenderer.material != null && spriteRenderer.material.HasProperty("_FlashAmount"))
+            {
+                spriteRenderer.material.SetFloat("_FlashAmount", 0f);
+            }
+        }
+
+        animator.SetTrigger("Squash");
+
+        // === ★変更：エネミーの種類を見て、待機する時間（Delay）を振り分ける ===
+        float delay = (_EnemyType == EnemyType.Habanero) ? habaneroDestroyDelay : defaultDestroyDelay;
+        StartCoroutine(DestroyAndPlayEffect(delay));
+    }
+
+    public void TakeDamage(int damageAmount)
+    {
+        if (isSquashed || hasExploded) return;
+
+        currentHp -= damageAmount;
+
+        if (_EnemyType == EnemyType.Habanero)
+        {
+            // まだ起爆していなければ、攻撃をきっかけに起爆する
+            if (currentState != EnemyState.Ignite)
+            {
+                ChangeState(EnemyState.Ignite);
+            }
+            // すでに起爆していて、まだノックバックしていなければ、1回だけノックバックする
+            else if (!hasIgniteKnockedBack)
+            {
+                hasIgniteKnockedBack = true;
+                StartCoroutine(KnockbackRoutine());
+            }
+        }
+
+        if (currentHp <= 0)
+        {
+            // 1. スコア加算のポップアップ表示
+            if (scorePopupPrefab != null)
+            {
+                Vector3 spawnPos = transform.position + new Vector3(0, 1.5f, 0);
+                Instantiate(scorePopupPrefab, spawnPos, Quaternion.identity);
+            }
+
+            Squash();
+            AlphaGameManager.instance.AddScore(scoreValue);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -348,71 +497,6 @@ public class EnemyMovement : MonoBehaviour
                 collision.gameObject.GetComponent<PlayerController>().TakeDamage(1);
                 StartCoroutine(KnockbackRoutine());
             }
-        }
-    }
-
-    private IEnumerator KnockbackRoutine()
-    {
-        isKnockedBack = true;
-        animator.SetFloat("Speed", 0);
-
-        Vector3 knockbackDir = (transform.position - playerTarget.position).normalized;
-        knockbackDir.y = 0;
-
-        Vector3 startPos = transform.position;
-        Vector3 targetPos = startPos + knockbackDir * knockbackDistance;
-
-        float elapsedTime = 0f;
-
-        while (elapsedTime < knockbackDuration)
-        {
-            _rigidbody.MovePosition(Vector3.Lerp(startPos, targetPos, elapsedTime / knockbackDuration));
-            elapsedTime += Time.fixedDeltaTime;
-            yield return new WaitForFixedUpdate();
-        }
-
-        isKnockedBack = false;
-    }
-
-    public void Squash()
-    {
-        if (isSquashed || hasExploded) return;
-
-        isSquashed = true;
-        movement = Vector3.zero;
-
-        bool isFleeing = (currentState == EnemyState.Chase && IsFleeingType);
-        animator.SetBool("IsFleeing", isFleeing);
-
-        if (sweatEffect != null) sweatEffect.SetActive(false);
-
-        // ★修正：ハバネロの場合のみマテリアルの操作を行う（ここでMiniTomatoが壊れるのを防ぐ）
-        if (_EnemyType == EnemyType.Habanero && spriteRenderer != null && spriteRenderer.material != null)
-        {
-            spriteRenderer.material.SetFloat("_FlashAmount", 0f);
-        }
-
-        animator.SetTrigger("Squash");
-
-        Destroy(gameObject, 2.0f);
-    }
-
-    public void TakeDamage(int damageAmount)
-    {
-        if (isSquashed || hasExploded) return;
-
-        currentHp -= damageAmount;
-
-        if (currentHp <= 0)
-        {
-            if (scorePopupPrefab != null)
-            {
-                Vector3 spawnPos = transform.position + new Vector3(0, 1.5f, 0);
-                Instantiate(scorePopupPrefab, spawnPos, Quaternion.identity);
-            }
-
-            Squash();
-            AlphaGameManager.instance.AddScore(scoreValue);
         }
     }
 
