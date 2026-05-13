@@ -46,6 +46,8 @@ public class AngelGageUI : MonoBehaviour
 
     public float CurrentGage => _gage;
 
+    public System.Action<bool> OnOverGageChanged;
+
     private void Start()
     {
         InitializeGageUI();
@@ -119,6 +121,7 @@ public class AngelGageUI : MonoBehaviour
     public void UpdateViewAngelWing(bool key)
     {
         WingUI.gameObject.SetActive(key);
+        OnOverGageChanged?.Invoke(key);
     }
 
     async UniTask OnClick()

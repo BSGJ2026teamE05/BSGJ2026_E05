@@ -14,14 +14,38 @@ public class ResultSceneManager : ClapDetectorBase
     [SerializeField] private string gameSceneName = "";
     [SerializeField] private string titleSceneName = "";
 
+    [Header("── BGM/SE ──")]
+    [SerializeField] private AudioSource bgmSource;
+    [SerializeField] private AudioClip gameOverBGM;
+    [SerializeField] private AudioClip gameClearBGM;
+    [SerializeField] private AudioClip SE;
+
     private ClapHandState _leftHand = new ClapHandState();
     private ClapHandState _rightHand = new ClapHandState();
     private InputSystemActions _input;
     private bool _isTransitioning = false;
     private bool _isInputting = false; // 名前入力中フラグ
+    private AudioSource audioSource = null;
+
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        string lastResult = PlayerPrefs.GetString("LastResult", "");
+        if (bgmSource != null)
+        {
+            if (lastResult == "GameClear" && gameClearBGM != null)
+            {
+                bgmSource.clip = gameClearBGM;
+                bgmSource.Play();
+            }
+            else if (lastResult == "GameOver" && gameOverBGM != null)
+            {
+                bgmSource.clip = gameOverBGM;
+                bgmSource.Play();
+            }
+        }
+
         _input = new InputSystemActions();
 
         int lastScore = PlayerPrefs.GetInt("LastScore", 0);
@@ -77,6 +101,7 @@ public class ResultSceneManager : ClapDetectorBase
         if (_isTransitioning) return;
         if (_isInputting) return; // 名前入力中はシーン遷移しない
         _isTransitioning = true;
+        PlaySE(SE);
         CloudTransition transition = FindAnyObjectByType<CloudTransition>();
         transition.PlayTransitionIn(() =>
         {
@@ -89,6 +114,7 @@ public class ResultSceneManager : ClapDetectorBase
         if (_isTransitioning) return;
         if (_isInputting) return; // 名前入力中はシーン遷移しない
         _isTransitioning = true;
+        PlaySE(SE);
         CloudTransition transition = FindAnyObjectByType<CloudTransition>();
         transition.PlayTransitionIn(() =>
         {
@@ -120,4 +146,18 @@ public class ResultSceneManager : ClapDetectorBase
             });
         }
     }
+
+    private void PlaySE(AudioClip clip)
+    {
+        if (audioSource != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
+        else
+        {
+            Debug.Log("audiosource=null");
+        }
+
+    }
+
 }

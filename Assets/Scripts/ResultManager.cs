@@ -6,6 +6,7 @@
 // ---------------------------------------------------------
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -24,6 +25,7 @@ public class ResultManager : MonoBehaviour
     private const int MAX_RANKING = 5;
 
     private ResultSceneManager _resultSceneManager;
+
 
     private void Awake()
     {
@@ -47,7 +49,7 @@ public class ResultManager : MonoBehaviour
     {
         finalScore = score;
 
-        if (FinalScoreText != null) FinalScoreText.text = $"SCORE: {finalScore}";
+        if (FinalScoreText != null) FinalScoreText.text = $"SCORE\n{finalScore}";
 
         rankInIndex = GetRankInIndex(finalScore);
         Debug.Log("rankInIndex: " + rankInIndex);

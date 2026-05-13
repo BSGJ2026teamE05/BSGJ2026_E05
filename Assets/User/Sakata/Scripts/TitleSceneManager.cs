@@ -19,12 +19,16 @@ public class TitleSceneManager : ClapDetectorBase
     [Header("── 演出 ──")]
     [SerializeField] private DoorController doorController;
 
+    [SerializeField] private AudioClip SE;
+
     // 内部状態
     private ClapHandState _leftHand = new ClapHandState();
     private ClapHandState _rightHand = new ClapHandState();
 
     private float _leftClapTime = -999f;
     private float _rightClapTime = -999f;
+
+    private AudioSource audioSource = null;
 
     private InputSystemActions input;
 
@@ -35,6 +39,7 @@ public class TitleSceneManager : ClapDetectorBase
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         input = new InputSystemActions();
     }
 
@@ -86,7 +91,8 @@ public class TitleSceneManager : ClapDetectorBase
     private void OnBothHandsClapped()
     {
         doorController.OpenDoor();
-        // SceneManager.LoadScene(gameSceneName);
+        PlaySE(SE);
+
     }
 
     private void Update()
@@ -107,10 +113,22 @@ public class TitleSceneManager : ClapDetectorBase
             {
                 _leftClapTime = -999f;
                 _rightClapTime = -999f;
-
                 doorController.OpenDoor();
-                // SceneManager.LoadScene(gameSceneName);
+                
             }
         }
+    }
+
+    private void PlaySE(AudioClip clip)
+    {
+        if (audioSource != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
+        else
+        {
+            Debug.Log("audiosource=null");
+        }
+
     }
 }
