@@ -5,6 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e69687702766b8842acc4b12e954c6a6, type: 3}
@@ -56,6 +57,18 @@ PrefabInstance:
       value: PlatformStar_001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e69687702766b8842acc4b12e954c6a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5514759185536104004}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e69687702766b8842acc4b12e954c6a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2816385204011288770}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e69687702766b8842acc4b12e954c6a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6071569678684421706}
   m_SourcePrefab: {fileID: 100100000, guid: e69687702766b8842acc4b12e954c6a6, type: 3}
 --- !u!1 &182376908154869380 stripped
 GameObject:
@@ -70,9 +83,55 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182376908154869380}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1797910952292588805, guid: e69687702766b8842acc4b12e954c6a6, type: 3}
+--- !u!65 &-2816385204011288770
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182376908154869380}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 61.343582, y: 19.19948, z: 58.473686}
+  m_Center: {x: 0.06806183, y: 9.132804, z: -2.9439774}
+--- !u!114 &6071569678684421706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182376908154869380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc1cfe45eecd7247987315f3d435f47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collisionForce: 10
+  _forceDirection: {x: 0, y: 0.5, z: 1}
+  _destroyDelay: 3
+  _gageRecoverAmount: 10
+  _score: 0
