@@ -1251,6 +1251,9 @@ MonoBehaviour:
   lostResetDelay: 0.3
   gameSceneName: BetaIngame
   titleSceneName: BetaTitle
+  bgmSource: {fileID: 0}
+  gameOverBGM: {fileID: 8300000, guid: fca20fa8b7976be418d925a2ad2cf7af, type: 3}
+  gameClearBGM: {fileID: 8300000, guid: 27dd8d4a27f843a4095ece70e2ccb34d, type: 3}
 --- !u!4 &1150578894
 Transform:
   m_ObjectHideFlags: 0

@@ -42,6 +42,8 @@ public class AlphaGameManager : MonoBehaviour
     private bool isGameActive = false;
     public bool IsGameActive => isGameActive;
 
+    private float scoreMultiplier = 1f;
+
     void Awake()
     {
         if (instance == null) instance = this;
@@ -52,6 +54,8 @@ public class AlphaGameManager : MonoBehaviour
     {
         scoreText.text = "Score: 0";
         scoreText.color = Color.blue;
+
+        angelGageUI.OnOverGageChanged += OnOverGageChanged;
 
         CloudTransition cloudTransition = FindAnyObjectByType<CloudTransition>();
 
@@ -86,7 +90,7 @@ public class AlphaGameManager : MonoBehaviour
 
     public void AddScore(int amount)
     {
-        score += amount;
+        score += Mathf.RoundToInt(amount * scoreMultiplier);
         scoreText.text = "Score: " + score;
         scoreText.color = GetScoreColor(score);
     }
@@ -99,9 +103,30 @@ public class AlphaGameManager : MonoBehaviour
         if (score < 100000) return new Color(1f, 0.5f, 0f); // 10000以上100000未満：橙色
         return Color.red;                                    // 100000以上：赤色
     }
+
+    private void OnOverGageChanged(bool isOver)
+    {
+        PlayerMoveImproved player = FindAnyObjectByType<PlayerMoveImproved>();
+        if (isOver)
+        {
+            scoreMultiplier = 1.5f;
+            player?.SetSpeedBoost(1.5f);
+        }
+        else
+        {
+            scoreMultiplier = 1f;
+            player?.SetSpeedBoost(1f);
+        }
+    }
+
     public void RecoverAngelGage(float amount)
     {
         angelGageUI.AddAngleGage(amount);
+    }
+
+    public void DamageAngelGage(float amount)
+    {
+        angelGageUI.SubAngleGage(amount);
     }
 
     public void GameClear()
@@ -151,6 +176,7 @@ public class AlphaGameManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("LastScore", score);
         PlayerPrefs.SetString("LastName", playerName);
+        PlayerPrefs.SetString("LastResult", "GameOver");
         PlayerPrefs.Save();
 
         gameOverUI.SetActive(true);
@@ -167,6 +193,7 @@ public class AlphaGameManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("LastScore", score);
         PlayerPrefs.SetString("LastName", playerName);
+        PlayerPrefs.SetString("LastResult", "GameClear");
         PlayerPrefs.Save();
 
         gameClearUI.SetActive(true);

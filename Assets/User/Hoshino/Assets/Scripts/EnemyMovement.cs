@@ -74,6 +74,10 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float knockbackDistance = 2f;
     [SerializeField] private float knockbackDuration = 0.5f;
 
+    [Header("死亡時ノックバック")]
+    [SerializeField] private float deathKnockbackDistance = 1.5f;
+    [SerializeField] private float deathKnockbackDuration = 0.2f;
+
     [Header("スコア")]
     [SerializeField] private int scoreValue = 10;
     [Tooltip("撃破時に出すスコアのプレハブ（+15など）")]
@@ -323,6 +327,56 @@ public class EnemyMovement : MonoBehaviour
         isKnockedBack = false;
     }
 
+    private IEnumerator DeathKnockbackRoutine()
+    {
+        isKnockedBack = true;
+
+        Vector3 knockbackDir = transform.position - playerTarget.position;
+
+        // 横方向だけ取得
+        knockbackDir.y = 0f;
+        knockbackDir.Normalize();
+
+        Vector3 startPos = transform.position;
+
+        // 飛ぶ先
+        Vector3 endPos = startPos + knockbackDir * deathKnockbackDistance;
+
+        float elapsed = 0f;
+
+        while (elapsed < deathKnockbackDuration)
+        {
+            float t = elapsed / deathKnockbackDuration;
+
+            // 横移動
+            Vector3 pos = Vector3.Lerp(startPos, endPos, t);
+
+            // 放物線
+            float height = Mathf.Sin(t * Mathf.PI) * 2.0f;
+
+            pos.y += height;
+
+            transform.position = pos;
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        // 最終位置
+        transform.position = endPos;
+
+        isKnockedBack = false;
+
+        // ===== 着地後につぶれアニメ =====
+        animator.SetTrigger("Squash");
+
+        float delay = (_EnemyType == EnemyType.Habanero)
+            ? habaneroDestroyDelay
+            : defaultDestroyDelay;
+
+        StartCoroutine(DestroyAndPlayEffect(delay));
+    }
+
     private IEnumerator ShowDiscoveryEffect()
     {
         if (findEffect != null)
@@ -396,11 +450,13 @@ public class EnemyMovement : MonoBehaviour
         if (playerTarget != null)
         {
             float distanceToPlayer = Vector3.Distance(transform.position, playerTarget.position);
-
             if (distanceToPlayer <= explosionRadius)
             {
-                PlayerController pc = playerTarget.GetComponent<PlayerController>();
-                if (pc != null) pc.TakeDamage(explosionDamage);
+                // 天使ゲージ減少
+                if (AlphaGameManager.instance != null)
+                {
+                    AlphaGameManager.instance.DamageAngelGage(explosionDamage);
+                }
             }
         }
 
@@ -439,11 +495,12 @@ public class EnemyMovement : MonoBehaviour
             }
         }
 
-        animator.SetTrigger("Squash");
+        //animator.SetTrigger("Squash");
 
-        // === ★変更：エネミーの種類を見て、待機する時間（Delay）を振り分ける ===
-        float delay = (_EnemyType == EnemyType.Habanero) ? habaneroDestroyDelay : defaultDestroyDelay;
-        StartCoroutine(DestroyAndPlayEffect(delay));
+        //// === ★変更：エネミーの種類を見て、待機する時間（Delay）を振り分ける ===
+        //float delay = (_EnemyType == EnemyType.Habanero) ? habaneroDestroyDelay : defaultDestroyDelay;
+        //StartCoroutine(DestroyAndPlayEffect(delay));
+        StartCoroutine(DeathKnockbackRoutine());
     }
 
     public void TakeDamage(int damageAmount)
