@@ -6,6 +6,7 @@
 // 概要:右手で叩くともう一度プレイ、左手で叩くとタイトルへ
 // ---------------------------------------------------------
 using UnityEngine;
+using UnityEngine.Rendering.LookDev;
 using UnityEngine.SceneManagement;
 
 public class ResultSceneManager : ClapDetectorBase
@@ -19,6 +20,9 @@ public class ResultSceneManager : ClapDetectorBase
     [SerializeField] private AudioClip gameOverBGM;
     [SerializeField] private AudioClip gameClearBGM;
     [SerializeField] private AudioClip SE;
+
+    [SerializeField] private Material gameClearSky;
+    [SerializeField] private Material gameOverSky;
 
     private ClapHandState _leftHand = new ClapHandState();
     private ClapHandState _rightHand = new ClapHandState();
@@ -38,11 +42,13 @@ public class ResultSceneManager : ClapDetectorBase
             {
                 bgmSource.clip = gameClearBGM;
                 bgmSource.Play();
+                RenderSettings.skybox = gameClearSky;
             }
             else if (lastResult == "GameOver" && gameOverBGM != null)
             {
                 bgmSource.clip = gameOverBGM;
                 bgmSource.Play();
+                RenderSettings.skybox = gameOverSky;
             }
         }
 
