@@ -366,18 +366,28 @@ public class PlayerMoveImproved : MonoBehaviour
     // 衝突判定
     // -------------------------------------------------------
 
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Goal"))
         {
             FindFirstObjectByType<AlphaGameManager>().GameClear();
         }
-        else if (collision.gameObject.CompareTag ("Enemy"))
+        else if (collision.gameObject.CompareTag("Enemy"))
         {
-            // ぶつかった相手から「EnemyController」スクリプトを取得する
-            EnemyMovement enemy = collision.gameObject.GetComponent<EnemyMovement>();
+            // ★修正：GetComponent から GetComponentInParent に変更（親子構造のどこにぶつかっても大丈夫なように）
+            EnemyMovement enemy = collision.gameObject.GetComponentInParent<EnemyMovement>();
             Debug.Log("エネミーへ攻撃");
-            enemy.TakeDamage(enemyDamage);
+
+            // ★修正：空っぽ（null）じゃないときだけダメージを与える（安全ガード）
+            if (enemy != null)
+            {
+                enemy.TakeDamage(enemyDamage);
+            }
+            else
+            {
+                Debug.LogWarning($"ぶつかった {collision.gameObject.name} またはその親に EnemyMovement が見つかりません。");
+            }
         }
         else if (collision.gameObject.CompareTag("Deadline"))
         {
@@ -391,7 +401,6 @@ public class PlayerMoveImproved : MonoBehaviour
                 _targetPosition = _startPosition;
                 _targetRotationY = 0f;
             });
-
         }
     }
 

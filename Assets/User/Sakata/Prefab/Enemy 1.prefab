@@ -196,6 +196,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: findEffect
+      value: 
+      objectReference: {fileID: 7663033904565043679}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: sweatEffect
+      value: 
+      objectReference: {fileID: 4102418806649768750}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -251,14 +259,22 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 1611076410997866951}
   animator: {fileID: 8968710674306181397}
+--- !u!1 &4102418806649768750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4218247130776447092, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 172404805250081626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7663033904565043679 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7510898059318895237, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 172404805250081626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &8968710674306181397 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 9084819925801257551, guid: 32895aa830655d341aa28872b224b50b, type: 3}
@@ -640,8 +656,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -800,8 +814,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -910,6 +922,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: findEffect
+      value: 
+      objectReference: {fileID: 7057818520644362933}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: sweatEffect
+      value: 
+      objectReference: {fileID: 3694148082973026372}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -960,8 +980,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -971,6 +989,16 @@ MonoBehaviour:
 --- !u!4 &3035307952290079032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2581105682377515272, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 706635719492337712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3694148082973026372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4218247130776447092, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 706635719492337712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7057818520644362933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7510898059318895237, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 706635719492337712}
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &8637265164488919679 stripped
@@ -1070,6 +1098,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: findEffect
+      value: 
+      objectReference: {fileID: 7121963075160948834}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: sweatEffect
+      value: 
+      objectReference: {fileID: 3485895211321182867}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1125,14 +1161,22 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 2221798982709870714}
   animator: {fileID: 8428937251176786088}
+--- !u!1 &3485895211321182867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4218247130776447092, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 786540398795645671}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7121963075160948834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7510898059318895237, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 786540398795645671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &8428937251176786088 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 9084819925801257551, guid: 32895aa830655d341aa28872b224b50b, type: 3}
@@ -1308,6 +1352,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: findEffect
+      value: 
+      objectReference: {fileID: 7245424920312486554}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: sweatEffect
+      value: 
+      objectReference: {fileID: 3907650051339391083}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1358,8 +1410,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -1369,6 +1419,16 @@ MonoBehaviour:
 --- !u!4 &3414035966102870295 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2581105682377515272, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 914506075450030111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3907650051339391083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4218247130776447092, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 914506075450030111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7245424920312486554 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7510898059318895237, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 914506075450030111}
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &8260509882632172112 stripped
@@ -1506,8 +1566,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -1671,8 +1729,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -1819,8 +1875,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -1840,18 +1894,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1174167895343656912}
     m_Modifications:
-    - target: {fileID: 4593961052053041879, guid: 6507f1fb34785164789ec43652ad9c94, type: 3}
-      propertyPath: maxHp
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593961052053041879, guid: 6507f1fb34785164789ec43652ad9c94, type: 3}
-      propertyPath: moveSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593961052053041879, guid: 6507f1fb34785164789ec43652ad9c94, type: 3}
-      propertyPath: playerTarget
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6226471286353587429, guid: 6507f1fb34785164789ec43652ad9c94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.438
@@ -1895,10 +1937,6 @@ PrefabInstance:
     - target: {fileID: 7598704285942088890, guid: 6507f1fb34785164789ec43652ad9c94, type: 3}
       propertyPath: m_Name
       value: Potato
-      objectReference: {fileID: 0}
-    - target: {fileID: 7598704285942088890, guid: 6507f1fb34785164789ec43652ad9c94, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2135,8 +2173,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -2295,8 +2331,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -2556,6 +2590,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: findEffect
+      value: 
+      objectReference: {fileID: 8639359430252526355}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: sweatEffect
+      value: 
+      objectReference: {fileID: 2689496941430927842}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2567,6 +2609,11 @@ PrefabInstance:
 --- !u!54 &857384225413446411 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1458937806218486429, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 2294929658220698006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2689496941430927842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4218247130776447092, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 2294929658220698006}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &4325944576546863262 stripped
@@ -2611,8 +2658,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -2622,6 +2667,11 @@ MonoBehaviour:
 --- !u!95 &7046719220386010073 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 9084819925801257551, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 2294929658220698006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8639359430252526355 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7510898059318895237, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 2294929658220698006}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2316227412805768738
@@ -2917,8 +2967,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -3032,6 +3080,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: findEffect
+      value: 
+      objectReference: {fileID: 5610021676340188036}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: sweatEffect
+      value: 
+      objectReference: {fileID: 2264435860019452277}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3077,8 +3133,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -3090,9 +3144,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2581105682377515272, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 2731113217217540353}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2264435860019452277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4218247130776447092, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 2731113217217540353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &3592162986349450140 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1458937806218486429, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 2731113217217540353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5610021676340188036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7510898059318895237, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 2731113217217540353}
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &6626236058695007054 stripped
@@ -3320,8 +3384,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -3541,8 +3603,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -3734,6 +3794,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: findEffect
+      value: 
+      objectReference: {fileID: 4872742290732022836}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: sweatEffect
+      value: 
+      objectReference: {fileID: 1236622776265668293}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3784,17 +3852,25 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 4583631438109162540}
   animator: {fileID: 6174618848042620158}
+--- !u!1 &1236622776265668293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4218247130776447092, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 3144467699707764401}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &4583631438109162540 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1458937806218486429, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 3144467699707764401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4872742290732022836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7510898059318895237, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 3144467699707764401}
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &6174618848042620158 stripped
@@ -4005,8 +4081,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -4120,6 +4194,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: findEffect
+      value: 
+      objectReference: {fileID: 5090362648189160079}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: sweatEffect
+      value: 
+      objectReference: {fileID: 1446413373844045950}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4170,17 +4252,25 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 4226549163429366423}
   animator: {fileID: 5803815766551863877}
+--- !u!1 &1446413373844045950 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4218247130776447092, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 3357583220586899466}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &4226549163429366423 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1458937806218486429, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 3357583220586899466}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5090362648189160079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7510898059318895237, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 3357583220586899466}
   m_PrefabAsset: {fileID: 0}
 --- !u!95 &5803815766551863877 stripped
@@ -4396,8 +4486,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -4506,6 +4594,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: findEffect
+      value: 
+      objectReference: {fileID: 6802957557685244240}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: sweatEffect
+      value: 
+      objectReference: {fileID: 927421900269902753}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4514,6 +4610,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8645013878089437041}
   m_SourcePrefab: {fileID: 100100000, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+--- !u!1 &927421900269902753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4218247130776447092, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 3915004834230367189}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1550656462163170013 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2581105682377515272, guid: 32895aa830655d341aa28872b224b50b, type: 3}
@@ -4556,8 +4657,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -4572,6 +4671,11 @@ Rigidbody:
 --- !u!95 &5208175138393733530 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 9084819925801257551, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 3915004834230367189}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6802957557685244240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7510898059318895237, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 3915004834230367189}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4054008751835268188
@@ -4711,8 +4815,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -4871,8 +4973,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -5102,22 +5202,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Habanero
       objectReference: {fileID: 0}
-    - target: {fileID: 1941170182445660688, guid: 6f036119874948e47b9740484f0afb27, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 2520639145947659507, guid: 6f036119874948e47b9740484f0afb27, type: 3}
-      propertyPath: maxHp
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2520639145947659507, guid: 6f036119874948e47b9740484f0afb27, type: 3}
-      propertyPath: moveSpeed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2520639145947659507, guid: 6f036119874948e47b9740484f0afb27, type: 3}
-      propertyPath: playerTarget
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5220,6 +5304,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: findEffect
+      value: 
+      objectReference: {fileID: 3234027673971428020}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: sweatEffect
+      value: 
+      objectReference: {fileID: 9103951467382538309}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5228,6 +5320,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 894851425344620069}
   m_SourcePrefab: {fileID: 100100000, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+--- !u!1 &3234027673971428020 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7510898059318895237, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 4962266355308308529}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &4237396195825181310 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 9084819925801257551, guid: 32895aa830655d341aa28872b224b50b, type: 3}
@@ -5275,8 +5372,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -5286,6 +5381,11 @@ MonoBehaviour:
 --- !u!4 &7425431949148981561 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2581105682377515272, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 4962266355308308529}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9103951467382538309 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4218247130776447092, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 4962266355308308529}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4998103280764898141
@@ -5423,8 +5523,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -5576,8 +5674,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -5731,8 +5827,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -5969,8 +6063,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -6129,8 +6221,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -6289,8 +6379,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -6449,8 +6537,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -6609,8 +6695,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -6769,8 +6853,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -6917,8 +6999,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -7100,6 +7180,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: findEffect
+      value: 
+      objectReference: {fileID: 4485354315279603958}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: sweatEffect
+      value: 
+      objectReference: {fileID: 7820788185618944519}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7113,9 +7201,19 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 9084819925801257551, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 6197863490135145075}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4485354315279603958 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7510898059318895237, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 6197863490135145075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &4772703130482923758 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1458937806218486429, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 6197863490135145075}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7820788185618944519 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4218247130776447092, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 6197863490135145075}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &8490079080329550715 stripped
@@ -7160,8 +7258,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -7320,8 +7416,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -7336,41 +7430,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1174167895343656912}
     m_Modifications:
-    - target: {fileID: 728585750583198543, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 728585750583198543, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 728585750583198543, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 0b6e37a82230a464c91c6aeec038da46, type: 3}
-    - target: {fileID: 728585750583198543, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2368117359318476982, guid: 32895aa830655d341aa28872b224b50b, type: 3}
       propertyPath: m_Name
       value: miniTomato
-      objectReference: {fileID: 0}
-    - target: {fileID: 2368117359318476982, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 2581105682377515272, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.85858
-      objectReference: {fileID: 0}
-    - target: {fileID: 2581105682377515272, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.85858
-      objectReference: {fileID: 0}
-    - target: {fileID: 2581105682377515272, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.85858
       objectReference: {fileID: 0}
     - target: {fileID: 2581105682377515272, guid: 32895aa830655d341aa28872b224b50b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7412,82 +7474,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-      propertyPath: maxHp
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-      propertyPath: moveSpeed
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2368117359318476982, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3157986542820794560}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32895aa830655d341aa28872b224b50b, type: 3}
---- !u!95 &2626091755052211145 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9084819925801257551, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-  m_PrefabInstance: {fileID: 6512771444198232454}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &5646725768302310171 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 1458937806218486429, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-  m_PrefabInstance: {fileID: 6512771444198232454}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8769615605648388238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2581105682377515272, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 6512771444198232454}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8844855462401898800 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2368117359318476982, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-  m_PrefabInstance: {fileID: 6512771444198232454}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3157986542820794560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8844855462401898800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b73a0c2f7116f7546a8611f20405556e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _EnemyType: 0
-  findEffect: {fileID: 0}
-  sweatEffect: {fileID: 0}
-  exclamationDuration: 1
-  defeatEffectPrefab: {fileID: 0}
-  igniteFlashColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  spriteRenderer: {fileID: 0}
-  maxHp: 50
-  moveSpeed: 5
-  playerTarget: {fileID: 0}
-  changeDirectionInterval: 2
-  detectionRange: 10
-  chaseDuration: 5
-  cooldownDuration: 1.5
-  igniteRadius: 0.5
-  explosionRadius: 3
-  explosionDamage: 1
-  explosionDelay: 5
-  defaultDestroyDelay: 0.75
-  habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
-  deathKnockbackDistance: 1.5
-  deathKnockbackDuration: 0.2
-  scoreValue: 10
-  scorePopupPrefab: {fileID: 0}
-  _rigidbody: {fileID: 5646725768302310171}
-  animator: {fileID: 2626091755052211145}
 --- !u!1001 &6611707526426553977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7640,8 +7636,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -7795,8 +7789,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -8094,8 +8086,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -8360,6 +8350,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: findEffect
+      value: 
+      objectReference: {fileID: 143772240106127814}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: sweatEffect
+      value: 
+      objectReference: {fileID: 6001293344527125303}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8368,6 +8366,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 5531766705494799081}
   m_SourcePrefab: {fileID: 100100000, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+--- !u!1 &143772240106127814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7510898059318895237, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 7620893121291297603}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1716182054628976908 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 9084819925801257551, guid: 32895aa830655d341aa28872b224b50b, type: 3}
@@ -8410,8 +8413,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -8421,6 +8422,11 @@ MonoBehaviour:
 --- !u!4 &5337667278094959179 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2581105682377515272, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 7620893121291297603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6001293344527125303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4218247130776447092, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 7620893121291297603}
   m_PrefabAsset: {fileID: 0}
 --- !u!54 &9078669567244583390 stripped
@@ -8563,8 +8569,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -8711,8 +8715,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -8816,6 +8818,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: findEffect
+      value: 
+      objectReference: {fileID: 463484049976981660}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: sweatEffect
+      value: 
+      objectReference: {fileID: 6113786984181658221}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8824,6 +8834,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 6912935471497027844}
   m_SourcePrefab: {fileID: 100100000, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+--- !u!1 &463484049976981660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7510898059318895237, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 7949611679924378137}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1171342872506929238 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 9084819925801257551, guid: 32895aa830655d341aa28872b224b50b, type: 3}
@@ -8871,14 +8886,17 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 8821849633005910148}
   animator: {fileID: 1171342872506929238}
+--- !u!1 &6113786984181658221 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4218247130776447092, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 7949611679924378137}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &8821849633005910148 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1458937806218486429, guid: 32895aa830655d341aa28872b224b50b, type: 3}
@@ -8976,6 +8994,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: findEffect
+      value: 
+      objectReference: {fileID: 2029210869937299708}
+    - target: {fileID: 3499783367499786347, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+      propertyPath: sweatEffect
+      value: 
+      objectReference: {fileID: 5665277779644213773}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8987,6 +9013,16 @@ PrefabInstance:
 --- !u!95 &722518655704795190 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 9084819925801257551, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 8364633069049004665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2029210869937299708 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7510898059318895237, guid: 32895aa830655d341aa28872b224b50b, type: 3}
+  m_PrefabInstance: {fileID: 8364633069049004665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5665277779644213773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4218247130776447092, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 8364633069049004665}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &6109162875039509199 stripped
@@ -9026,8 +9062,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -9264,8 +9298,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -9412,8 +9444,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
@@ -9577,8 +9607,6 @@ MonoBehaviour:
   explosionDelay: 5
   defaultDestroyDelay: 0.75
   habaneroDestroyDelay: 2
-  knockbackDistance: 2
-  knockbackDuration: 0.5
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
