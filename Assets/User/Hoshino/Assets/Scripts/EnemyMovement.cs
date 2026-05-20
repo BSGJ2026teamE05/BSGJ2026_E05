@@ -70,9 +70,9 @@ public class EnemyMovement : MonoBehaviour
     // === ★追加：起爆中のノックバックを1回だけに制限するフラグ ===
     private bool hasIgniteKnockedBack = false;
 
-    [Header("ノックバック設定")]
-    [SerializeField] private float knockbackDistance = 2f;
-    [SerializeField] private float knockbackDuration = 0.5f;
+    //[Header("ノックバック設定")]
+    //[SerializeField] private float knockbackDistance = 2f;
+    //[SerializeField] private float knockbackDuration = 0.5f;
 
     [Header("死亡時ノックバック")]
     [SerializeField] private float deathKnockbackDistance = 1.5f;
@@ -80,6 +80,7 @@ public class EnemyMovement : MonoBehaviour
 
     [Header("スコア")]
     [SerializeField] private int scoreValue = 10;
+    [SerializeField] private int gageRecoverAmount = 10;
     [Tooltip("撃破時に出すスコアのプレハブ（+15など）")]
     [SerializeField] private GameObject scorePopupPrefab;
 
@@ -301,31 +302,31 @@ public class EnemyMovement : MonoBehaviour
         animator.SetBool("IsFleeing", isFleeing);
     }
 
-    private IEnumerator KnockbackRoutine()
-    {
-        isKnockedBack = true;
-        animator.SetFloat("Speed", 0);
+    //private IEnumerator KnockbackRoutine()
+    //{
+    //    isKnockedBack = true;
+    //    animator.SetFloat("Speed", 0);
 
-        Vector3 knockbackDir = (transform.position - playerTarget.position).normalized;
-        knockbackDir.y = 0;
+    //    Vector3 knockbackDir = (transform.position - playerTarget.position).normalized;
+    //    knockbackDir.y = 0;
 
-        Vector3 startPos = transform.position;
-        Vector3 targetPos = startPos + knockbackDir * knockbackDistance;
+    //    Vector3 startPos = transform.position;
+    //    //Vector3 targetPos = startPos + knockbackDir * knockbackDistance;
 
-        float elapsedTime = 0f;
+    //    float elapsedTime = 0f;
 
-        while (elapsedTime < knockbackDuration)
-        {
-            // === ★追加：吹き飛んでいる最中に爆発したり倒されたりしたら強制終了する ===
-            if (isSquashed || hasExploded) break;
+    //    while (elapsedTime < knockbackDuration)
+    //    {
+    //        // === ★追加：吹き飛んでいる最中に爆発したり倒されたりしたら強制終了する ===
+    //        if (isSquashed || hasExploded) break;
 
-            _rigidbody.MovePosition(Vector3.Lerp(startPos, targetPos, elapsedTime / knockbackDuration));
-            elapsedTime += Time.fixedDeltaTime;
-            yield return new WaitForFixedUpdate();
-        }
+    //        _rigidbody.MovePosition(Vector3.Lerp(startPos, targetPos, elapsedTime / knockbackDuration));
+    //        elapsedTime += Time.fixedDeltaTime;
+    //        yield return new WaitForFixedUpdate();
+    //    }
 
-        isKnockedBack = false;
-    }
+    //    isKnockedBack = false;
+    //}
 
     private IEnumerator DeathKnockbackRoutine()
     {
@@ -520,7 +521,7 @@ public class EnemyMovement : MonoBehaviour
             else if (!hasIgniteKnockedBack)
             {
                 hasIgniteKnockedBack = true;
-                StartCoroutine(KnockbackRoutine());
+                //StartCoroutine(KnockbackRoutine());
             }
         }
 
@@ -535,6 +536,8 @@ public class EnemyMovement : MonoBehaviour
 
             Squash();
             AlphaGameManager.instance.AddScore(scoreValue);
+            AlphaGameManager.instance.RecoverAngelGage(gageRecoverAmount);
+
         }
     }
 
@@ -551,8 +554,24 @@ public class EnemyMovement : MonoBehaviour
             }
             else
             {
-                collision.gameObject.GetComponent<PlayerController>().TakeDamage(1);
-                StartCoroutine(KnockbackRoutine());
+                PlayerController player = collision.gameObject.GetComponentInParent<PlayerController>();
+
+                if (player != null)
+                {
+                    player.TakeDamage(1);
+                }
+                else
+                {
+                    PlayerMoveImproved playerMove = collision.gameObject.GetComponentInParent<PlayerMoveImproved>();
+                    if (playerMove != null)
+                    {
+                        Debug.LogWarning("PlayerController はありませんが、PlayerMoveImproved を検出しました。");
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"プレイヤーにぶつかりましたが、親オブジェクトにダメージを処理するスクリプトが見つかりません: {collision.gameObject.name}");
+                    }
+                }
             }
         }
     }

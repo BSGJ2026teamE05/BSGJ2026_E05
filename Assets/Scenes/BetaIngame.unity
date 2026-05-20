@@ -259,7 +259,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6071569678684421706, guid: 3427a7dbd73123240b28f3928017034f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -545,6 +546,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2695a01f49f55514cb704e378e41ab83, type: 3}
+--- !u!212 &42225960 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1028430947164887239, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+  m_PrefabInstance: {fileID: 1196130349}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &42464760 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4706220218044689892, guid: ec824a14830595b43bea25b579291d93, type: 3}
@@ -2770,6 +2776,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1943701436651702300, guid: 44cd42c3efe82e046b2e37ddb899bd88, type: 3}
   m_PrefabInstance: {fileID: 1509000277}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &142548429 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5504293711925981901, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+  m_PrefabInstance: {fileID: 1196130349}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &142684181
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2975,6 +2986,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7156276d23dd980459f6e635c51d0348, type: 3}
+--- !u!212 &161287662 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4934080620596941089, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+  m_PrefabInstance: {fileID: 1196130349}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &162088759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8346139860629291646, guid: 7193bf8721103b448bbe633a1fe456bb, type: 3}
@@ -5770,6 +5786,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cca7ca86afe5ebc418c53ca8f6a4713b, type: 3}
+--- !u!212 &316772679 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7344090747485180591, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+  m_PrefabInstance: {fileID: 1196130349}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &317044604 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2694179848322785852, guid: 223d3016030b1814bbf7d40248078963, type: 3}
@@ -7291,6 +7312,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b01f039bb729c3419c43cb8a1e167d8, type: 3}
+--- !u!212 &428773692 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8200728261082141633, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+  m_PrefabInstance: {fileID: 1196130349}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &429242501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10156,7 +10182,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bone_006
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -2609836144943390553, guid: 8b99e714fa9dc6b459da438ec17fd867, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11256,6 +11283,7 @@ GameObject:
   - component: {fileID: 656694025}
   - component: {fileID: 656694023}
   - component: {fileID: 656694026}
+  - component: {fileID: 656694027}
   m_Layer: 0
   m_Name: Gamemanager
   m_TagString: Untagged
@@ -11400,6 +11428,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &656694027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656694022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32eab12c99e22534cb7a918f485ebef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 1917478685}
+  titleSceneName: BetaTitle
 --- !u!4 &658903782 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2694179848322785852, guid: 223d3016030b1814bbf7d40248078963, type: 3}
@@ -12569,939 +12611,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3397995363979230377, guid: f0e467273026e3244b94bd6af701443a, type: 3}
   m_PrefabInstance: {fileID: 642884889}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &740538087
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 165559608990636489, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 265231355245675196, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 265231355245675196, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 304565847612629484, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 487899804087212990, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 487899804087212990, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 506243882222533556, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 506243882222533556, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 506243882222533556, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 635853162293652535, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 635853162293652535, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 894851425344620069, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 940264919455055499, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 940264919455055499, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000798114401215919, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1151468052496403513, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: m_Name
-      value: Enemy 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -12.78
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 10.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 60.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1185003381649009070, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1353210671094150582, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1378997967231269594, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1378997967231269594, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1378997967231269594, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1439905419595397225, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1439905419595397225, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1439905419595397225, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1502658974127218435, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1520502768987459667, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1520502768987459667, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1546818720696179050, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1546818720696179050, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1572910799259918059, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1595850384929245683, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1595850384929245683, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1599322963278891228, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1599322963278891228, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1599322963278891228, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1758504125495235892, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1758504125495235892, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1758504125495235892, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784350931801192034, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784350931801192034, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1891999938570829788, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1904251773637369946, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959873808804378330, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1959873808804378330, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2071688832678281044, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2071688832678281044, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2164316381892427873, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2164316381892427873, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2214549617255744868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2214549617255744868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2214549617255744868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298493546888865013, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298493546888865013, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2298493546888865013, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2302574896250712357, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2309474116866316183, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2309474116866316183, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2455122793792246863, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2481180333135091672, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2481180333135091672, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2581073193989954904, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2581073193989954904, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2718868444577298654, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2718868444577298654, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2718868444577298654, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2780015720196552762, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2780015720196552762, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2780015720196552762, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2810255760819738986, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2810255760819738986, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 2810255760819738986, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2902627107319411023, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055171071027060679, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055171071027060679, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055171071027060679, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3077155395805116032, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 3077155395805116032, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090211807963087920, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090211807963087920, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3157986542820794560, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172852973049755296, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3344207908987678102, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3354852182255164374, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3354852182255164374, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 3354852182255164374, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3362151170016125132, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3407114076456088061, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 3407114076456088061, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3482154779565472894, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3671906147933440817, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 3671906147933440817, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3757223714960299817, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4035385527088685808, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4035385527088685808, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4103779167852353659, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4122007778172340068, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4122007778172340068, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4134237522997061723, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4134237522997061723, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4214208430359988876, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4214208430359988876, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4244999326232177119, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4291528413488804437, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4291528413488804437, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4291528413488804437, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332814686166159476, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4332814686166159476, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4349005628313037250, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4349005628313037250, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4349005628313037250, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4408606248260937855, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4408606248260937855, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4408606248260937855, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4937246031957191186, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4937246031957191186, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5064704751718951534, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5064704751718951534, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5064704751718951534, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5066039841265314384, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5183710241828279740, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5198647229927042897, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5198647229927042897, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5204533381679646449, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5204533381679646449, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359573981419319268, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359573981419319268, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5531766705494799081, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5700983658631419453, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5716710188248845354, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5806961155626726381, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6055646672756253133, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6055646672756253133, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6140567443316645441, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6223076700941366956, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6281709879331962442, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6320735361717506086, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6320735361717506086, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6320735361717506086, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436597714240932648, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436597714240932648, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6445287834424464684, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6445287834424464684, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6445287834424464684, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6649918990342008293, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6828314491601908338, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6828314491601908338, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6834582454626183003, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6834582454626183003, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6834978462660621533, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6834978462660621533, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6882412203486081559, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912935471497027844, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6949925646851602477, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 6949925646851602477, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6983649466995930428, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7001978622982556625, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7001978622982556625, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7001978622982556625, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7003893721322835694, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7003893721322835694, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7008101380611450246, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7008101380611450246, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7008101380611450246, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7011562161591846473, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7011562161591846473, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7056177439330150868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7056177439330150868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7087643818289397926, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7087643818289397926, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7087643818289397926, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7218267191853694409, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7235977573648413010, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7235977573648413010, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7270743877643638842, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7270743877643638842, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7307611981662143332, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7325734713990262357, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7336635218394909137, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7336635218394909137, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7359470824970091904, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7374284261715705735, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7374284261715705735, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7374284261715705735, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7391071627378170936, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7391117752812638744, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7391117752812638744, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412440743434011945, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7412440743434011945, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7522178663530446352, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7617615996858435809, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7706707283553253869, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7706707283553253869, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7732744989499409938, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7732744989499409938, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7829580246587863516, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 7829580246587863516, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7829580246587863516, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7853752557346488188, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7900020002791581500, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7900020002791581500, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8278665166578973506, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8296513615814941653, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8380135246739472474, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8380135246739472474, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8488561947557618486, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8488561947557618486, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8507171411446175465, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8570601367166991595, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8586108959554234775, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8586108959554234775, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8597322358547085497, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8597322358547085497, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8597322358547085497, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8645013878089437041, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8760314216211422997, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8760314216211422997, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8963868905507032615, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 9059915659943130771, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: scoreValue
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 9059915659943130771, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDistance
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 9059915659943130771, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
-      propertyPath: deathKnockbackDuration
-      value: 0.8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
 --- !u!1001 &740576105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16183,6 +15292,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8046999384069601460, guid: 23b40b2eefc1b5647b43d5eef20c2430, type: 3}
   m_PrefabInstance: {fileID: 1739053398}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &868226231 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3844450024078244157, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+  m_PrefabInstance: {fileID: 1196130349}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &869142752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16936,6 +16050,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a7d37c9d478d364492cdfdb40489610, type: 3}
+--- !u!212 &929474153 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2640388785722884981, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+  m_PrefabInstance: {fileID: 1196130349}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &933312772
 GameObject:
   m_ObjectHideFlags: 0
@@ -21855,6 +20974,1848 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 258cf905ed725ee449e45d0de78d0605, type: 3}
+--- !u!1001 &1196130349
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 265231355245675196, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 265231355245675196, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 265231355245675196, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 265231355245675196, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 265231355245675196, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 487899804087212990, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 487899804087212990, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 487899804087212990, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 487899804087212990, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 487899804087212990, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 506243882222533556, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 506243882222533556, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: igniteRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 506243882222533556, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 506243882222533556, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 506243882222533556, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 316772679}
+    - target: {fileID: 506243882222533556, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 506243882222533556, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 506243882222533556, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 506243882222533556, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 506243882222533556, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4440374871733114721, guid: 591ccf89271f91a46ad7bb7cf99a143a, type: 3}
+    - target: {fileID: 506243882222533556, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 635853162293652535, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 635853162293652535, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 635853162293652535, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 635853162293652535, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 635853162293652535, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 940264919455055499, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 940264919455055499, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 940264919455055499, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 940264919455055499, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 940264919455055499, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151468052496403513, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: m_Name
+      value: Enemy 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 60.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1174167895343656912, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378997967231269594, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378997967231269594, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: igniteRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378997967231269594, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 1378997967231269594, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378997967231269594, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 428773692}
+    - target: {fileID: 1378997967231269594, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378997967231269594, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378997967231269594, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 1378997967231269594, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378997967231269594, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4440374871733114721, guid: 591ccf89271f91a46ad7bb7cf99a143a, type: 3}
+    - target: {fileID: 1378997967231269594, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439905419595397225, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439905419595397225, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 1439905419595397225, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 1439905419595397225, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439905419595397225, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4131683519261853172, guid: 5633a56263c186b47b983ff5571232ef, type: 3}
+    - target: {fileID: 1439905419595397225, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1520502768987459667, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 1520502768987459667, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 1520502768987459667, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1520502768987459667, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 1520502768987459667, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546818720696179050, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 1546818720696179050, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 1546818720696179050, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1546818720696179050, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 1546818720696179050, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595850384929245683, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 1595850384929245683, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 1595850384929245683, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595850384929245683, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 1595850384929245683, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1599322963278891228, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1599322963278891228, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 1599322963278891228, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 1599322963278891228, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1599322963278891228, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4131683519261853172, guid: 5633a56263c186b47b983ff5571232ef, type: 3}
+    - target: {fileID: 1599322963278891228, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758504125495235892, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758504125495235892, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 1758504125495235892, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 1758504125495235892, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758504125495235892, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4131683519261853172, guid: 5633a56263c186b47b983ff5571232ef, type: 3}
+    - target: {fileID: 1758504125495235892, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784350931801192034, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 1784350931801192034, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 1784350931801192034, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784350931801192034, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 1784350931801192034, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959873808804378330, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 1959873808804378330, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 1959873808804378330, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959873808804378330, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 1959873808804378330, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071688832678281044, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 2071688832678281044, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 2071688832678281044, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2071688832678281044, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 2071688832678281044, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2164316381892427873, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 2164316381892427873, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 2164316381892427873, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2164316381892427873, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 2164316381892427873, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214549617255744868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214549617255744868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 2214549617255744868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 2214549617255744868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2214549617255744868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4131683519261853172, guid: 5633a56263c186b47b983ff5571232ef, type: 3}
+    - target: {fileID: 2214549617255744868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298493546888865013, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298493546888865013, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 2298493546888865013, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 2298493546888865013, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2298493546888865013, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4131683519261853172, guid: 5633a56263c186b47b983ff5571232ef, type: 3}
+    - target: {fileID: 2298493546888865013, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309474116866316183, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 2309474116866316183, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 2309474116866316183, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309474116866316183, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 2309474116866316183, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481180333135091672, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 2481180333135091672, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 2481180333135091672, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481180333135091672, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 2481180333135091672, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581073193989954904, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 2581073193989954904, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 2581073193989954904, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581073193989954904, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 2581073193989954904, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2718868444577298654, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2718868444577298654, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 2718868444577298654, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 2718868444577298654, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2718868444577298654, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4131683519261853172, guid: 5633a56263c186b47b983ff5571232ef, type: 3}
+    - target: {fileID: 2718868444577298654, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2780015720196552762, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2780015720196552762, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: igniteRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2780015720196552762, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 2780015720196552762, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2780015720196552762, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 161287662}
+    - target: {fileID: 2780015720196552762, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2780015720196552762, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2780015720196552762, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 2780015720196552762, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2780015720196552762, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4440374871733114721, guid: 591ccf89271f91a46ad7bb7cf99a143a, type: 3}
+    - target: {fileID: 2780015720196552762, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2810255760819738986, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2810255760819738986, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 2810255760819738986, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 2810255760819738986, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2810255760819738986, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4131683519261853172, guid: 5633a56263c186b47b983ff5571232ef, type: 3}
+    - target: {fileID: 2810255760819738986, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055171071027060679, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055171071027060679, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 3055171071027060679, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 3055171071027060679, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055171071027060679, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4131683519261853172, guid: 5633a56263c186b47b983ff5571232ef, type: 3}
+    - target: {fileID: 3055171071027060679, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077155395805116032, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 3077155395805116032, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 3077155395805116032, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3077155395805116032, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 3077155395805116032, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090211807963087920, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 3090211807963087920, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 3090211807963087920, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090211807963087920, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 3090211807963087920, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354852182255164374, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354852182255164374, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: igniteRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354852182255164374, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 3354852182255164374, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354852182255164374, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 142548429}
+    - target: {fileID: 3354852182255164374, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354852182255164374, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354852182255164374, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 3354852182255164374, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354852182255164374, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4440374871733114721, guid: 591ccf89271f91a46ad7bb7cf99a143a, type: 3}
+    - target: {fileID: 3354852182255164374, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3407114076456088061, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 3407114076456088061, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 3407114076456088061, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3407114076456088061, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 3407114076456088061, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3671906147933440817, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 3671906147933440817, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 3671906147933440817, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3671906147933440817, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 3671906147933440817, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035385527088685808, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 4035385527088685808, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 4035385527088685808, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4035385527088685808, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 4035385527088685808, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4122007778172340068, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 4122007778172340068, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 4122007778172340068, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4122007778172340068, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 4122007778172340068, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134237522997061723, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 4134237522997061723, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 4134237522997061723, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134237522997061723, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 4134237522997061723, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214208430359988876, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 4214208430359988876, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 4214208430359988876, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214208430359988876, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 4214208430359988876, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291528413488804437, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291528413488804437, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 4291528413488804437, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 4291528413488804437, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291528413488804437, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4131683519261853172, guid: 5633a56263c186b47b983ff5571232ef, type: 3}
+    - target: {fileID: 4291528413488804437, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4332814686166159476, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 4332814686166159476, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 4332814686166159476, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4332814686166159476, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 4332814686166159476, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4349005628313037250, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4349005628313037250, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: igniteRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4349005628313037250, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 4349005628313037250, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4349005628313037250, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 161287662}
+    - target: {fileID: 4349005628313037250, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4349005628313037250, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4349005628313037250, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 4349005628313037250, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4349005628313037250, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4440374871733114721, guid: 591ccf89271f91a46ad7bb7cf99a143a, type: 3}
+    - target: {fileID: 4349005628313037250, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4408606248260937855, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4408606248260937855, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 4408606248260937855, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 4408606248260937855, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4408606248260937855, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4131683519261853172, guid: 5633a56263c186b47b983ff5571232ef, type: 3}
+    - target: {fileID: 4408606248260937855, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937246031957191186, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 4937246031957191186, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 4937246031957191186, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937246031957191186, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 4937246031957191186, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064704751718951534, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064704751718951534, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: igniteRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064704751718951534, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 5064704751718951534, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064704751718951534, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 929474153}
+    - target: {fileID: 5064704751718951534, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064704751718951534, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064704751718951534, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 5064704751718951534, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064704751718951534, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4440374871733114721, guid: 591ccf89271f91a46ad7bb7cf99a143a, type: 3}
+    - target: {fileID: 5064704751718951534, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198647229927042897, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 5198647229927042897, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 5198647229927042897, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198647229927042897, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 5198647229927042897, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204533381679646449, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 5204533381679646449, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 5204533381679646449, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5204533381679646449, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 5204533381679646449, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359573981419319268, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 5359573981419319268, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 5359573981419319268, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359573981419319268, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 5359573981419319268, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055646672756253133, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 6055646672756253133, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 6055646672756253133, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055646672756253133, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 6055646672756253133, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6320735361717506086, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6320735361717506086, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: igniteRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6320735361717506086, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 6320735361717506086, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6320735361717506086, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 868226231}
+    - target: {fileID: 6320735361717506086, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6320735361717506086, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6320735361717506086, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 6320735361717506086, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6320735361717506086, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4440374871733114721, guid: 591ccf89271f91a46ad7bb7cf99a143a, type: 3}
+    - target: {fileID: 6320735361717506086, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436597714240932648, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 6436597714240932648, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 6436597714240932648, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436597714240932648, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 6436597714240932648, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445287834424464684, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445287834424464684, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 6445287834424464684, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 6445287834424464684, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445287834424464684, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4131683519261853172, guid: 5633a56263c186b47b983ff5571232ef, type: 3}
+    - target: {fileID: 6445287834424464684, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828314491601908338, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 6828314491601908338, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 6828314491601908338, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828314491601908338, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 6828314491601908338, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834582454626183003, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 6834582454626183003, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 6834582454626183003, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834582454626183003, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 6834582454626183003, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834978462660621533, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 6834978462660621533, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 6834978462660621533, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834978462660621533, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 6834978462660621533, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949925646851602477, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 6949925646851602477, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 6949925646851602477, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949925646851602477, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 6949925646851602477, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001978622982556625, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001978622982556625, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7001978622982556625, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7001978622982556625, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7001978622982556625, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4131683519261853172, guid: 5633a56263c186b47b983ff5571232ef, type: 3}
+    - target: {fileID: 7001978622982556625, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7003893721322835694, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7003893721322835694, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7003893721322835694, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7003893721322835694, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 7003893721322835694, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008101380611450246, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008101380611450246, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: igniteRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008101380611450246, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7008101380611450246, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008101380611450246, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 1854608731}
+    - target: {fileID: 7008101380611450246, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008101380611450246, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008101380611450246, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7008101380611450246, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008101380611450246, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4440374871733114721, guid: 591ccf89271f91a46ad7bb7cf99a143a, type: 3}
+    - target: {fileID: 7008101380611450246, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011562161591846473, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7011562161591846473, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7011562161591846473, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011562161591846473, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 7011562161591846473, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056177439330150868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7056177439330150868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7056177439330150868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056177439330150868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 7056177439330150868, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087643818289397926, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087643818289397926, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7087643818289397926, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7087643818289397926, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087643818289397926, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4131683519261853172, guid: 5633a56263c186b47b983ff5571232ef, type: 3}
+    - target: {fileID: 7087643818289397926, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7235977573648413010, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7235977573648413010, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7235977573648413010, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7235977573648413010, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 7235977573648413010, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270743877643638842, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7270743877643638842, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7270743877643638842, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270743877643638842, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 7270743877643638842, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7336635218394909137, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7336635218394909137, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7336635218394909137, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7336635218394909137, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 7336635218394909137, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374284261715705735, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374284261715705735, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: igniteRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374284261715705735, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7374284261715705735, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374284261715705735, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 1196130350}
+    - target: {fileID: 7374284261715705735, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374284261715705735, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionRadius
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374284261715705735, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7374284261715705735, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374284261715705735, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4440374871733114721, guid: 591ccf89271f91a46ad7bb7cf99a143a, type: 3}
+    - target: {fileID: 7374284261715705735, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391117752812638744, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7391117752812638744, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7391117752812638744, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7391117752812638744, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 7391117752812638744, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412440743434011945, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7412440743434011945, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7412440743434011945, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412440743434011945, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 7412440743434011945, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706707283553253869, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7706707283553253869, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7706707283553253869, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706707283553253869, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 7706707283553253869, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732744989499409938, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7732744989499409938, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7732744989499409938, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732744989499409938, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 7732744989499409938, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829580246587863516, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829580246587863516, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: igniteRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829580246587863516, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7829580246587863516, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829580246587863516, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 42225960}
+    - target: {fileID: 7829580246587863516, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829580246587863516, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829580246587863516, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7829580246587863516, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829580246587863516, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4440374871733114721, guid: 591ccf89271f91a46ad7bb7cf99a143a, type: 3}
+    - target: {fileID: 7829580246587863516, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900020002791581500, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 7900020002791581500, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 7900020002791581500, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900020002791581500, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 7900020002791581500, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380135246739472474, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 8380135246739472474, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 8380135246739472474, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380135246739472474, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 8380135246739472474, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488561947557618486, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 8488561947557618486, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 8488561947557618486, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488561947557618486, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 8488561947557618486, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8586108959554234775, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 8586108959554234775, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 8586108959554234775, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8586108959554234775, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 8586108959554234775, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597322358547085497, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597322358547085497, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: igniteRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597322358547085497, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 8597322358547085497, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597322358547085497, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 1718075522}
+    - target: {fileID: 8597322358547085497, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597322358547085497, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: explosionRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597322358547085497, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 8597322358547085497, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597322358547085497, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4440374871733114721, guid: 591ccf89271f91a46ad7bb7cf99a143a, type: 3}
+    - target: {fileID: 8597322358547085497, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760314216211422997, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 8760314216211422997, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 8760314216211422997, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760314216211422997, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 1645843370360682046, guid: 96ba7fcb74f480f47a0bb0ee3c3746bc, type: 3}
+    - target: {fileID: 8760314216211422997, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059915659943130771, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: _EnemyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059915659943130771, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 1714323790}
+    - target: {fileID: 9059915659943130771, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: scorePopupPrefab
+      value: 
+      objectReference: {fileID: 3650385268543691805, guid: b83a3b64983e84845b09aa8f1c5574a1, type: 3}
+    - target: {fileID: 9059915659943130771, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: gageRecoverAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059915659943130771, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: defeatEffectPrefab
+      value: 
+      objectReference: {fileID: 4131683519261853172, guid: 5633a56263c186b47b983ff5571232ef, type: 3}
+    - target: {fileID: 9059915659943130771, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+      propertyPath: deathKnockbackDistance
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+--- !u!212 &1196130350 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 340938524579698332, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+  m_PrefabInstance: {fileID: 1196130349}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1197949842 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8370310486363675488, guid: 3a7d37c9d478d364492cdfdb40489610, type: 3}
@@ -29003,6 +29964,155 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 223d3016030b1814bbf7d40248078963, type: 3}
+--- !u!1001 &1529282130
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 423922700753370429, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641623856312103510, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435252107058554882, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_Name
+      value: Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 2435252107058554882, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2785402529529354642, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 656694027}
+    - target: {fileID: 2785402529529354642, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToTitle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2785402529529354642, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449002185311453136, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 656694027}
+    - target: {fileID: 4449002185311453136, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449002185311453136, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659613577999091485, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_ScaleFactor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7347945103974264481, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943005270891971375, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 656694027}
+    - target: {fileID: 7943005270891971375, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResumeGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943005270891971375, guid: 159b2468508565c46ae32029dde07602, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 159b2468508565c46ae32029dde07602, type: 3}
 --- !u!1001 &1529518558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31463,7 +32573,98 @@ PrefabInstance:
       propertyPath: _gageRecoverAmount
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7918755024035518126, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 8970600111578709920, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 4267746601442156232, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 5337905048950926111, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 7473126934047922197, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 2607409174114190642, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 1851173623388027716, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 6908275071294609282, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 6139083767697187532, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 7706578144608445086, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 3107664929288399013, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 6496007940982751172, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 8974753517011668013, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 3552663439242922294, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 1960918221495879424, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 6351672073291712454, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 976195309983888203, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 1382490700004216966, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 206236561429292532, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 974064644430857082, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 2777245498054472407, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 5316938296598272759, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 4378997360145331829, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 660018774340257243, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 4097317161107845604, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 7402721262903866738, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 6965800738525835756, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 6347039117712620378, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 1032213002912314496, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 5713265506028894647, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 8920500471055237122, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 2568300982321633037, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 7468150900647399789, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 3061380713670954969, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 4741032726158837809, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 1553549831281791571, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 7944055400245322579, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 6570723568983393365, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 3053590638942904491, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 6378919534021208024, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 7643251964779228866, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 8563639721706554534, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 6450316705176316654, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 357491047817723688, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 5374436748124474498, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 5322289747811060207, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 2257251051144094283, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 1369263537573299445, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 4517934700419574739, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 4004352372315168419, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 247724540126252920, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 4911106020997939404, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 7351698551992173049, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 8093456872521753720, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 8321346652974604550, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 2620783338723507874, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 4184291055037671949, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 1722757688329509957, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 2531709076162433179, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 1132791571992607902, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 8973554284049500781, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 6606023340278645886, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 7503467269825908946, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 3026453516466784886, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 7584900619282819687, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 5822429809460768789, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 2643545080596740091, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 4000701187275272911, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 7300393533425964057, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 1627555593703911755, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 813764948887853275, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 2635983865970840158, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 3069690778228803647, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 8859991358332837073, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 1452573664467242202, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 8723596158802323785, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 2066364313445777272, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 5187056649407553586, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 3496670439870468855, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 6426332984108959882, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 4371108145844623320, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 3510354358700175551, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 4656375134452639333, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 25545698209954767, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 6147940027531213073, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 5704306103104967969, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 6006221589547493025, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 3796346216652013110, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 2480337444225226040, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 148542922677930384, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
+    - {fileID: 286518067621241591, guid: 9a215ac5dac1a7f4db79025c288f01ae, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -33588,6 +34789,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2695a01f49f55514cb704e378e41ab83, type: 3}
+--- !u!212 &1718075522 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1558855276083810722, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+  m_PrefabInstance: {fileID: 1196130349}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1719709415
 GameObject:
   m_ObjectHideFlags: 0
@@ -35839,6 +37045,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8346139860629291646, guid: 7193bf8721103b448bbe633a1fe456bb, type: 3}
   m_PrefabInstance: {fileID: 756733065}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &1854608731 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 264655386676939933, guid: 4aeaa20040b461248aec0631bc80409e, type: 3}
+  m_PrefabInstance: {fileID: 1196130349}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1854964537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36629,6 +37840,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 806270819}
   m_LocalEulerAnglesHint: {x: 0, y: 18.094, z: 0}
+--- !u!1 &1917478685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 423922700753370429, guid: 159b2468508565c46ae32029dde07602, type: 3}
+  m_PrefabInstance: {fileID: 1529282130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1922258726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39272,9 +40488,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: AngelGageUI
       objectReference: {fileID: 0}
+    - target: {fileID: 3301544537881315247, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7acfc36dc81efc04b862642c933cf35d, type: 3}
+    - target: {fileID: 3301544537881315247, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301544537881315247, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301544537881315247, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3807214647585159078, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4053804055101335028, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
       propertyPath: m_Pivot.x
@@ -39302,11 +40534,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4053804055101335028, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1920
+      value: 421.7959
       objectReference: {fileID: 0}
     - target: {fileID: 4053804055101335028, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1080
+      value: 394.5715
       objectReference: {fileID: 0}
     - target: {fileID: 4053804055101335028, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39356,10 +40588,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4663358226640409721, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: baeaf0cc2fa884448b4af2ec346c1618, type: 3}
+    - target: {fileID: 8298614698757117313, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0baece7ba26a9a14ea249902891b94d2, type: 3}
+    - target: {fileID: 8298614698757117313, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298614698757117313, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298614698757117313, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8516629742296447463, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a6d42b89960ccbf4988c2a82adb36fb4, type: 3}
+    - target: {fileID: 8516629742296447463, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516629742296447463, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516629742296447463, guid: 1494c2e6e6c8f6148988333c0056a45c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40876,6 +42140,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1340967990329555174, guid: ebf1568a27e07714b80faecbce10ce2f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1838442947821659369, guid: ebf1568a27e07714b80faecbce10ce2f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 818.3203
@@ -40919,6 +42187,10 @@ PrefabInstance:
     - target: {fileID: 3078075232801270762, guid: ebf1568a27e07714b80faecbce10ce2f, type: 3}
       propertyPath: m_Name
       value: Transision
+      objectReference: {fileID: 0}
+    - target: {fileID: 3078075232801270762, guid: ebf1568a27e07714b80faecbce10ce2f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41219,6 +42491,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8571076842338426122, guid: 140d1d2c406167c50819d89f86d9092e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571076842338426122, guid: 140d1d2c406167c50819d89f86d9092e, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
@@ -41418,4 +42694,5 @@ SceneRoots:
   - {fileID: 1454931282}
   - {fileID: 1595964543}
   - {fileID: 806270819}
-  - {fileID: 740538087}
+  - {fileID: 1196130349}
+  - {fileID: 1529282130}
