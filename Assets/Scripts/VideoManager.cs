@@ -19,19 +19,30 @@ public class VideoManager : MonoBehaviour
 	[SerializeField] private float Title_TimeOut = 10f;
     [Tooltip("ゲームパッドのスティック")]
 	[SerializeField] private float stickDeadzone = 0.2f;
+	[Tooltip("暗転がかかる時間")]
+	[SerializeField] private float fadeDuration = 0.5f;
 
     [Header("連動させるオブジェクト")]
 	[Tooltip("動画を表示するRawImage")]
 	[SerializeField] private GameObject UI_Panel;
 	[Tooltip("Video Player Component")]
 	[SerializeField] private VideoPlayer videoPlayer;
+	[Tooltip("画面を暗転させるための画像")]
+	[SerializeField] private CanvasGroup fadeCanvasGroup;
 
 	private float Title_Timer;
 	private bool VideoPlaying;
+	private bool Transitioning;
 
-	private void Start() 
+	private void Start()
 	{
 		ResetTimer();
+
+		if (fadeCanvasGroup != null) // 暗転用パネルを透明
+		{
+			fadeCanvasGroup.alpha = 0f;
+			fadeCanvasGroup.gameObject.SetActive(false);
+		}
 	}
 	
 	private void Update() 
@@ -64,78 +75,112 @@ public class VideoManager : MonoBehaviour
 	private void StartVideo()
 	{
 		VideoPlaying = true;
-		UI_Panel.SetActive(true); // 映像の表示
 
-		if (videoPlayer != null)
-		{
-			videoPlayer.Play();
-		}
-	}
+        StartCoroutine(FadeAndPlayVideoRoutine());
+    }
 
 	private void StopVideo()
 	{
 		VideoPlaying = false;
-		UI_Panel.SetActive(false); // 映像の"非"表示
 
-		if(videoPlayer != null)
-		{
-			videoPlayer.Stop();
-		}
-
-		ResetTimer();
-	}
+        StartCoroutine(FadeAndStopVideoRoutine());
+    }
 
 	private bool AnyInputDetected()
 	{
-        // 1. キーボードの入力チェック（何かキーが押されたか）
-        if (Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame)
-        {
-            return true;
-        }
+		// キーボードの入力チェック
+		if (Keyboard.current != null && Keyboard.current.anyKey.wasPressedThisFrame) return true;
+		// マウスの入力チェック
+		if (Mouse.current != null)
+		{
+			// クリックされたか
+			if (Mouse.current.leftButton.wasPressedThisFrame ||
+				Mouse.current.rightButton.wasPressedThisFrame ||
+				Mouse.current.middleButton.wasPressedThisFrame)
+			{
+				return true;
+			}
 
-        // 2. マウスの入力チェック
-        if (Mouse.current != null)
-        {
-            // クリックされたか
-            if (Mouse.current.leftButton.wasPressedThisFrame ||
-                Mouse.current.rightButton.wasPressedThisFrame ||
-                Mouse.current.middleButton.wasPressedThisFrame)
-            {
-                return true;
-            }
+			// マウスが動いたか
+			if (Mouse.current.delta.ReadValue().sqrMagnitude > 0.1f)
+			{
+				return true;
+			}
+		}
 
-            // マウスが動いたか
-            if (Mouse.current.delta.ReadValue().sqrMagnitude > 0.1f)
-            {
-                return true;
-            }
-        }
+		// コントローラーの入力チェック
+		if (Gamepad.current != null)
+		{
+			// いずれかのボタンが「今フレーム押されたか」をループでチェック
+			var controls = Gamepad.current.allControls;
+			for (int i = 0; i < controls.Count; i++)
+			{
+				if (controls[i] is UnityEngine.InputSystem.Controls.ButtonControl button)
+				{
+					if (button.wasPressedThisFrame)
+					{
+						return true;
+					}
+				}
+			}
 
-        // 3. ゲームパッド（コントローラー）の入力チェック
-        if (Gamepad.current != null)
-        {
-            // いずれかのボタンが「今フレーム押されたか」をループでチェック
-            // allControlsの中から「ButtonControl（ボタン型の入力）」だけを安全に判別します
-            var controls = Gamepad.current.allControls;
-            for (int i = 0; i < controls.Count; i++)
-            {
-                if (controls[i] is UnityEngine.InputSystem.Controls.ButtonControl button)
-                {
-                    if (button.wasPressedThisFrame)
-                    {
-                        return true;
-                    }
-                }
-            }
-
-            // スティックの傾きチェック（デッドゾーンを考慮して誤検知を防ぐ）
-            if (Gamepad.current.leftStick.ReadValue().magnitude > stickDeadzone ||
-                Gamepad.current.rightStick.ReadValue().magnitude > stickDeadzone)
-            {
-                return true;
-            }
-        }
+			// スティックの傾きチェック（デッドゾーンを考慮して誤検知を防ぐ）
+			if (Gamepad.current.leftStick.ReadValue().magnitude > stickDeadzone ||
+				Gamepad.current.rightStick.ReadValue().magnitude > stickDeadzone)
+			{
+				return true;
+			}
+		}
 
         return false;
+    }
+
+	private IEnumerator Fade(float targetAlpha)
+	{
+		if (fadeCanvasGroup == null) yield break;
+
+		fadeCanvasGroup.gameObject.SetActive(true);
+		float startAlpha = fadeCanvasGroup.alpha;
+		float time = 0f;
+
+		while (time < fadeDuration)
+		{
+			time += Time.deltaTime; // 現在時刻を取得
+			fadeCanvasGroup.alpha = Mathf.Lerp(startAlpha, targetAlpha, time / fadeDuration);
+			yield return null;
+		}
+
+		fadeCanvasGroup.alpha = targetAlpha;
+
+		if (targetAlpha == 0f) fadeCanvasGroup.gameObject.SetActive(false);
+	}
+
+	private IEnumerator FadeAndPlayVideoRoutine()
+	{
+		Transitioning = true;
+
+		yield return StartCoroutine(Fade(1f));		 // だんだん画面を暗くする（フェードアウト）
+
+		UI_Panel.SetActive(true);                    // 画面が暗転したら、裏で動画を再生し始める
+        if (videoPlayer != null) videoPlayer.Play();
+
+		yield return StartCoroutine(Fade(0f));		 // だんだん画面を明るくする（フェードイン）
+
+		Transitioning = false;
+	}
+
+    private IEnumerator FadeAndStopVideoRoutine()
+    {
+        Transitioning = true;
+
+        yield return StartCoroutine(Fade(1f));		 // だんだん画面を暗くする（フェードアウト）
+
+        UI_Panel.SetActive(false);
+        if (videoPlayer != null) videoPlayer.Stop(); // 画面が暗転したら、動画を止めて非表示に
+        ResetTimer();
+
+        yield return StartCoroutine(Fade(0f));		 // // だんだん画面を明るくして、タイトル画面を表示
+
+        Transitioning = false;
     }
 }
