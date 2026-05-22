@@ -207,64 +207,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2368117359318476982, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 304565847612629484}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32895aa830655d341aa28872b224b50b, type: 3}
---- !u!54 &1611076410997866951 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 1458937806218486429, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-  m_PrefabInstance: {fileID: 172404805250081626}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2428967079812710994 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2581105682377515272, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 172404805250081626}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2502241558994963436 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2368117359318476982, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-  m_PrefabInstance: {fileID: 172404805250081626}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &304565847612629484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2502241558994963436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b73a0c2f7116f7546a8611f20405556e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _EnemyType: 0
-  findEffect: {fileID: 0}
-  sweatEffect: {fileID: 0}
-  exclamationDuration: 1
-  defeatEffectPrefab: {fileID: 0}
-  igniteFlashColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  spriteRenderer: {fileID: 0}
-  maxHp: 50
-  moveSpeed: 5
-  playerTarget: {fileID: 0}
-  changeDirectionInterval: 2
-  detectionRange: 10
-  chaseDuration: 5
-  cooldownDuration: 1.5
-  igniteRadius: 0.5
-  explosionRadius: 3
-  explosionDamage: 1
-  explosionDelay: 5
-  defaultDestroyDelay: 0.75
-  habaneroDestroyDelay: 2
-  deathKnockbackDistance: 1.5
-  deathKnockbackDuration: 0.2
-  scoreValue: 10
-  scorePopupPrefab: {fileID: 0}
-  _rigidbody: {fileID: 1611076410997866951}
-  animator: {fileID: 8968710674306181397}
 --- !u!1 &4102418806649768750 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4218247130776447092, guid: 32895aa830655d341aa28872b224b50b, type: 3}
@@ -273,11 +222,6 @@ GameObject:
 --- !u!1 &7663033904565043679 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7510898059318895237, guid: 32895aa830655d341aa28872b224b50b, type: 3}
-  m_PrefabInstance: {fileID: 172404805250081626}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &8968710674306181397 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9084819925801257551, guid: 32895aa830655d341aa28872b224b50b, type: 3}
   m_PrefabInstance: {fileID: 172404805250081626}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &211531996091964072
@@ -659,6 +603,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 2066619634939914246}
   animator: {fileID: 8539643177084960980}
@@ -817,6 +762,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 2133257506224557458}
   animator: {fileID: 8626128062162888000}
@@ -983,6 +929,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 2157586257675018925}
   animator: {fileID: 8637265164488919679}
@@ -1164,6 +1111,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 2221798982709870714}
   animator: {fileID: 8428937251176786088}
@@ -1413,6 +1361,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 1769855667904502402}
   animator: {fileID: 8260509882632172112}
@@ -1569,6 +1518,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 333948221072727393}
   animator: {fileID: 7966480171402655155}
@@ -1732,6 +1682,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 486500942684658990}
   animator: {fileID: 7848812787228784124}
@@ -1878,6 +1829,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 540249708826892206}
   animator: {fileID: 7877826668271681404}
@@ -2176,6 +2128,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 1016347716697767030}
   animator: {fileID: 7221022273291981988}
@@ -2334,6 +2287,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 1030243624223559366}
   animator: {fileID: 7233021504982148628}
@@ -2661,6 +2615,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 857384225413446411}
   animator: {fileID: 7046719220386010073}
@@ -2970,6 +2925,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 3582441344151427749}
   animator: {fileID: 6601028896334656119}
@@ -3136,6 +3092,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 3592162986349450140}
   animator: {fileID: 6626236058695007054}
@@ -3387,6 +3344,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 3642025761211122437}
   animator: {fileID: 6388321439409482711}
@@ -3606,6 +3564,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 4354351839945882772}
   animator: {fileID: 6215302077208777798}
@@ -3855,6 +3814,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 4583631438109162540}
   animator: {fileID: 6174618848042620158}
@@ -4084,6 +4044,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 4066350646071260578}
   animator: {fileID: 5927414393943743856}
@@ -4255,6 +4216,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 4226549163429366423}
   animator: {fileID: 5803815766551863877}
@@ -4489,6 +4451,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 2810458206979590218}
   animator: {fileID: 5560876247561904280}
@@ -4660,6 +4623,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 2480309198122291528}
   animator: {fileID: 5208175138393733530}
@@ -4818,6 +4782,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 3205871682929370817}
   animator: {fileID: 5066964018773691923}
@@ -4976,6 +4941,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 3000232619977634941}
   animator: {fileID: 4867832708388248751}
@@ -5375,6 +5341,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 5828417409837189804}
   animator: {fileID: 4237396195825181310}
@@ -5526,6 +5493,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 5864782135805520320}
   animator: {fileID: 4273660844341100818}
@@ -5677,6 +5645,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 6019472952195031905}
   animator: {fileID: 4153872893151022003}
@@ -5830,6 +5799,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 6718360226971080163}
   animator: {fileID: 3967841306339015985}
@@ -6066,6 +6036,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 4962283820043219675}
   animator: {fileID: 3382591951958448649}
@@ -6224,6 +6195,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 4990579531607270178}
   animator: {fileID: 3417926479651359728}
@@ -6382,6 +6354,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 5015987857226335256}
   animator: {fileID: 3436437572730629322}
@@ -6540,6 +6513,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 5035192580660251839}
   animator: {fileID: 3444245857059464301}
@@ -6698,6 +6672,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 4632046030586958540}
   animator: {fileID: 3054749997131692574}
@@ -6856,6 +6831,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 4667366496621493156}
   animator: {fileID: 3092040806381572982}
@@ -7002,6 +6978,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 4719346375649903399}
   animator: {fileID: 3121714880536636405}
@@ -7261,6 +7238,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 4772703130482923758}
   animator: {fileID: 2887088386795401276}
@@ -7419,6 +7397,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 4787552693720387551}
   animator: {fileID: 2908268099401099021}
@@ -7639,6 +7618,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 5764238926766410980}
   animator: {fileID: 2725314811803477046}
@@ -7792,6 +7772,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 5263590913253322186}
   animator: {fileID: 2531299719481394456}
@@ -8089,6 +8070,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 8117580870225161019}
   animator: {fileID: 1912766950951011305}
@@ -8416,6 +8398,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 9078669567244583390}
   animator: {fileID: 1716182054628976908}
@@ -8572,6 +8555,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 8824762592073559469}
   animator: {fileID: 1178581292048909695}
@@ -8718,6 +8702,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 8823733544925511211}
   animator: {fileID: 1177903826216654585}
@@ -8889,6 +8874,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 8821849633005910148}
   animator: {fileID: 1171342872506929238}
@@ -9065,6 +9051,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 6929374346052673764}
   animator: {fileID: 722518655704795190}
@@ -9301,6 +9288,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 7824087167910726663}
   animator: {fileID: 484223211405239509}
@@ -9447,6 +9435,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 7821560986274489767}
   animator: {fileID: 479413339797966197}
@@ -9610,6 +9599,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 7984744123477517586}
   animator: {fileID: 352250381722439104}

@@ -109,8 +109,8 @@ public class AlphaGameManager : MonoBehaviour
         PlayerMoveImproved player = FindAnyObjectByType<PlayerMoveImproved>();
         if (isOver)
         {
-            scoreMultiplier = 1.5f;
-            player?.SetSpeedBoost(1.5f);
+            scoreMultiplier = 2f;
+            player?.SetSpeedBoost(2f);
         }
         else
         {

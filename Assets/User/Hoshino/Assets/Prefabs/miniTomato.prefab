@@ -10,12 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2581105682377515272}
   - component: {fileID: 1458937806218486429}
-  - component: {fileID: 6131851177144524642}
   - component: {fileID: 3499783367499786347}
   - component: {fileID: 728585750583198543}
   - component: {fileID: 9084819925801257551}
   - component: {fileID: 2635894864994327948}
-  - component: {fileID: 5739645787531936211}
   m_Layer: 0
   m_Name: miniTomato
   m_TagString: Enemy
@@ -67,29 +65,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!136 &6131851177144524642
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2368117359318476982}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.43592313
-  m_Height: 0.9498211
-  m_Direction: 1
-  m_Center: {x: 0.00089624524, y: -0.027096689, z: 0}
 --- !u!114 &3499783367499786347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +100,7 @@ MonoBehaviour:
   deathKnockbackDistance: 1.5
   deathKnockbackDuration: 0.2
   scoreValue: 10
+  gageRecoverAmount: 10
   scorePopupPrefab: {fileID: 0}
   _rigidbody: {fileID: 1458937806218486429}
   animator: {fileID: 9084819925801257551}
@@ -227,44 +203,6 @@ NavMeshAgent:
   m_BaseOffset: 0.421875
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &5739645787531936211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2368117359318476982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b73a0c2f7116f7546a8611f20405556e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _EnemyType: 0
-  findEffect: {fileID: 0}
-  sweatEffect: {fileID: 0}
-  exclamationDuration: 1
-  defeatEffectPrefab: {fileID: 0}
-  igniteFlashColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  spriteRenderer: {fileID: 0}
-  maxHp: 50
-  moveSpeed: 5
-  playerTarget: {fileID: 0}
-  changeDirectionInterval: 2
-  detectionRange: 10
-  chaseDuration: 5
-  cooldownDuration: 1.5
-  igniteRadius: 0.5
-  explosionRadius: 3
-  explosionDamage: 1
-  explosionDelay: 5
-  defaultDestroyDelay: 0.75
-  habaneroDestroyDelay: 2
-  deathKnockbackDistance: 1.5
-  deathKnockbackDuration: 0.2
-  scoreValue: 10
-  scorePopupPrefab: {fileID: 0}
-  _rigidbody: {fileID: 1458937806218486429}
-  animator: {fileID: 9084819925801257551}
 --- !u!1001 &2636019265238568566
 PrefabInstance:
   m_ObjectHideFlags: 0
