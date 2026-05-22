@@ -427,7 +427,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -14, y: 296}
-  m_SizeDelta: {x: 350, y: 80}
+  m_SizeDelta: {x: 400, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &356962538
 MonoBehaviour:
@@ -453,8 +453,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c6e8f70ca8478046b86680a57bda356, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 920067f39e0e5294b9420f4d61d11957, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1379,7 +1379,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7af4780d68a9faf469c61d59cee9291e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.8
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1502,8 +1502,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -300}
-  m_SizeDelta: {x: 600, y: 150}
+  m_AnchoredPosition: {x: 136, y: -300}
+  m_SizeDelta: {x: 900, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &924042544
 MonoBehaviour:
@@ -1527,8 +1527,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Bang to Start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c6e8f70ca8478046b86680a57bda356, type: 2}
+  m_sharedMaterial: {fileID: 966635998036760955, guid: 7c6e8f70ca8478046b86680a57bda356, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2506,8 +2506,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -641, y: -175}
-  m_SizeDelta: {x: 500, y: 700}
+  m_AnchoredPosition: {x: -644, y: -175}
+  m_SizeDelta: {x: 620.615, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1618560400
 MonoBehaviour:
@@ -3080,8 +3080,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ranking
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c6e8f70ca8478046b86680a57bda356, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 920067f39e0e5294b9420f4d61d11957, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -180,8 +180,8 @@ MonoBehaviour:
 
     0000000'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 8aad9f97e9a6eee4abb292baf524b99c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c6e8f70ca8478046b86680a57bda356, type: 2}
+  m_sharedMaterial: {fileID: 966635998036760955, guid: 7c6e8f70ca8478046b86680a57bda356, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -787,8 +787,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Title
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 8aad9f97e9a6eee4abb292baf524b99c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c6e8f70ca8478046b86680a57bda356, type: 2}
+  m_sharedMaterial: {fileID: 966635998036760955, guid: 7c6e8f70ca8478046b86680a57bda356, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1165,7 +1165,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1523,8 +1523,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Replay
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 8aad9f97e9a6eee4abb292baf524b99c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c6e8f70ca8478046b86680a57bda356, type: 2}
+  m_sharedMaterial: {fileID: 966635998036760955, guid: 7c6e8f70ca8478046b86680a57bda356, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
