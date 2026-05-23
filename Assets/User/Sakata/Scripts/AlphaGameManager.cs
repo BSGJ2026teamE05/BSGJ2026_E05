@@ -110,7 +110,7 @@ public class AlphaGameManager : MonoBehaviour
         if (isOver)
         {
             scoreMultiplier = 2f;
-            player?.SetSpeedBoost(2f);
+            player?.SetSpeedBoost(1.3f);
         }
         else
         {
