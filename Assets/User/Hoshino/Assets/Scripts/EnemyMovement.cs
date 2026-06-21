@@ -35,7 +35,6 @@ public class EnemyMovement : MonoBehaviour
 
     [Header("ステータス")]
     [SerializeField] public int maxHp = 50;
-    private int currentHp;
 
     [Header("移動設定")]
     [SerializeField] public float moveSpeed = 5f;
@@ -43,7 +42,6 @@ public class EnemyMovement : MonoBehaviour
 
     [Header("徘徊設定")]
     [SerializeField] private float changeDirectionInterval = 2f;
-    private Vector3 wanderDirection;
 
     [Header("索敵設定")]
     [SerializeField] private float detectionRange = 10f;
@@ -59,20 +57,12 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private int explosionDamage = 1;
     [Tooltip("起爆状態になってから爆発するまでの時間(秒)")]
     [SerializeField] private float explosionDelay = 5f;
-    private bool hasExploded = false;
 
     [Header("消滅タイミング設定")]
     [Tooltip("MiniTomatoやPotatoが潰れてから消滅するまでの時間(秒)")]
     [SerializeField] private float defaultDestroyDelay = 0.75f;
     [Tooltip("Habaneroが撃破・爆発してから消滅するまでの時間(秒)")]
     [SerializeField] private float habaneroDestroyDelay = 2.0f;
-
-    // === ★追加：起爆中のノックバックを1回だけに制限するフラグ ===
-    private bool hasIgniteKnockedBack = false;
-
-    //[Header("ノックバック設定")]
-    //[SerializeField] private float knockbackDistance = 2f;
-    //[SerializeField] private float knockbackDuration = 0.5f;
 
     [Header("死亡時ノックバック")]
     [SerializeField] private float deathKnockbackDistance = 1.5f;
@@ -90,12 +80,15 @@ public class EnemyMovement : MonoBehaviour
 
     public Rigidbody _rigidbody;
     public Animator animator;
-    Vector3 movement;
-
+    private Vector3 movement;
+    private Vector3 wanderDirection;
+    private int currentHp;
     private float stateTimer = 0f;
     private float currentSpeed;
     private bool isSquashed = false;
+    private bool hasExploded = false;
     private bool isKnockedBack = false;
+    private bool hasIgniteKnockedBack = false; // 起爆中のノックバックを1回だけに制限する
     private bool IsFleeingType => _EnemyType is EnemyType.MiniTomato or EnemyType.Potato;
     private bool IsStationaryType => _EnemyType is EnemyType.Potato;
 
@@ -108,38 +101,11 @@ public class EnemyMovement : MonoBehaviour
             GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
             if (playerObj != null) playerTarget = playerObj.transform;
         }
-
-        // ★修正：ハバネロの場合のみ、SpriteRendererを自動取得する（不要な処理を削除）
-        if (_EnemyType == EnemyType.Habanero && spriteRenderer == null)
-        {
-            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        }
-
+        if (_EnemyType == EnemyType.Habanero && spriteRenderer == null) spriteRenderer = GetComponentInChildren<SpriteRenderer>(); // ハバネロのみ、SpriteRendererを自動取得する
         if (findEffect != null) findEffect.SetActive(false);
         if (sweatEffect != null) sweatEffect.SetActive(false);
         StartCoroutine(WanderRoutine());
         ChangeState(EnemyState.wander);
-    }
-
-    private IEnumerator WanderRoutine()
-    {
-        while (true)
-        {
-            int randomDir = UnityEngine.Random.Range(0, 5);
-            Vector3 newDirection = Vector3.zero;
-
-            switch (randomDir)
-            {
-                case 0: newDirection = Vector3.forward; break;
-                case 1: newDirection = Vector3.back; break;
-                case 2: newDirection = Vector3.left; break;
-                case 3: newDirection = Vector3.right; break;
-                case 4: newDirection = Vector3.zero; break;
-            }
-
-            wanderDirection = newDirection;
-            yield return new WaitForSeconds(changeDirectionInterval);
-        }
     }
 
     private void Update()
@@ -230,20 +196,18 @@ public class EnemyMovement : MonoBehaviour
                 currentSpeed = 0f;
                 stateTimer += Time.deltaTime;
 
-                // === ★復活：確実に点滅させる処理 ===
-                if (spriteRenderer != null)
+                if (spriteRenderer != null) // ハバネロ撃破時に、点滅させるための処理
                 {
                     float progress = stateTimer / explosionDelay;
                     float blinkSpeed = Mathf.Lerp(15f, 60f, progress);
                     float lerp = (Mathf.Sin(stateTimer * blinkSpeed) + 1f) / 2f;
 
-                    // 1. 専用ShaderがあればShaderで光らせる
-                    if (spriteRenderer.material != null && spriteRenderer.material.HasProperty("_FlashAmount"))
+                    if (spriteRenderer.material != null && spriteRenderer.material.HasProperty("_FlashAmount")) // Shaderで光らせる
                     {
                         spriteRenderer.material.SetFloat("_FlashAmount", lerp);
                         spriteRenderer.material.SetColor("_FlashColor", igniteFlashColor);
                     }
-                    // 2. ★超重要修正：elseを削除。Shaderの有無に関わらず「絶対に」C#でも点滅させる！
+                    
                     if (lerp > 0.5f)
                     {
                         // 色を少し透明な黄色にしつつ、ピーク時(0.85以上)は一瞬だけ完全に非表示にして激しい点滅を作る
@@ -273,6 +237,10 @@ public class EnemyMovement : MonoBehaviour
         _rigidbody.MovePosition(_rigidbody.position + movement * currentSpeed * Time.fixedDeltaTime);
     }
 
+
+    // ============================================================================================================
+    // 処理：アニメーション
+    // ============================================================================================================
     private void UpdateAnimation()
     {
         if (animator == null) return;
@@ -302,58 +270,49 @@ public class EnemyMovement : MonoBehaviour
         animator.SetBool("IsFleeing", isFleeing);
     }
 
-    //private IEnumerator KnockbackRoutine()
-    //{
-    //    isKnockedBack = true;
-    //    animator.SetFloat("Speed", 0);
+    // ============================================================================================================
+    // 処理：歩行時
+    // ============================================================================================================
+    private IEnumerator WanderRoutine()
+    {
+        while (true)
+        {
+            int randomDir = UnityEngine.Random.Range(0, 5);
+            Vector3 newDirection = Vector3.zero;
+            switch (randomDir)
+            {
+                case 0: newDirection = Vector3.forward; break;
+                case 1: newDirection = Vector3.back; break;
+                case 2: newDirection = Vector3.left; break;
+                case 3: newDirection = Vector3.right; break;
+                case 4: newDirection = Vector3.zero; break;
+            }
+            wanderDirection = newDirection;
+            yield return new WaitForSeconds(changeDirectionInterval);
+        }
+    }
 
-    //    Vector3 knockbackDir = (transform.position - playerTarget.position).normalized;
-    //    knockbackDir.y = 0;
-
-    //    Vector3 startPos = transform.position;
-    //    //Vector3 targetPos = startPos + knockbackDir * knockbackDistance;
-
-    //    float elapsedTime = 0f;
-
-    //    while (elapsedTime < knockbackDuration)
-    //    {
-    //        // === ★追加：吹き飛んでいる最中に爆発したり倒されたりしたら強制終了する ===
-    //        if (isSquashed || hasExploded) break;
-
-    //        _rigidbody.MovePosition(Vector3.Lerp(startPos, targetPos, elapsedTime / knockbackDuration));
-    //        elapsedTime += Time.fixedDeltaTime;
-    //        yield return new WaitForFixedUpdate();
-    //    }
-
-    //    isKnockedBack = false;
-    //}
-
+    // ============================================================================================================
+    // 処理：ノックバック
+    // ============================================================================================================
     private IEnumerator DeathKnockbackRoutine()
     {
         isKnockedBack = true;
 
         Vector3 knockbackDir = transform.position - playerTarget.position;
-
-        // 横方向だけ取得
-        knockbackDir.y = 0f;
+        knockbackDir.y = 0f; // 横方向だけ取得
         knockbackDir.Normalize();
 
         Vector3 startPos = transform.position;
-
-        // 飛ぶ先
-        Vector3 endPos = startPos + knockbackDir * deathKnockbackDistance;
+        Vector3 endPos = startPos + knockbackDir * deathKnockbackDistance; // 飛ぶ先
 
         float elapsed = 0f;
 
         while (elapsed < deathKnockbackDuration)
         {
             float t = elapsed / deathKnockbackDuration;
-
-            // 横移動
-            Vector3 pos = Vector3.Lerp(startPos, endPos, t);
-
-            // 放物線
-            float height = Mathf.Sin(t * Mathf.PI) * 2.0f;
+            Vector3 pos = Vector3.Lerp(startPos, endPos, t); // 横移動
+            float height = Mathf.Sin(t * Mathf.PI) * 2.0f; // 放物線
 
             pos.y += height;
 
@@ -363,13 +322,9 @@ public class EnemyMovement : MonoBehaviour
             yield return null;
         }
 
-        // 最終位置
-        transform.position = endPos;
-
+        transform.position = endPos; // 最終位置
         isKnockedBack = false;
-
-        // ===== 着地後につぶれアニメ =====
-        animator.SetTrigger("Squash");
+        animator.SetTrigger("Squash"); // 着地後に潰れるアニメーション
 
         float delay = (_EnemyType == EnemyType.Habanero)
             ? habaneroDestroyDelay
@@ -378,6 +333,9 @@ public class EnemyMovement : MonoBehaviour
         StartCoroutine(DestroyAndPlayEffect(delay));
     }
 
+    // ============================================================================================================
+    // 処理：敵がプレイヤーを発見したときに出るエフェクト
+    // ============================================================================================================
     private IEnumerator ShowDiscoveryEffect()
     {
         if (findEffect != null)
@@ -388,7 +346,9 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    // === ★追加：指定秒数（2秒）待ってからエフェクトを出して消滅させるコルーチン ===
+    // ============================================================================================================
+    // 処理：指定秒数（2秒）待ってからエフェクトを出して消滅させる
+    // ============================================================================================================
     private IEnumerator DestroyAndPlayEffect(float delay)
     {
         // アニメーションが終わるまで待つ
@@ -399,18 +359,17 @@ public class EnemyMovement : MonoBehaviour
         {
             Instantiate(defeatEffectPrefab, transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
         }
-
-        // オブジェクトを破壊
-        Destroy(gameObject);
+        Destroy(gameObject); // オブジェクトを破壊
     }
 
+    // ============================================================================================================
+    // 処理：状態遷移
+    // ============================================================================================================
     private void ChangeState(EnemyState newState)
     {
-        if (newState == EnemyState.find)
-        {
-            if (IsFleeingType) StartCoroutine(ShowDiscoveryEffect());
-        }
-
+        // 爆発したら点滅の非表示状態を強制的に元に戻す
+        if (newState == EnemyState.find) if (IsFleeingType) StartCoroutine(ShowDiscoveryEffect());
+        
         if (sweatEffect != null)
         {
             bool isRunningAway = (newState == EnemyState.Chase && IsFleeingType);
@@ -419,7 +378,6 @@ public class EnemyMovement : MonoBehaviour
 
         if (newState == EnemyState.Ignite)
         {
-            Debug.Log($"ハバネロ起爆！{explosionDelay}秒後に爆発します。");
             if (animator != null) animator.SetTrigger("Squash");
         }
 
@@ -427,16 +385,17 @@ public class EnemyMovement : MonoBehaviour
         stateTimer = 0f;
     }
 
+    // ============================================================================================================
+    // 処理：爆発する
+    // ============================================================================================================
     private void Explode()
     {
         if (hasExploded || isSquashed) return;
-
         hasExploded = true;
         movement = Vector3.zero;
         currentSpeed = 0f;
 
-        // ★追加：爆発したら点滅の非表示状態を強制的に元に戻す
-        if (_EnemyType == EnemyType.Habanero && spriteRenderer != null)
+        if (_EnemyType == EnemyType.Habanero && spriteRenderer != null) // 爆発したら点滅の非表示状態を強制的に元に戻す
         {
             spriteRenderer.enabled = true;
             spriteRenderer.color = Color.white;
@@ -445,34 +404,28 @@ public class EnemyMovement : MonoBehaviour
                 spriteRenderer.material.SetFloat("_FlashAmount", 0f);
             }
         }
-
-        Debug.Log("ドカーン！ハバネロが爆発した！");
+        Debug.Log("ハバネロが爆発");
 
         if (playerTarget != null)
         {
             float distanceToPlayer = Vector3.Distance(transform.position, playerTarget.position);
             if (distanceToPlayer <= explosionRadius)
             {
-                // 天使ゲージ減少
-                if (AlphaGameManager.instance != null)
-                {
-                    AlphaGameManager.instance.DamageAngelGage(explosionDamage);
-                }
+                if (AlphaGameManager.instance != null) AlphaGameManager.instance.DamageAngelGage(explosionDamage); // 天使ゲージ減少
             }
         }
 
-        // === ★追加：ハバネロは「爆発した直後（今この瞬間）」にエフェクトを出す ===
-        if (defeatEffectPrefab != null)
+        if (defeatEffectPrefab != null) // ハバネロが爆発した直後にエフェクトを出す
         {
-            // Y軸を少し浮かせて表示
-            Instantiate(defeatEffectPrefab, transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
+            Instantiate(defeatEffectPrefab, transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity); // Y軸を少し浮かせて表示
         }
-
         animator.SetTrigger("Squash");
-        // === ★変更：Habanero専用の短い時間（0.5秒）で消滅させる ===
-        Destroy(gameObject, habaneroDestroyDelay);
+        Destroy(gameObject, habaneroDestroyDelay); // ハバネロを短い時間（0.5秒）で消滅させる
     }
 
+    // ============================================================================================================
+    // 処理：潰れる
+    // ============================================================================================================
     public void Squash()
     {
         if (isSquashed || hasExploded) return;
@@ -485,8 +438,7 @@ public class EnemyMovement : MonoBehaviour
 
         if (sweatEffect != null) sweatEffect.SetActive(false);
 
-        // ★追加：潰されたら点滅の非表示状態を強制的に元に戻す
-        if (_EnemyType == EnemyType.Habanero && spriteRenderer != null)
+        if (_EnemyType == EnemyType.Habanero && spriteRenderer != null) // 潰されたら点滅の非表示状態を強制的に元に戻す
         {
             spriteRenderer.enabled = true;
             spriteRenderer.color = Color.white;
@@ -495,15 +447,12 @@ public class EnemyMovement : MonoBehaviour
                 spriteRenderer.material.SetFloat("_FlashAmount", 0f);
             }
         }
-
-        //animator.SetTrigger("Squash");
-
-        //// === ★変更：エネミーの種類を見て、待機する時間（Delay）を振り分ける ===
-        //float delay = (_EnemyType == EnemyType.Habanero) ? habaneroDestroyDelay : defaultDestroyDelay;
-        //StartCoroutine(DestroyAndPlayEffect(delay));
         StartCoroutine(DeathKnockbackRoutine());
     }
 
+    // ============================================================================================================
+    // 処理：ダメージを受ける
+    // ============================================================================================================
     public void TakeDamage(int damageAmount)
     {
         if (isSquashed || hasExploded) return;
@@ -512,70 +461,51 @@ public class EnemyMovement : MonoBehaviour
 
         if (_EnemyType == EnemyType.Habanero)
         {
-            // まだ起爆していなければ、攻撃をきっかけに起爆する
-            if (currentState != EnemyState.Ignite)
+            if (currentState != EnemyState.Ignite) // まだ起爆していなければ、起爆する
             {
                 ChangeState(EnemyState.Ignite);
             }
-            // すでに起爆していて、まだノックバックしていなければ、1回だけノックバックする
-            else if (!hasIgniteKnockedBack)
+            else if (!hasIgniteKnockedBack) // すでに起爆していてまだノックバックしていなければ、1回だけノックバックする
             {
                 hasIgniteKnockedBack = true;
-                //StartCoroutine(KnockbackRoutine());
             }
         }
 
         if (currentHp <= 0)
         {
-            // 1. スコア加算のポップアップ表示
-            if (scorePopupPrefab != null)
+            if (scorePopupPrefab != null) // スコア加算のポップアップ表示
             {
                 Vector3 spawnPos = transform.position + new Vector3(0, 1.5f, 0);
                 Instantiate(scorePopupPrefab, spawnPos, Quaternion.identity);
             }
-
             Squash();
             AlphaGameManager.instance.AddScore(scoreValue);
             AlphaGameManager.instance.RecoverAngelGage(gageRecoverAmount);
-
         }
     }
 
+    // ============================================================================================================
+    // 処理：プレイヤーにぶつかった
+    // ============================================================================================================
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player") && !isKnockedBack && !isSquashed && !hasExploded)
         {
             if (_EnemyType == EnemyType.Habanero)
             {
-                if (currentState != EnemyState.Ignite)
-                {
-                    ChangeState(EnemyState.Ignite);
-                }
+                if (currentState != EnemyState.Ignite) ChangeState(EnemyState.Ignite); // 着火状態に
             }
             else
             {
                 PlayerController player = collision.gameObject.GetComponentInParent<PlayerController>();
-
-                if (player != null)
-                {
-                    player.TakeDamage(1);
-                }
-                else
-                {
-                    PlayerMoveImproved playerMove = collision.gameObject.GetComponentInParent<PlayerMoveImproved>();
-                    if (playerMove != null)
-                    {
-                        Debug.LogWarning("PlayerController はありませんが、PlayerMoveImproved を検出しました。");
-                    }
-                    else
-                    {
-                        Debug.LogWarning($"プレイヤーにぶつかりましたが、親オブジェクトにダメージを処理するスクリプトが見つかりません: {collision.gameObject.name}");
-                    }
-                }
+                if (player != null) player.TakeDamage(1);
             }
         }
     }
 
+    // ============================================================================================================
+    // 処理：敵の範囲の補助線を描画する
+    // ============================================================================================================
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
